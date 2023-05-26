@@ -1,0 +1,6481 @@
+# Czech translation of the lynx.
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# This file is distributed under the same license as the lynx package.
+# Jiří Pavlovský <pavlovsk@ff.cuni.cz>, 1998, 2000.
+# Branislav Makúch <makuch@disroot.org>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lynx 2.9.0-dev3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-23 19:59-0400\n"
+"PO-Revision-Date: 2020-06-15 09:32+0200\n"
+"Last-Translator: Branislav Makúch <makuch@disroot.org>\n"
+"Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#. ******************************************************************
+#. * The following definitions are for status line prompts, messages, or
+#. * warnings issued by Lynx during program execution.  You can modify
+#. * them to make them more appropriate for your site.  We recommend that
+#. * you extend these definitions to other languages using the gettext
+#. * library.  There are also scattered uses of 'gettext()' throughout the
+#. * Lynx source, covering all but those messages which (a) are used for
+#. * debugging (CTRACE) or (b) are constants used in interaction with
+#. * other programs.
+#. *
+#. * See ABOUT-NLS and po/readme for details and location of contributed
+#. * translations.  When no translation is available, the English default is
+#. * used.
+#.
+#: LYMessages.c:28
+#, c-format
+msgid "Alert!: %s"
+msgstr "Pozor!: %s"
+
+#: LYMessages.c:29
+msgid "Welcome"
+msgstr "Vítejte"
+
+#: LYMessages.c:30
+msgid "Are you sure you want to quit?"
+msgstr "Opravdu chcete ukončit program?"
+
+#: LYMessages.c:32
+msgid "Really exit from Lynx?"
+msgstr "Opravdu chcete ukončit Lynx?"
+
+#: LYMessages.c:34
+msgid "Connection interrupted."
+msgstr "Spojení bylo přerušeno."
+
+#: LYMessages.c:35
+msgid "Data transfer interrupted."
+msgstr "Přenos dat byl přerušen."
+
+#: LYMessages.c:36
+msgid "Cancelled!!!"
+msgstr "Zrušeno!!!"
+
+#: LYMessages.c:37
+msgid "Cancelling!"
+msgstr "Ruším!"
+
+#: LYMessages.c:38
+msgid "Excellent!!!"
+msgstr "Výborně!!!"
+
+#: LYMessages.c:39
+msgid "OK"
+msgstr "OK"
+
+#: LYMessages.c:40
+msgid "Done!"
+msgstr "Hotovo!"
+
+#: LYMessages.c:41
+msgid "Bad request!"
+msgstr "Chybný požadavek!"
+
+#: LYMessages.c:42
+msgid "previous"
+msgstr "předchozí"
+
+#: LYMessages.c:43
+msgid "next screen"
+msgstr "následující obrazovka"
+
+#: LYMessages.c:44
+msgid "HELP!"
+msgstr "NÁPOVĚDA!"
+
+#: LYMessages.c:45
+msgid ", help on "
+msgstr ", nápověda pro "
+
+#. #define HELP
+#: LYMessages.c:47
+msgid "Commands: Use arrow keys to move, '?' for help, 'q' to quit, '<-' to go back."
+msgstr "Příkazy: Použijte šipky propohyb, '?' pro nápovědu, 'q' pro ukončení, '<-' pro návrat zpět."
+
+#. #define MOREHELP
+#: LYMessages.c:49
+msgid "-- press space for more, use arrow keys to move, '?' for help, 'q' to quit."
+msgstr "-- zmáčkněte mezerník pro další stranu, šipky pro pohyb, '?' pro nápovědu. 'q' pro ukončení."
+
+#: LYMessages.c:50
+msgid "-- press space for next page --"
+msgstr "-- pro další stranu zmáčkněte mezerník --"
+
+#: LYMessages.c:51
+msgid "URL too long"
+msgstr "URL je příliš dlouhé"
+
+#. Inactive input fields, messages used with -tna option - kw
+#. #define FORM_LINK_TEXT_ADV_MSG_INA
+#: LYMessages.c:57
+#, c-format
+msgid "(Textfield \"%s\"); Inactive.  Press <return> to activate."
+msgstr "(Textové pole \"%s\"); Vypnuto.  Zapnutí pomocí <return>."
+
+#. #define FORM_LINK_TEXT_MESSAGE_INA
+#: LYMessages.c:59
+msgid "(Text entry field) Inactive.  Press <return> to activate."
+msgstr "(Pole pro textový vstup) Vypnuto.  Zapnutí pomocí <return>."
+
+#. #define FORM_LINK_TEXTAREA_ADV_MSG_INA
+#: LYMessages.c:61
+#, c-format
+msgid "(Textarea \"%s\"); Inactive.  Press <return> to activate."
+msgstr "(Textová oblast \"%s\"); Vypnuto.  Zapnutí pomocí <return>."
+
+#. #define FORM_LINK_TEXTAREA_MESSAGE_INA
+#: LYMessages.c:63
+msgid "(Textarea) Inactive.  Press <return> to activate."
+msgstr "(Textová oblast) Vypnuto.  Zapnutí pomocí <return>."
+
+#. #define FORM_LINK_TEXTAREA_ADV_MSG_INA_E
+#: LYMessages.c:65
+#, c-format
+msgid "(Textarea \"%s\"); Inactive.  Press <return> to activate (%s for editor)."
+msgstr "(Textová oblast \"%s\"); Vypnuto.  Zapnutí pomocí <return> (%s pro editor)."
+
+#. #define FORM_LINK_TEXTAREA_MESSAGE_INA_E
+#: LYMessages.c:67
+#, c-format
+msgid "(Textarea) Inactive.  Press <return> to activate (%s for editor)."
+msgstr "(Textová oblast) Vypnuto.  Zapnutí pomocí <return> (%s pro editor)."
+
+#. #define FORM_LINK_TEXT_SUBMIT_MESSAGE_INA
+#: LYMessages.c:69
+msgid "(Form field) Inactive.  Use <return> to edit."
+msgstr "(Pole formuláře) Vypnuto.  <return> pro editaci."
+
+#. #define FORM_TEXT_SUBMIT_MESSAGE_INA_X
+#: LYMessages.c:71
+#, c-format
+msgid "(Form field) Inactive.  Use <return> to edit (%s to submit with no cache)."
+msgstr "(Pole formuláře) Vypnuto.  <return> pro editaci (%s pro 'NO CACHE')."
+
+#. #define FORM_TEXT_RESUBMIT_MESSAGE_INA
+#: LYMessages.c:73
+msgid "(Form field) Inactive. Press <return> to edit, press <return> twice to submit."
+msgstr "(Pole formuláře) Vypnuto. <return> pro editaci, 2x <return> pro odeslání."
+
+#. #define FORM_TEXT_SUBMIT_MAILTO_MSG_INA
+#: LYMessages.c:75
+msgid "(mailto form field) Inactive.  Press <return> to change."
+msgstr "('mailto' pole formuláře) Vypnuto.  <return> pro změnu."
+
+#. #define FORM_LINK_PASSWORD_MESSAGE_INA
+#: LYMessages.c:77
+msgid "(Password entry field) Inactive.  Press <return> to activate."
+msgstr "(Pole pro zadání hesla) Vypnuto.  Zapnutí pomocí <return>."
+
+#. #define FORM_LINK_FILE_UNM_MSG
+#: LYMessages.c:80
+msgid "UNMODIFIABLE file entry field.  Use UP or DOWN arrows or tab to move off."
+msgstr "NEMODIFIKOVATELNÉ pole pro výběr souboru.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_FILE_MESSAGE
+#: LYMessages.c:82
+msgid "(File entry field) Enter filename.  Use UP or DOWN arrows or tab to move off."
+msgstr "(Pole pro výběr souboru) Vyberte soubor.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_TEXT_ADV_MSG
+#. #define FORM_LINK_TEXT_MESSAGE
+#: LYMessages.c:84 LYMessages.c:86
+#, c-format
+msgid "(Textfield \"%s\"); Enter text.  Use UP or DOWN arrows or tab to move off."
+msgstr "(Textové pole \"%s\"); Zadejte text.  NAHORU/DOLŮ či TAB pro odchod."
+
+#. #define FORM_LINK_TEXTAREA_ADV_MSG
+#: LYMessages.c:88
+#, c-format
+msgid "(Textarea \"%s\"); Enter text. Use UP/DOWN arrows or TAB to move off."
+msgstr "(Textová oblast \"%s\"); Zadejte text. NAHORU/DOLŮ či TAB pro odchod."
+
+#. #define FORM_LINK_TEXTAREA_MESSAGE
+#: LYMessages.c:90
+msgid "(Textarea) Enter text. Use UP/DOWN arrows or TAB to move off."
+msgstr "(Textová oblast) Zadejte text. NAHORU/DOLŮ či TAB pro odchod."
+
+#. #define FORM_LINK_TEXTAREA_ADV_MSG_E
+#: LYMessages.c:92
+#, c-format
+msgid "(Textarea \"%s\"); Enter text. Use UP/DOWN arrows or TAB to move off (%s for editor)."
+msgstr "(Textová oblast \"%s\"); Zadejte text. NAHORU/DOLŮ či TAB pro odchod (%s pro editor)."
+
+#. #define FORM_LINK_TEXTAREA_MESSAGE_E
+#: LYMessages.c:94
+#, c-format
+msgid "(Textarea) Enter text. Use UP/DOWN arrows or TAB to move off (%s for editor)."
+msgstr "(Textová oblast) Zadejte text. NAHORU/DOLŮ či TAB pro odchod (%s pro editor)."
+
+#. #define FORM_LINK_TEXT_UNM_MSG
+#: LYMessages.c:96
+msgid "UNMODIFIABLE form text field.  Use UP or DOWN arrows or tab to move off."
+msgstr "NEMODIFIKOVATELNÉ textové pole formuláře.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_TEXT_SUBMIT_MESSAGE
+#: LYMessages.c:98
+msgid "(Form field) Enter text.  Use <return> to submit."
+msgstr "(Pole formuláře) Zadejte text.  <return> pro odeslání."
+
+#. #define FORM_LINK_TEXT_SUBMIT_MESSAGE_X
+#: LYMessages.c:100
+#, c-format
+msgid "(Form field) Enter text.  Use <return> to submit (%s for no cache)."
+msgstr "(Pole formuláře) Zadejte text.  <return> odešle (%s pro 'NO CACHE')."
+
+#. #define FORM_LINK_TEXT_RESUBMIT_MESSAGE
+#: LYMessages.c:102
+msgid "(Form field) Enter text.  Use <return> to submit, arrows or tab to move off."
+msgstr "(Pole formuláře) Zadejte text.  <return> odešle, šipky či TAB pro odchod."
+
+#. #define FORM_LINK_TEXT_SUBMIT_UNM_MSG
+#: LYMessages.c:104
+msgid "UNMODIFIABLE form field.  Use UP or DOWN arrows or tab to move off."
+msgstr "NEMODIFIKOVATELNÉ pole formuláře.  NAHORU/DOLŮ či TAB pro odchod."
+
+#. #define FORM_LINK_TEXT_SUBMIT_MAILTO_MSG
+#: LYMessages.c:106
+msgid "(mailto form field) Enter text.  Use <return> to submit, arrows to move off."
+msgstr "('mailto' pole formuláře) Zadejte text.  <return> odešle, šipky pro odchod."
+
+#. #define FORM_LINK_TEXT_SUBMIT_MAILTO_DIS_MSG
+#: LYMessages.c:108
+msgid "(mailto form field) Mail is disallowed so you cannot submit."
+msgstr "('mailto' pole formuláře) Pošta je vypnuta, tudíž nemůžete nic poslat."
+
+#. #define FORM_LINK_PASSWORD_MESSAGE
+#: LYMessages.c:110
+msgid "(Password entry field) Enter text.  Use UP or DOWN arrows or tab to move off."
+msgstr "(Pole pro zadání hesla) Zadejte text.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_PASSWORD_UNM_MSG
+#: LYMessages.c:112
+msgid "UNMODIFIABLE form password.  Use UP or DOWN arrows or tab to move off."
+msgstr "NEMODIFIKOVATELNÉ heslo formuláře.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_CHECKBOX_ADV_MSG
+#: LYMessages.c:114
+#, c-format
+msgid "(Checkbox \"%s\");   Use right-arrow or <return> to toggle."
+msgstr "(Zaškrtávací pole \"%s\");   Šipka vpravo či <return> pro přepnutí."
+
+#. #define FORM_LINK_CHECKBOX_MESSAGE
+#: LYMessages.c:116
+msgid "(Checkbox Field)   Use right-arrow or <return> to toggle."
+msgstr "(Zaškrtávací pole).   Šipka vpravo či <return> pro přepnutí."
+
+#. #define FORM_LINK_CHECKBOX_UNM_MSG
+#: LYMessages.c:118
+msgid "UNMODIFIABLE form checkbox.  Use UP or DOWN arrows or tab to move off."
+msgstr "NEMODIFIKOVATELNÉ zaškrtávací pole formuláře.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_RADIO_ADV_MSG
+#: LYMessages.c:120
+#, c-format
+msgid "(Radio Button \"%s\");   Use right-arrow or <return> to toggle."
+msgstr "(Přepínací tlačítko \"%s\");   Šipka vpravo či <return> pro přepnutí."
+
+#. #define FORM_LINK_RADIO_MESSAGE
+#: LYMessages.c:122
+msgid "(Radio Button)   Use right-arrow or <return> to toggle."
+msgstr "(Přepínací tlačítko)   Šipka vpravo či <return> pro přepnutí."
+
+#. #define FORM_LINK_RADIO_UNM_MSG
+#: LYMessages.c:124
+msgid "UNMODIFIABLE form radio button.  Use UP or DOWN arrows or tab to move off."
+msgstr "NEMODIFIKOVATELNÉ přepínací tlačítko formuláře.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_SUBMIT_PREFIX
+#: LYMessages.c:126
+msgid "Submit ('x' for no cache) to "
+msgstr "Odeslat ('x' pro 'NO CACHE') na "
+
+#. #define FORM_LINK_RESUBMIT_PREFIX
+#: LYMessages.c:128
+msgid "Submit to "
+msgstr "Odeslat na "
+
+#. #define FORM_LINK_SUBMIT_MESSAGE
+#: LYMessages.c:130
+msgid "(Form submit button) Use right-arrow or <return> to submit ('x' for no cache)."
+msgstr "(Tlačítko pro odeslání formuláře) Šipka vpravo či <return> pro odeslání (x pro 'NO CACHE')"
+
+#. #define FORM_LINK_RESUBMIT_MESSAGE
+#: LYMessages.c:132
+msgid "(Form submit button) Use right-arrow or <return> to submit."
+msgstr "(Tlačítko pro odeslání formuláře) Šipka vpravo či <return> pro odeslání."
+
+#. #define FORM_LINK_SUBMIT_DIS_MSG
+#: LYMessages.c:134
+msgid "DISABLED form submit button.  Use UP or DOWN arrows or tab to move off."
+msgstr "(VYPNUTÉ tlačítko pro odeslání formuláře).  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_SUBMIT_MAILTO_PREFIX
+#: LYMessages.c:136
+msgid "Submit mailto form to "
+msgstr "Odeslat 'mailto' formulář na "
+
+#. #define FORM_LINK_SUBMIT_MAILTO_MSG
+#: LYMessages.c:138
+msgid "(mailto form submit button) Use right-arrow or <return> to submit."
+msgstr "('mailto' tlačítko pro odeslání formuláře) Šipka vpravo či <return> pro odeslání."
+
+#. #define FORM_LINK_SUBMIT_MAILTO_DIS_MSG
+#: LYMessages.c:140
+msgid "(mailto form submit button) Mail is disallowed so you cannot submit."
+msgstr "('mailto' tlačítko pro odeslání formuláře) Pošta je zakázána, tudíž nemůžete nic odeslat."
+
+#. #define FORM_LINK_RESET_MESSAGE
+#: LYMessages.c:142
+msgid "(Form reset button)   Use right-arrow or <return> to reset form to defaults."
+msgstr "(Tlačítko pro smazání formuláře)   Šipka vpravo či <return> pro smazání vložených údajů."
+
+#. #define FORM_LINK_RESET_DIS_MSG
+#: LYMessages.c:144
+msgid "DISABLED form reset button.  Use UP or DOWN arrows or tab to move off."
+msgstr "(VYPNUTÉ tlačítko pro smazání).  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_BUTTON_MESSAGE
+#: LYMessages.c:146
+msgid "(Script button)   Use UP or DOWN arrows or tab to move off."
+msgstr "(Tlačítko skriptu)   NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_BUTTON_ADV_MSG
+#: LYMessages.c:148
+#, c-format
+msgid "(Script button \"%s\");   Use UP or DOWN arrows or tab to move off."
+msgstr "(Tlačítko skriptu \"%s\");   NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_BUTTON_DIS_MSG
+#: LYMessages.c:150
+msgid "DISABLED Script button.  Use UP or DOWN arrows or tab to move off."
+msgstr "VYPNUTÉ tlačítko skriptu.  NAHORU/DOLŮ či tab pro odchod."
+
+#. #define FORM_LINK_OPTION_LIST_ADV_MSG
+#: LYMessages.c:152
+#, c-format
+msgid "(Option list \"%s\"); Hit return to select option."
+msgstr "(Seznam voleb \"%s\"); Zmáčkněte return pro výběr volby."
+
+#. #define FORM_LINK_OPTION_LIST_MESSAGE
+#: LYMessages.c:154
+msgid "(Option list) Hit return and use arrow keys and return to select option."
+msgstr "(Seznam voleb) Zmáčkněte return, šipkami vyberte volbu a return pro potvrzení."
+
+#. #define CHOICE_LIST_ADV_MSG
+#: LYMessages.c:156
+#, c-format
+msgid "(Choice entry \"%s\"); Use arrow keys and return to select option."
+msgstr "(Výběr možnosti \"%s\"); Použijte šipky a return pro zvolení."
+
+#. #define CHOICE_LIST_MESSAGE
+#: LYMessages.c:158
+msgid "(Choice list) Hit return and use arrow keys and return to select option."
+msgstr "(Nabídka možností) Zmáčkněte return, šipkami vyberte možnost a return pro zvolení."
+
+#. #define MOUSE_CHOICE_MESSAGE
+#: LYMessages.c:160
+msgid "Left mouse button or return to select, arrow keys to scroll."
+msgstr "Levé tlačítko myši či return pro vybrání, šipky pro posun."
+
+#. #define FORM_LINK_OPTION_LIST_UNM_MSG
+#: LYMessages.c:162
+msgid "UNMODIFIABLE option list.  Use return or arrow keys to review or leave."
+msgstr "NEMODIFIKOVATELNÝ seznam voleb.  Zmáčkněte return či šipky pro prohlížení či odchod"
+
+#. #define CHOICE_LIST_UNM_MSG
+#: LYMessages.c:164
+msgid "UNMODIFIABLE choice list.  Use return or arrow keys to review or leave."
+msgstr "NEMODIFIKOVATELNÁ nabídka možností.  Zmáčkněte return či šipky pro prohlížení či odchod."
+
+#: LYMessages.c:165
+msgid "Submitting form..."
+msgstr "Odesílám formulář..."
+
+#: LYMessages.c:166
+msgid "Resetting form..."
+msgstr "Mažu obsah formuláře..."
+
+#. #define RELOADING_FORM
+#: LYMessages.c:168
+msgid "Reloading document.  Any form entries will be lost!"
+msgstr "Znovu nahrávám dokument.  Všechny údaje zapsané do formulářů budou ztraceny!"
+
+#. #define LINK_NOT_IN_FORM
+#: LYMessages.c:170
+msgid "The current link is not in a FORM"
+msgstr "Tento odkaz není FORM"
+
+#: LYMessages.c:171
+#, c-format
+msgid "Warning: Cannot transcode form data to charset %s!"
+msgstr "Varování: Data formuláře nelze převést do znakové sady %s!"
+
+#. #define NORMAL_LINK_MESSAGE
+#: LYMessages.c:174
+msgid "(NORMAL LINK)   Use right-arrow or <return> to activate."
+msgstr "(BĚŽNÝ ODKAZ)   Použijte šipku vpravo či <return> pro aktivaci."
+
+#: LYMessages.c:175
+msgid "The resource requested is not available at this time."
+msgstr "Požadovaný zdroj není v tuto chvíli přístupný."
+
+#: LYMessages.c:176
+msgid "Enter Lynx keystroke command: "
+msgstr "Stiskněte příkazovou klávesu Lynxu: "
+
+#: LYMessages.c:177
+msgid "Looking up "
+msgstr "Vyhledávám "
+
+#: LYMessages.c:178
+#, c-format
+msgid "Getting %s"
+msgstr "Získávám %s"
+
+#: LYMessages.c:179
+#, c-format
+msgid "Skipping %s"
+msgstr "Přeskakuji %s"
+
+#: LYMessages.c:180
+#, c-format
+msgid "Using %s"
+msgstr "Používám %s"
+
+#: LYMessages.c:181
+#, c-format
+msgid "Illegal URL: %s"
+msgstr "Chybné URL %s"
+
+#: LYMessages.c:182
+#, c-format
+msgid "Badly formed address %s"
+msgstr "Adresa %s je chybně utvořená"
+
+#: LYMessages.c:183
+#, c-format
+msgid "URL: %s"
+msgstr "URL: %s"
+
+#: LYMessages.c:184
+msgid "Unable to access WWW file!!!"
+msgstr "Přístup k WWW souboru nelze získat!!!"
+
+#: LYMessages.c:185
+#, c-format
+msgid "This is a searchable index.  Use %s to search."
+msgstr "Toto je prohledávatelný rejstřík.  Použijte %s pro hledání."
+
+#. #define WWW_INDEX_MORE_MESSAGE
+#: LYMessages.c:187
+#, c-format
+msgid "--More--  This is a searchable index.  Use %s to search."
+msgstr "--Více--  Toto je prohledávatelný rejstřík.  Použijte %s pro hledání."
+
+#: LYMessages.c:188
+msgid "You have entered an invalid link number."
+msgstr "Zadané číslo odkazu je chybné."
+
+#. #define SOURCE_HELP
+#: LYMessages.c:190
+msgid "Currently viewing document source.  Press '\\' to return to rendered version."
+msgstr "Zobrazuji zdrojový kód.  Stiskněte '\\' pro návrat k interpretované verzi."
+
+#. #define NOVICE_LINE_ONE
+#: LYMessages.c:192
+msgid "  Arrow keys: Up and Down to move.  Right to follow a link; Left to go back.  \n"
+msgstr "  Šipky: Nahoru/Dolů pro pohyb. Vpravo následuje odkaz; Vlevo se vrátí zpět.  \n"
+
+#. #define NOVICE_LINE_TWO
+#: LYMessages.c:194
+msgid " H)elp O)ptions P)rint G)o M)ain screen Q)uit /=search [delete]=history list \n"
+msgstr " H)Nápověda O)Volby P)Tisk G)Jdi M)Hlavní obrazovka Q)Konec /=hledej [delete]=historie \n"
+
+#. #define NOVICE_LINE_TWO_A
+#: LYMessages.c:196
+msgid "  O)ther cmds  H)elp  K)eymap  G)oto  P)rint  M)ain screen  o)ptions  Q)uit  \n"
+msgstr "  O)statní přík.  H)Nápověda  K)lávesová mapa  G)Jdi_na  P)Tisk  M)Hlavní obrazovka  o)volby  Q)Konec  \n"
+
+#. #define NOVICE_LINE_TWO_B
+#: LYMessages.c:198
+msgid "  O)ther cmds  B)ack  E)dit  D)ownload ^R)eload ^W)ipe screen  search doc: / \n"
+msgstr "  O)statní přík.  B)Zpět  E)ditovat  D)Stáhnout ^R)Znovu nahrát ^W)Smazat obraz  hledat v dokumentu: / \n"
+
+#. #define NOVICE_LINE_TWO_C
+#: LYMessages.c:200
+msgid "O)ther cmds  C)omment  History: <backspace>  Bookmarks: V)iew, A)dd, R)emove \n"
+msgstr "O)Ostatní přík.  C)Komentář  Historie: <backspace>  Záložky: V)Zobrazit, A)Nová, R)Smazat \n"
+
+#. #define FORM_NOVICELINE_ONE
+#: LYMessages.c:202
+msgid "            Enter text into the field by typing on the keyboard              "
+msgstr "            Pomocí klávesnice vložte text do pole              "
+
+#. #define FORM_NOVICELINE_TWO
+#: LYMessages.c:204
+msgid "    Ctrl-U to delete all text in field, [Backspace] to delete a character    "
+msgstr "    Ctrl-U vymaže veškerý text v poli, [Backspace] smaže jeden znak   "
+
+#. #define FORM_NOVICELINE_TWO_DELBL
+#: LYMessages.c:206
+msgid "      Ctrl-U to delete text in field, [Backspace] to delete a character    "
+msgstr "      Ctrl-U vymaže text v poli, [Backspace] smaže jeden znak    "
+
+#. #define FORM_NOVICELINE_TWO_VAR
+#: LYMessages.c:208
+#, c-format
+msgid "    %s to delete all text in field, [Backspace] to delete a character    "
+msgstr "    %s vymaže veškerý text v poli, [Backspace] smaže jeden znak    "
+
+#. #define FORM_NOVICELINE_TWO_DELBL_VAR
+#: LYMessages.c:210
+#, c-format
+msgid "      %s to delete text in field, [Backspace] to delete a character    "
+msgstr "    %s vymaže text v poli, [Backspace] smaže jeden znak    "
+
+#. mailto
+#: LYMessages.c:213
+msgid "Malformed mailto form submission!  Cancelled!"
+msgstr "Pokus o odeslání chybného 'mailto' formuláře!  Zrušeno!"
+
+#: LYMessages.c:214
+msgid "Warning!  Control codes in mail address replaced by ?"
+msgstr "Varování!  Řídící znaky v poštovní adrese byly nahrazeny ?"
+
+#: LYMessages.c:215
+msgid "Mail disallowed!  Cannot submit."
+msgstr "Pošta je zakázána!  Nelze nic poslat."
+
+#: LYMessages.c:216
+msgid "Mailto form submission failed!"
+msgstr "Odeslání 'mailto' formuláře se nezdařilo!"
+
+#: LYMessages.c:217
+msgid "Mailto form submission Cancelled!!!"
+msgstr "Odeslání 'mailto' formuláře Zrušeno!!!"
+
+#: LYMessages.c:218
+msgid "Sending form content..."
+msgstr "Posílám obsah formuláře..."
+
+#: LYMessages.c:219
+msgid "No email address is present in mailto URL!"
+msgstr "'Mailto' URL neobsahuje poštovní adresu!"
+
+#. #define MAILTO_URL_TEMPOPEN_FAILED
+#: LYMessages.c:221
+msgid "Unable to open temporary file for mailto URL!"
+msgstr "Dočasný soubor pro 'mailto' URL nelze otevřít!"
+
+#. #define INC_ORIG_MSG_PROMPT
+#: LYMessages.c:223
+msgid "Do you wish to include the original message?"
+msgstr "Chcete zařadit text původní zprávy?"
+
+#. #define INC_PREPARSED_MSG_PROMPT
+#: LYMessages.c:225
+msgid "Do you wish to include the preparsed source?"
+msgstr "Chcete zařadit předzpracovaný zdrojový text?"
+
+#. #define SPAWNING_EDITOR_FOR_MAIL
+#: LYMessages.c:227
+msgid "Spawning your selected editor to edit mail message"
+msgstr "Spouštím vámi zvolený textový editor pro editaci zprávy"
+
+#. #define ERROR_SPAWNING_EDITOR
+#: LYMessages.c:229
+msgid "Error spawning editor, check your editor definition in the options menu"
+msgstr "Chyba při startu editoru, zkontrolujte nastavení editoru v konfiguračním menu"
+
+#: LYMessages.c:230
+msgid "Send this comment?"
+msgstr "Odeslat tento komentář?"
+
+#: LYMessages.c:231
+msgid "Send this message?"
+msgstr "Odeslat tuto zprávu?"
+
+#: LYMessages.c:232
+msgid "Sending your message..."
+msgstr "Odesílám vaši zprávu..."
+
+#: LYMessages.c:233
+msgid "Sending your comment:"
+msgstr "Odesílám váš komentář:"
+
+#. textarea
+#: LYMessages.c:236
+msgid "Not in a TEXTAREA; cannot use external editor."
+msgstr "Toto není textová oblast; externí editor nelze použít."
+
+#: LYMessages.c:237
+msgid "Not in a TEXTAREA; cannot use command."
+msgstr "Toto není textová oblast; příkaz nelze použít."
+
+#: LYMessages.c:239
+msgid "file: ACTIONs are disallowed!"
+msgstr "file: AKCE jsou zakázány!"
+
+#. #define FILE_SERVED_LINKS_DISALLOWED
+#: LYMessages.c:241
+msgid "file: URLs via served links are disallowed!"
+msgstr "file: Odkazy ze vzdálených dokumentů pro lokální soubory jsou zakázány!"
+
+#: LYMessages.c:242
+msgid "Access to local files denied."
+msgstr "Přístup k místním souborům je zakázán."
+
+#: LYMessages.c:243
+msgid "file: URLs via bookmarks are disallowed!"
+msgstr "file: Používání URL pomocí záložek je zakázáno!"
+
+#. #define SPECIAL_VIA_EXTERNAL_DISALLOWED
+#: LYMessages.c:245
+msgid "This special URL is not allowed in external documents!"
+msgstr "Toto zvláštní URL není v externích dokumentech povoleno!"
+
+#: LYMessages.c:246
+msgid "Press <return> to return to Lynx."
+msgstr "Stiskněte <return> pro návrat do programu Lynx."
+
+#. #define SPAWNING_MSG
+#: LYMessages.c:249
+msgid "Spawning DCL subprocess.  Use 'logout' to return to Lynx.\n"
+msgstr "Spouštím DCL podproces.  Použijte 'logout' pro návrat do programu Lynx.\n"
+
+#. #define SPAWNING_MSG
+#: LYMessages.c:253
+msgid "Type EXIT to return to Lynx.\n"
+msgstr "Napište EXIT pro návrat do programu Lynx.\n"
+
+#. #define SPAWNING_MSG
+#: LYMessages.c:256
+msgid "Spawning your default shell.  Use 'exit' to return to Lynx.\n"
+msgstr "Spouštím implicitní shell.  Použijte 'exit' pro návrat do programu Lynx.\n"
+
+#: LYMessages.c:259
+msgid "Spawning is currently disabled."
+msgstr "Spouštění je nyní vypnuto."
+
+#: LYMessages.c:260
+msgid "The 'd'ownload command is currently disabled."
+msgstr "Příkaz 'd'(stahování) je nyní vypnut."
+
+#: LYMessages.c:261
+msgid "You cannot download an input field."
+msgstr "Nemůžete stahovat vstupní pole."
+
+#: LYMessages.c:262
+msgid "Form has a mailto action!  Cannot download."
+msgstr "Formulář obsahuje 'mailto' akci!  Nelze stáhnout."
+
+#: LYMessages.c:263
+msgid "You cannot download a mailto: link."
+msgstr "Nemůžete stáhnout 'mailto:' odkaz."
+
+#: LYMessages.c:264
+msgid "You cannot download cookies."
+msgstr "Nemůžete stahovat cookies."
+
+#: LYMessages.c:265
+msgid "You cannot download a printing option."
+msgstr "Položku z menu voleb tisku nelze stáhnout."
+
+#: LYMessages.c:266
+msgid "You cannot download an upload option."
+msgstr "Položku z menu voleb posílání (upload) nelze stáhnout."
+
+#: LYMessages.c:267
+msgid "You cannot download an permit option."
+msgstr "Položku z menu nastavení práv souborů nelze stáhnout."
+
+#: LYMessages.c:268
+msgid "This special URL cannot be downloaded!"
+msgstr "Toto zvláštní URL nemůže být staženo!"
+
+#: LYMessages.c:269
+msgid "Nothing to download."
+msgstr "Není co stáhnout."
+
+#: LYMessages.c:270
+msgid "Trace ON!"
+msgstr "Sledování ZAPNUTO!"
+
+#: LYMessages.c:271
+msgid "Trace OFF!"
+msgstr "Sledování VYPNUTO!"
+
+#. #define CLICKABLE_IMAGES_ON
+#: LYMessages.c:273
+msgid "Links will be included for all images!  Reloading..."
+msgstr "Budou zařazeny odkazy na všechny obrázky!  Znovu načítám..."
+
+#. #define CLICKABLE_IMAGES_OFF
+#: LYMessages.c:275
+msgid "Standard image handling restored!  Reloading..."
+msgstr "Implicitní zpracování obrázků obnoveno!  Znovu načítám..."
+
+#. #define PSEUDO_INLINE_ALTS_ON
+#: LYMessages.c:277
+msgid "Pseudo_ALTs will be inserted for inlines without ALT strings!  Reloading..."
+msgstr "Zobrazuji pseudo-popisy pro vložené obrázky bez popisu!  Znovu načítám..."
+
+#. #define PSEUDO_INLINE_ALTS_OFF
+#: LYMessages.c:279
+msgid "Inlines without an ALT string specified will be ignored!  Reloading..."
+msgstr "Vložené obrázky bez popisu budou ignorovány!  Znovu načítám..."
+
+#: LYMessages.c:280
+msgid "Raw 8-bit or CJK mode toggled OFF!  Reloading..."
+msgstr "Přímý 8bitový či CJK režim VYPNUT!  Znovu načítám..."
+
+#: LYMessages.c:281
+msgid "Raw 8-bit or CJK mode toggled ON!  Reloading..."
+msgstr "Přímý 8bitový či CJK režim ZAPNUT!  Znovu načítám..."
+
+#. #define HEAD_D_L_OR_CANCEL
+#: LYMessages.c:283
+msgid "Send HEAD request for D)ocument or L)ink, or C)ancel? (d,l,c): "
+msgstr "Poslat HEAD požadavek pro D) Dokument, L)Odkaz či C)Zrušit? (d,l,c): "
+
+#. #define HEAD_D_OR_CANCEL
+#: LYMessages.c:285
+msgid "Send HEAD request for D)ocument, or C)ancel? (d,c): "
+msgstr "Poslat HEAD požadavek pro D)Dokument či C)Zrušit? (d,c): "
+
+#: LYMessages.c:286
+msgid "Sorry, the document is not an http URL."
+msgstr "Lituji, dokument není http URL."
+
+#: LYMessages.c:287
+msgid "Sorry, the link is not an http URL."
+msgstr "Lituji, odkaz není http URL."
+
+#: LYMessages.c:288
+msgid "Sorry, the ACTION for this form is disabled."
+msgstr "Liruji, AKCE tohoto formuláře je vypnuta."
+
+#. #define FORM_ACTION_NOT_HTTP_URL
+#: LYMessages.c:290
+msgid "Sorry, the ACTION for this form is not an http URL."
+msgstr "Lituji, AKCE tohoto formuláře není http URL."
+
+#: LYMessages.c:291
+msgid "Not an http URL or form ACTION!"
+msgstr "Toto není http URL ani AKCE formuláře!"
+
+#: LYMessages.c:292
+msgid "This special URL cannot be a form ACTION!"
+msgstr "Toto zvláštní URL nemůže být AKCÍ formuláře!"
+
+#: LYMessages.c:293
+msgid "URL is not in starting realm!"
+msgstr "URL není ve startovní oblasti!"
+
+#: LYMessages.c:294
+msgid "News posting is disabled!"
+msgstr "Odesílání příspěvků do diskuzních skupin je zakázáno!"
+
+#: LYMessages.c:295
+msgid "File management support is disabled!"
+msgstr "Správce souborů je zakázán!"
+
+#: LYMessages.c:296
+msgid "No jump file is currently available."
+msgstr "Žádný soubor zkratek není dostupný."
+
+#: LYMessages.c:297
+msgid "Jump to (use '?' for list): "
+msgstr "Skočit na ('?' pro seznam): "
+
+#: LYMessages.c:298
+msgid "Jumping to a shortcut URL is disallowed!"
+msgstr "Není povoleno přeskakovat na zkrácená URL!"
+
+#: LYMessages.c:299
+msgid "Random URL is disallowed!  Use a shortcut."
+msgstr "Náhodná URL jsou zakázána!  Použijte zkratku."
+
+#: LYMessages.c:300
+msgid "No random URLs have been used thus far."
+msgstr "Doposud nebyla použita žádná náhodná URL."
+
+#: LYMessages.c:301
+msgid "Bookmark features are currently disabled."
+msgstr "Používání záložek je nyní zakázáno."
+
+#: LYMessages.c:302
+msgid "Execution via bookmarks is disabled."
+msgstr "Spouštění programů přes soubory záložek je zakázáno."
+
+#. #define BOOKMARK_FILE_NOT_DEFINED
+#: LYMessages.c:304
+#, c-format
+msgid "Bookmark file is not defined. Use %s to see options."
+msgstr "Soubor se záložkami není zadán. Použijte %s pro zobrazení možností."
+
+#. #define NO_TEMP_FOR_HOTLIST
+#: LYMessages.c:306
+msgid "Unable to open tempfile for X Mosaic hotlist conversion."
+msgstr "Dočasný soubor pro konverzi X Mosaic 'hotlistu' nelze otevřít."
+
+#: LYMessages.c:307
+msgid "ERROR - unable to open bookmark file."
+msgstr "CHYBA - soubor záložek nelze otevřít."
+
+#. #define BOOKMARK_OPEN_FAILED_FOR_DEL
+#: LYMessages.c:309
+msgid "Unable to open bookmark file for deletion of link."
+msgstr "Záložku nelze smazat: soubor záložek nelze otevřít."
+
+#. #define BOOKSCRA_OPEN_FAILED_FOR_DEL
+#: LYMessages.c:311
+msgid "Unable to open scratch file for deletion of link."
+msgstr "Záložku nelze smazat: dočasný soubor typu scratch nelze otevřít."
+
+#: LYMessages.c:313
+msgid "Error renaming scratch file."
+msgstr "Chyba při přejmenovávání dočasného souboru typu scratch."
+
+#: LYMessages.c:315
+msgid "Error renaming temporary file."
+msgstr "Chyba při přejmenovávání dočasného souboru."
+
+#. #define BOOKTEMP_COPY_FAIL
+#: LYMessages.c:317
+msgid "Unable to copy temporary file for deletion of link."
+msgstr "Záložku nelze smazat: dočasný soubor nelze kopírovat."
+
+#. #define BOOKTEMP_REOPEN_FAIL_FOR_DEL
+#: LYMessages.c:319
+msgid "Unable to reopen temporary file for deletion of link."
+msgstr "Záložku nelze smazat: dočasný soubor nelze znovu otevřít."
+
+#. #define BOOKMARK_LINK_NOT_ONE_LINE
+#: LYMessages.c:322
+msgid "Link is not by itself all on one line in bookmark file."
+msgstr "Odkaz záložky je delší než jeden řádek."
+
+#: LYMessages.c:323
+msgid "Bookmark deletion failed."
+msgstr "Odstranění záložky se nezdařilo."
+
+#. #define BOOKMARKS_NOT_TRAVERSED
+#: LYMessages.c:325
+msgid "Bookmark files cannot be traversed (only http URLs)."
+msgstr "Soubory se záložkami nelze křížit (traverse) (pouze http URL)."
+
+#. #define BOOKMARKS_NOT_OPEN
+#: LYMessages.c:327
+msgid "Unable to open bookmark file, use 'a' to save a link first"
+msgstr "Soubor se záložkami nelze otevřít, klávesou 'a' nejprve uložte odkaz"
+
+#: LYMessages.c:328
+msgid "There are no links in this bookmark file!"
+msgstr "Tento soubor záložek je prázdný!"
+
+#. #define CACHE_D_OR_CANCEL
+#: LYMessages.c:330
+msgid "D)elete cached document or C)ancel? (d,c): "
+msgstr "D)Smazat dokument ve vyrovnávací paměti, nebo C)Zrušit? (d,c): "
+
+#. #define BOOK_D_L_OR_CANCEL
+#: LYMessages.c:332
+msgid "Save D)ocument or L)ink to bookmark file or C)ancel? (d,l,c): "
+msgstr "Uložit do souboru se záložkami D)Dokument, L)Odkaz či C)Zrušit? (d,l,c): "
+
+#: LYMessages.c:333
+msgid "Save D)ocument to bookmark file or C)ancel? (d,c): "
+msgstr "Uložit do souboru se záložkami D)Dokument či C)Zrušit? (d,c): "
+
+#: LYMessages.c:334
+msgid "Save L)ink to bookmark file or C)ancel? (l,c): "
+msgstr "Uložit do souboru se záložkami L)Odkaz či C)Zrušit? (l,c): "
+
+#. #define NOBOOK_POST_FORM
+#: LYMessages.c:336
+msgid "Documents from forms with POST content cannot be saved as bookmarks."
+msgstr "Dokumenty z formulářů s POST obsahem nelze uložit jako záložku."
+
+#: LYMessages.c:337
+msgid "Cannot save form fields/links"
+msgstr "Formulářová pole/odkazy nelze uložit"
+
+#. #define NOBOOK_HSML
+#: LYMessages.c:339
+msgid "History, showinfo, menu and list files cannot be saved as bookmarks."
+msgstr "Soubory historie, showinfo, menu a seznamů nelze ukládat jako záložky."
+
+#. #define CONFIRM_BOOKMARK_DELETE
+#: LYMessages.c:341
+msgid "Do you really want to delete this link from your bookmark file?"
+msgstr "Opravdu chcete vymazat tento odkaz z vašeho souboru se záložkami?"
+
+#: LYMessages.c:342
+msgid "Malformed address."
+msgstr "Chybná adresa."
+
+#. #define HISTORICAL_ON_MINIMAL_OFF
+#: LYMessages.c:344
+msgid "Historical comment parsing ON (Minimal is overridden)!"
+msgstr "Historické komentáře ZAPNUTO (minimální komentáře potlačeny)!"
+
+#. #define HISTORICAL_OFF_MINIMAL_ON
+#: LYMessages.c:346
+msgid "Historical comment parsing OFF (Minimal is in effect)!"
+msgstr "Historické komentáře VYPNUTO (minimální komentáře aktivní)!"
+
+#. #define HISTORICAL_ON_VALID_OFF
+#: LYMessages.c:348
+msgid "Historical comment parsing ON (Valid is overridden)!"
+msgstr "Historické komentáře ZAPNUTO (platné komentáře potlačeny)!"
+
+#. #define HISTORICAL_OFF_VALID_ON
+#: LYMessages.c:350
+msgid "Historical comment parsing OFF (Valid is in effect)!"
+msgstr "Historické komentáře VYPNUTO (platné komentáře aktivní)!"
+
+#. #define MINIMAL_ON_IN_EFFECT
+#: LYMessages.c:352
+msgid "Minimal comment parsing ON (and in effect)!"
+msgstr "Používání minimálních komentářů ZAPNUTO (a aktivní)!"
+
+#. #define MINIMAL_OFF_VALID_ON
+#: LYMessages.c:354
+msgid "Minimal comment parsing OFF (Valid is in effect)!"
+msgstr "Používání minimálních komentářů VYPNUTO (platné komentáře aktivní)!"
+
+#. #define MINIMAL_ON_BUT_HISTORICAL
+#: LYMessages.c:356
+msgid "Minimal comment parsing ON (but Historical is in effect)!"
+msgstr "Používání minimálních komentářů ZAPNUTO (ale aktivní jsou historické komentáře)!"
+
+#. #define MINIMAL_OFF_HISTORICAL_ON
+#: LYMessages.c:358
+msgid "Minimal comment parsing OFF (Historical is in effect)!"
+msgstr "Používání minimálních komentářů VYPNUTO (historické komentáře aktivní)!"
+
+#: LYMessages.c:359
+msgid "Soft double-quote parsing ON!"
+msgstr "Metoda jednoduchého zpracování uvozovek ZAPNUTO!"
+
+#: LYMessages.c:360
+msgid "Soft double-quote parsing OFF!"
+msgstr "Metoda jednoduchého zpracování uvozovek VYPNUTO!"
+
+#: LYMessages.c:361
+msgid "Now using TagSoup parsing of HTML."
+msgstr "Používám 'TagSoup' metodu zpracování HTML."
+
+#: LYMessages.c:362
+msgid "Now using SortaSGML parsing of HTML!"
+msgstr "Používám 'SortaSGML' metodu zpracování HTML!"
+
+#: LYMessages.c:363
+msgid "You are already at the end of this document."
+msgstr "Již jste na konci dokumentu."
+
+#: LYMessages.c:364
+msgid "You are already at the beginning of this document."
+msgstr "Již jste na začátku dokumentu."
+
+#: LYMessages.c:365
+#, c-format
+msgid "You are already at page %d of this document."
+msgstr "Již jste na straně %d."
+
+#: LYMessages.c:366
+#, c-format
+msgid "Link number %d already is current."
+msgstr "Odkaz číslo %d je právě zvolen."
+
+#: LYMessages.c:367
+msgid "You are already at the first document"
+msgstr "Již jste na prvním dokumentu"
+
+#: LYMessages.c:368
+msgid "There are no links above this line of the document."
+msgstr "Nad tímto řádkem již nejsou žádné odkazy."
+
+#: LYMessages.c:369
+msgid "There are no links below this line of the document."
+msgstr "Pod tímto řádkem již nejsou žádné odkazy."
+
+#. #define MAXLEN_REACHED_DEL_OR_MOV
+#: LYMessages.c:371
+msgid "Maximum length reached!  Delete text or move off field."
+msgstr "Maximální délka dosažena!  Smažte text, nebo se přesuňte mimo pole."
+
+#. #define NOT_ON_SUBMIT_OR_LINK
+#: LYMessages.c:373
+msgid "You are not on a form submission button or normal link."
+msgstr "Toto není běžný odkaz ani tlačítko na odeslání formuláře."
+
+#. #define NEED_CHECKED_RADIO_BUTTON
+#: LYMessages.c:375
+msgid "One radio button must be checked at all times!"
+msgstr "Vždy musí být vybráno alespoň jedno z přepínacích tlačítek!"
+
+#: LYMessages.c:376
+msgid "No submit button for this form, submit single text field?"
+msgstr "Tento formulář nemá tlačítko pro odeslání dat, odeslat jediné textové pole?"
+
+#: LYMessages.c:377
+msgid "Do you want to go back to the previous document?"
+msgstr "Chcete se vrátit k předchozímu dokumentu?"
+
+#: LYMessages.c:378
+msgid "Use arrows or tab to move off of field."
+msgstr "Použijte šipky či tab pro přesun mimo pole."
+
+#. #define ENTER_TEXT_ARROWS_OR_TAB
+#: LYMessages.c:380
+msgid "Enter text.  Use arrows or tab to move off of field."
+msgstr "Vložte text.  Použijte šipky či tab pro přesun mimo pole."
+
+#: LYMessages.c:381
+msgid "** Bad HTML!!  No form action defined. **"
+msgstr "** Chybné HTML!!  Formulář nemá definovánu žádnou akci. **"
+
+#: LYMessages.c:382
+msgid "Bad HTML!!  Unable to create popup window!"
+msgstr "Chybné HTML!!  Nelze vytvořit vyskakovací okno!"
+
+#: LYMessages.c:383
+msgid "Unable to create popup window!"
+msgstr "Nelze vytvořit vyskakovací okno!"
+
+#: LYMessages.c:384
+msgid "Goto a random URL is disallowed!"
+msgstr "Náhodná URL je zakázáno použít jako cíl!"
+
+#: LYMessages.c:385
+msgid "Goto a non-http URL is disallowed!"
+msgstr "URL, která nejsou http je zakázáno použít jako cíl!"
+
+#: LYMessages.c:386
+#, c-format
+msgid "You are not allowed to goto \"%s\" URLs"
+msgstr "Je zakázáno používat jako cíl \"%s\" URL"
+
+#: LYMessages.c:387
+msgid "URL to open: "
+msgstr "Cílové URL: "
+
+#: LYMessages.c:388
+msgid "Edit the current Goto URL: "
+msgstr "Editace aktuálního cílového URL: "
+
+#: LYMessages.c:389
+msgid "Edit the previous Goto URL: "
+msgstr "Editace předchozího cílového URL: "
+
+#: LYMessages.c:390
+msgid "Edit a previous Goto URL: "
+msgstr "Editace předchozího cílového URL: "
+
+#: LYMessages.c:391
+msgid "Current document has POST data."
+msgstr "Aktuální dokument obsahuje POST data."
+
+#: LYMessages.c:392
+msgid "Edit this document's URL: "
+msgstr "Editace URL tohoto dokumentu: "
+
+#: LYMessages.c:393
+msgid "Edit the current link's URL: "
+msgstr "Editace URL aktuálního odkazu: "
+
+#: LYMessages.c:394
+msgid "Edit the form's submit-URL: "
+msgstr "Editace URL pro poslání formuláře: "
+
+#: LYMessages.c:395
+msgid "You cannot edit File Management URLs"
+msgstr "Nemůžete editovat URL Správce souborů"
+
+#: LYMessages.c:396
+msgid "Enter a database query: "
+msgstr "Zadejte dotaz na databázi: "
+
+#: LYMessages.c:397
+msgid "Enter a whereis query: "
+msgstr "Zadejte hledaný řetězec: "
+
+#: LYMessages.c:398
+msgid "Edit the current query: "
+msgstr "Editace aktuálního dotazu: "
+
+#: LYMessages.c:399
+msgid "Edit the previous query: "
+msgstr "Editace předchozího dotazu: "
+
+#: LYMessages.c:400
+msgid "Edit a previous query: "
+msgstr "Editace předchozího dotazu: "
+
+#. #define USE_C_R_TO_RESUB_CUR_QUERY
+#: LYMessages.c:402
+msgid "Use Control-R to resubmit the current query."
+msgstr "Použijte Control-R pro opětovné odeslání dotazu."
+
+#: LYMessages.c:403
+msgid "Edit the current shortcut: "
+msgstr "Editovat aktuální zkratku: "
+
+#: LYMessages.c:404
+msgid "Edit the previous shortcut: "
+msgstr "Editovat předchozí zkratku: "
+
+#: LYMessages.c:405
+msgid "Edit a previous shortcut: "
+msgstr "Editovat předchozí zkratku: "
+
+#: LYMessages.c:406
+#, c-format
+msgid "Key '%c' is not mapped to a jump file!"
+msgstr "Klávesa '%c' není svázána se souborem zkratek!"
+
+#: LYMessages.c:407
+msgid "Cannot locate jump file!"
+msgstr "Soubor zkratek nelze nalézt!"
+
+#: LYMessages.c:408
+msgid "Cannot open jump file!"
+msgstr "Soubor zkratek nelze otevřít!"
+
+#: LYMessages.c:409
+msgid "Error reading jump file!"
+msgstr "Chyba při čtení souboru zkratek!"
+
+#: LYMessages.c:410
+msgid "Out of memory reading jump file!"
+msgstr "Při čtení souboru zkratek došla paměť!"
+
+#: LYMessages.c:411
+msgid "Out of memory reading jump table!"
+msgstr "Při čtení tabulky zkratek došla paměť!"
+
+#: LYMessages.c:412
+msgid "No index is currently available."
+msgstr "Není dostupný žádný rejstřík."
+
+#. #define CONFIRM_MAIN_SCREEN
+#: LYMessages.c:414
+msgid "Do you really want to go to the Main screen?"
+msgstr "Opravdu chcete přejít na Hlavní obrazovku?"
+
+#: LYMessages.c:415
+msgid "You are already at main screen!"
+msgstr "Již jste na Hlavní obrazovce!"
+
+#. #define NOT_ISINDEX
+#: LYMessages.c:417
+msgid "Not a searchable indexed document -- press '/' to search for a text string"
+msgstr "Toto není prohledávatelný rejstřík -- použijte '/' pro vyhledání řetězce"
+
+#. #define NO_OWNER
+#: LYMessages.c:419
+msgid "No owner is defined for this file so you cannot send a comment"
+msgstr "Není udán vlastník tohoto dokumentu, tudíž nemůžete zaslat komentář"
+
+#: LYMessages.c:420
+#, c-format
+msgid "No owner is defined. Use %s?"
+msgstr "Není udán vlastník. Použít %s?"
+
+#: LYMessages.c:421
+msgid "Do you wish to send a comment?"
+msgstr "Chcete zaslat komentář?"
+
+#: LYMessages.c:422
+msgid "Mail is disallowed so you cannot send a comment"
+msgstr "Pošta je zakázána, tudíž nemůžete zaslat komentář"
+
+#: LYMessages.c:423
+msgid "The 'e'dit command is currently disabled."
+msgstr "Použití příkazu 'e'(editovat) je nyní zakázáno."
+
+#: LYMessages.c:424
+msgid "External editing is currently disabled."
+msgstr "Používání externího editoru je nyní zakázáno."
+
+#: LYMessages.c:425
+msgid "System error - failure to get status."
+msgstr "Systémová chyba - status nelze zjistit."
+
+#: LYMessages.c:426
+msgid "No editor is defined!"
+msgstr "Není zadán žádný editor!"
+
+#: LYMessages.c:427
+msgid "The 'p'rint command is currently disabled."
+msgstr "Použití příkazu 'p'(tisknout) je nyní zakázáno."
+
+#: LYMessages.c:428
+msgid "Document has no Toolbar links or Banner."
+msgstr "Dokument nemá žádnou Nástrojovou lištu ani Reklamní banner."
+
+#: LYMessages.c:429
+msgid "Unable to open traversal file."
+msgstr "Nelze otevřít 'traverse' soubor."
+
+#: LYMessages.c:430
+msgid "Unable to open traversal found file."
+msgstr "Nelze otevřít 'traverse_found' soubor."
+
+#: LYMessages.c:431
+msgid "Unable to open reject file."
+msgstr "Nelze otevřít 'traverse_reject' soubor."
+
+#: LYMessages.c:432
+msgid "Unable to open traversal errors output file"
+msgstr "Nelze otevřít 'traverse_errors' soubor"
+
+#: LYMessages.c:433
+msgid "TRAVERSAL WAS INTERRUPTED"
+msgstr "KŘÍŽENÍ (TRAVERSE) BYLO PŘERUŠENO"
+
+#: LYMessages.c:434
+msgid "Follow link (or goto link or page) number: "
+msgstr "Následovat odkaz (či jít na odkaz nebo stránku) číslo: "
+
+#: LYMessages.c:435
+msgid "Select option (or page) number: "
+msgstr "Zvolte číslo volby (či strany): "
+
+#: LYMessages.c:436
+#, c-format
+msgid "Option number %d already is current."
+msgstr "Volba číslo %d je právě aktivní."
+
+#. #define ALREADY_AT_OPTION_END
+#: LYMessages.c:438
+msgid "You are already at the end of this option list."
+msgstr "Již jste na konci seznamu voleb."
+
+#. #define ALREADY_AT_OPTION_BEGIN
+#: LYMessages.c:440
+msgid "You are already at the beginning of this option list."
+msgstr "Již jste na začátku seznamu voleb."
+
+#. #define ALREADY_AT_OPTION_PAGE
+#: LYMessages.c:442
+#, c-format
+msgid "You are already at page %d of this option list."
+msgstr "Již jste na straně %d nabídky."
+
+#: LYMessages.c:443
+msgid "You have entered an invalid option number."
+msgstr "Bylo zadáno chybné číslo volby."
+
+#: LYMessages.c:444
+msgid "** Bad HTML!!  Use -trace to diagnose. **"
+msgstr "** Chybné HTML!!  Použijte -trace pro diagnostiku. **"
+
+#: LYMessages.c:445
+msgid "Give name of file to save in"
+msgstr "Zadejte jméno souboru, do kterého mám uložit"
+
+#: LYMessages.c:446
+msgid "Can't save data to file -- please run WWW locally"
+msgstr "Data nelze do souboru uložit -- spusťte WWW místně"
+
+#: LYMessages.c:447
+msgid "Can't open temporary file!"
+msgstr "Dočasný soubor nelze otevřít!"
+
+#: LYMessages.c:448
+msgid "Can't open output file!  Cancelling!"
+msgstr "Výstupní soubor nelze otevřít!  Ruším!"
+
+#: LYMessages.c:449
+msgid "Execution is disabled."
+msgstr "Spouštění programů je zakázáno."
+
+#. #define EXECUTION_DISABLED_FOR_FILE
+#: LYMessages.c:451
+#, c-format
+msgid "Execution is not enabled for this file.  See the Options menu (use %s)."
+msgstr "Tento soubor nelze spustit.  Viz Konfigurační menu (použijte %s)."
+
+#. #define EXECUTION_NOT_COMPILED
+#: LYMessages.c:453
+msgid "Execution capabilities are not compiled into this version."
+msgstr "Podpora pro spouštění programů byla vypnuta při sestavení programu."
+
+#: LYMessages.c:454
+msgid "This file cannot be displayed on this terminal."
+msgstr "Tento soubor nelze na tomto terminálu zobrazit."
+
+#. #define CANNOT_DISPLAY_FILE_D_OR_C
+#: LYMessages.c:456
+msgid "This file cannot be displayed on this terminal:  D)ownload, or C)ancel"
+msgstr "Tento soubor nelze na tomto terminálu zobrazit:  D)Stáhnout či C)Zrušit"
+
+#: LYMessages.c:457
+#, c-format
+msgid "%s  D)ownload, or C)ancel"
+msgstr "%s  D)Stáhnout či C)Zrušit"
+
+#: LYMessages.c:458
+msgid "Cancelling file."
+msgstr "Zrušeno."
+
+#: LYMessages.c:459
+msgid "Retrieving file.  - PLEASE WAIT -"
+msgstr "Stahuji soubor.  - POČKEJTE, PROSÍM -"
+
+#: LYMessages.c:460
+msgid "Enter a filename: "
+msgstr "Zadejte jméno souboru: "
+
+#: LYMessages.c:461
+msgid "Edit the previous filename: "
+msgstr "Editace předchozího jména souboru: "
+
+#: LYMessages.c:462
+msgid "Edit a previous filename: "
+msgstr "Editace předchozího jména souboru: "
+
+#: LYMessages.c:463
+msgid "Enter a new filename: "
+msgstr "Zadejte nové jméno souboru: "
+
+#: LYMessages.c:464
+msgid "File name may not begin with a dot."
+msgstr "Jméno souboru nesmí začínat tečkou."
+
+#: LYMessages.c:466
+msgid "File exists.  Create higher version?"
+msgstr "Soubor již existuje.  Vytvořit jeho novou verzi?"
+
+#: LYMessages.c:468
+msgid "File exists.  Overwrite?"
+msgstr "Soubor již existuje.  Přepsat?"
+
+#: LYMessages.c:470
+msgid "Cannot write to file."
+msgstr "Do souboru nelze zapisovat."
+
+#: LYMessages.c:471
+msgid "ERROR! - download command is misconfigured."
+msgstr "CHYBA! - příkaz pro stahování je chybný."
+
+#: LYMessages.c:472
+msgid "Unable to download file."
+msgstr "Soubor nelze stáhnout."
+
+#: LYMessages.c:473
+msgid "Reading directory..."
+msgstr "Čtu adresář..."
+
+#: LYMessages.c:474
+msgid "Building directory listing..."
+msgstr "Sestavuji výpis adresáře..."
+
+#: LYMessages.c:475
+msgid "Saving..."
+msgstr "Ukládám..."
+
+#: LYMessages.c:476
+#, c-format
+msgid "Could not edit file '%s'."
+msgstr "Soubor '%s' nelze editovat."
+
+#: LYMessages.c:477
+msgid "Unable to access document!"
+msgstr "Přístup k dokumentu nelze získat!"
+
+#: LYMessages.c:478
+msgid "Could not access file."
+msgstr "Soubor není dostupný."
+
+#: LYMessages.c:479
+msgid "Could not access directory."
+msgstr "Adresář není dostupný."
+
+#: LYMessages.c:480
+msgid "Could not load data."
+msgstr "Nelze načíst data."
+
+#. #define CANNOT_EDIT_REMOTE_FILES
+#: LYMessages.c:482
+msgid "Lynx cannot currently (e)dit remote WWW files."
+msgstr "Lynx v současné době nemůže 'e'(editovat) vzdálené WWW dokumenty."
+
+#. #define CANNOT_EDIT_FIELD
+#: LYMessages.c:484
+msgid "This field cannot be (e)dited with an external editor."
+msgstr "Toto pole nemůže být 'e'(editováno) pomocí externího editoru."
+
+#: LYMessages.c:485
+msgid "Bad rule"
+msgstr "Chybné pravidlo"
+
+#: LYMessages.c:486
+msgid "Insufficient operands:"
+msgstr "Chybí operandy:"
+
+#: LYMessages.c:487
+msgid "You are not authorized to edit this file."
+msgstr "Nejste oprávněn editovat tento soubor."
+
+#: LYMessages.c:488
+msgid "Title: "
+msgstr "Titulek: "
+
+#: LYMessages.c:489
+msgid "Subject: "
+msgstr "Předmět: "
+
+#: LYMessages.c:490
+msgid "Username: "
+msgstr "Uživatelské jméno: "
+
+#: LYMessages.c:491
+msgid "Password: "
+msgstr "Heslo: "
+
+#: LYMessages.c:492
+msgid "lynx: Username and Password required!!!"
+msgstr "lynx: Je vyžadováno uživatelské jméno a heslo!!!"
+
+#: LYMessages.c:493
+msgid "lynx: Password required!!!"
+msgstr "lynx: Je vyžadováno heslo!!!"
+
+#: LYMessages.c:494
+msgid "Clear all authorization info for this session?"
+msgstr "Smazat všechny autorizační informace pro toto sezení?"
+
+#: LYMessages.c:495
+msgid "Authorization info cleared."
+msgstr "Autorizační informace smazány."
+
+#: LYMessages.c:496
+msgid "Authorization failed.  Retry?"
+msgstr "Autorizace se nezdařila.  Nový pokus?"
+
+#: LYMessages.c:497
+msgid "cgi support has been disabled."
+msgstr "podpora cgi byla vypnuta."
+
+#. #define CGI_NOT_COMPILED
+#: LYMessages.c:499
+msgid "Lynxcgi capabilities are not compiled into this version."
+msgstr "Podpora pro spouštění Lynxcgi byla vypnuta při sestavení programu."
+
+#: LYMessages.c:500
+#, c-format
+msgid "Sorry, no known way of converting %s to %s."
+msgstr "Lituji, není znám způsob jak převést %s na %s."
+
+#: LYMessages.c:501
+msgid "Unable to set up connection."
+msgstr "Spojení nelze nastavit."
+
+#: LYMessages.c:502
+msgid "Unable to make connection"
+msgstr "Spojení nelze navázat"
+
+#. #define MALFORMED_EXEC_REQUEST
+#: LYMessages.c:504
+msgid "Executable link rejected due to malformed request."
+msgstr "Chybný požadavek na spuštění programu."
+
+#. #define BADCHAR_IN_EXEC_LINK
+#: LYMessages.c:506
+#, c-format
+msgid "Executable link rejected due to `%c' character."
+msgstr "Odkaz na program obsahuje chybný znak `%c'."
+
+#. #define RELPATH_IN_EXEC_LINK
+#: LYMessages.c:508
+msgid "Executable link rejected due to relative path string ('../')."
+msgstr "Odkaz na program nesmí být relativní ('../')'."
+
+#. #define BADLOCPATH_IN_EXEC_LINK
+#: LYMessages.c:510
+msgid "Executable link rejected due to location or path."
+msgstr "Odkaz na program odmítnut kvůli umístění či názvu cesty."
+
+#: LYMessages.c:511
+msgid "Mail access is disabled!"
+msgstr "Pošta je zakázána!"
+
+#. #define ACCESS_ONLY_LOCALHOST
+#: LYMessages.c:513
+msgid "Only files and servers on the local host can be accessed."
+msgstr "Přístup je povolen pouze k místním souborům a službám."
+
+#: LYMessages.c:514
+msgid "Telnet access is disabled!"
+msgstr "Použití telnetu je zakázáno!"
+
+#. #define TELNET_PORT_SPECS_DISABLED
+#: LYMessages.c:516
+msgid "Telnet port specifications are disabled."
+msgstr "Je zakázáno uvádět port u telnetu."
+
+#: LYMessages.c:517
+msgid "USENET news access is disabled!"
+msgstr "Přístup do diskuzních skupin USENET je zakázán!"
+
+#: LYMessages.c:518
+msgid "Rlogin access is disabled!"
+msgstr "Použití rlogin je zakázáno!"
+
+#: LYMessages.c:519
+msgid "Ftp access is disabled!"
+msgstr "Použití FTP je zakázáno!"
+
+#: LYMessages.c:520
+msgid "There are no references from this document."
+msgstr "Tento dokument neobsahuje žádné odkazy."
+
+#: LYMessages.c:521
+msgid "There are only hidden links from this document."
+msgstr "Tento dokument obsahuje pouze skryté odkazy."
+
+#: LYMessages.c:523
+msgid "Unable to open command file."
+msgstr "Soubor s příkazy nelze otevřít."
+
+#: LYMessages.c:525
+msgid "News Post Cancelled!!!"
+msgstr "Odeslání příspěvku do diskuzních skupin Zrušeno!!!"
+
+#. #define SPAWNING_EDITOR_FOR_NEWS
+#: LYMessages.c:527
+msgid "Spawning your selected editor to edit news message"
+msgstr "Spouštím editor pro editaci diskuzního příspěvku"
+
+#: LYMessages.c:528
+msgid "Post this message?"
+msgstr "Odeslat tuto zprávu?"
+
+#: LYMessages.c:529
+#, c-format
+msgid "Append '%s'?"
+msgstr "Připojit '%s'?"
+
+#: LYMessages.c:530
+msgid "Posting to newsgroup(s)..."
+msgstr "Zasílám do diskuzních skupin..."
+
+#: LYMessages.c:532
+msgid "*** You have unread mail. ***"
+msgstr "*** Máte nepřečtenou poštu. ***"
+
+#: LYMessages.c:534
+msgid "*** You have mail. ***"
+msgstr "*** Máte poštu. ***"
+
+#: LYMessages.c:536
+msgid "*** You have new mail. ***"
+msgstr "*** Máte novou poštu. ***"
+
+#: LYMessages.c:537
+msgid "File insert cancelled!!!"
+msgstr "Požadavek na vložení souboru byl zrušen!!!"
+
+#: LYMessages.c:538
+msgid "Not enough memory for file!"
+msgstr "Pro soubor není dostatek paměti!"
+
+#: LYMessages.c:539
+msgid "Can't open file for reading."
+msgstr "Soubor nelze otevřít pro čtení."
+
+#: LYMessages.c:540
+msgid "File does not exist."
+msgstr "Soubor neexistuje."
+
+#: LYMessages.c:541
+msgid "File does not exist - reenter or cancel:"
+msgstr "Soubor neexistuje - zadejte znovu, či zrušte:"
+
+#: LYMessages.c:542
+msgid "File is not readable."
+msgstr "Soubor je nečitelný."
+
+#: LYMessages.c:543
+msgid "File is not readable - reenter or cancel:"
+msgstr "Soubor je nečitelný - zadejte znovu, či zrušte:"
+
+#: LYMessages.c:544
+msgid "Nothing to insert - file is 0-length."
+msgstr "Není co vložit - soubor má nulovou délku."
+
+#: LYMessages.c:545
+msgid "Save request cancelled!!!"
+msgstr "Požadavek na uložení byl zrušen!!!"
+
+#: LYMessages.c:546
+msgid "Mail request cancelled!!!"
+msgstr "Požadavek na odeslání pošty byl zrušen!!!"
+
+#. #define CONFIRM_MAIL_SOURCE_PREPARSED
+#: LYMessages.c:548
+msgid "Viewing preparsed source.  Are you sure you want to mail it?"
+msgstr "Zobrazuji předzpracovaný zdrojový kód.  Opravdu jej chcete poslat poštou?"
+
+#: LYMessages.c:549
+msgid "Please wait..."
+msgstr "Okamžik, prosím..."
+
+#: LYMessages.c:550
+msgid "Mailing file.  Please wait..."
+msgstr "Posílám soubor poštou.  Okamžik, prosím..."
+
+#: LYMessages.c:551
+msgid "ERROR - Unable to mail file"
+msgstr "CHYBA - Soubor nelze poštou odeslat"
+
+#. #define CONFIRM_LONG_SCREEN_PRINT
+#: LYMessages.c:553
+#, c-format
+msgid "File is %d screens long.  Are you sure you want to print?"
+msgstr "Délka souboru v obrazovkách je %d.  Opravdu jej chcete vytisknout?"
+
+#: LYMessages.c:554
+msgid "Print request cancelled!!!"
+msgstr "Požadavek na tisk byl zrušen!!!"
+
+#: LYMessages.c:555
+msgid "Press <return> to begin: "
+msgstr "Zahajte stisknutím <return>: "
+
+#: LYMessages.c:556
+msgid "Press <return> to finish: "
+msgstr "Ukončete stisknutím <return>: "
+
+#. #define CONFIRM_LONG_PAGE_PRINT
+#: LYMessages.c:558
+#, c-format
+msgid "File is %d pages long.  Are you sure you want to print?"
+msgstr "Délka souboru ve stranách je %d.  Opravdu jej chcete vytisknout?"
+
+#. #define CHECK_PRINTER
+#: LYMessages.c:560
+msgid "Be sure your printer is on-line.  Press <return> to start printing:"
+msgstr "Ujistěte se, že tiskárna je zapnuta.  Tisk zahajte stisknutím <return>:"
+
+#: LYMessages.c:561
+msgid "ERROR - Unable to allocate file space!!!"
+msgstr "CHYBA - není dostatek místa pro soubor!!!"
+
+#: LYMessages.c:562
+msgid "Unable to open tempfile"
+msgstr "Dočasný soubor nelze otevřít"
+
+#: LYMessages.c:563
+msgid "Unable to open print options file"
+msgstr "Soubor s menu voleb tisku nelze otevřít"
+
+#: LYMessages.c:564
+msgid "Printing file.  Please wait..."
+msgstr "Tisknu soubor.  Okamžik, prosím..."
+
+#: LYMessages.c:565
+msgid "Please enter a valid internet mail address: "
+msgstr "Zadejte platnou adresu elektronické pošty: "
+
+#: LYMessages.c:566
+msgid "ERROR! - printer is misconfigured!"
+msgstr "CHYBA! - tiskárna je špatně nastavena!"
+
+#: LYMessages.c:567
+msgid "Image map from POST response not available!"
+msgstr "Klikací mapa z odpovědi na POST není dostupná!"
+
+#: LYMessages.c:568
+msgid "Misdirected client-side image MAP request!"
+msgstr "Chybně cílený požadavek z klikací mapy!"
+
+#: LYMessages.c:569
+msgid "Client-side image MAP is not accessible!"
+msgstr "Klientská klikací mapa není přístupná!"
+
+#: LYMessages.c:570
+msgid "No client-side image MAPs are available!"
+msgstr "Není dostupná žádná klientská klikací mapa!"
+
+#: LYMessages.c:571
+msgid "Client-side image MAP is not available!"
+msgstr "Klientská klikací mapa není dostupná!"
+
+#. #define OPTION_SCREEN_NEEDS_24
+#: LYMessages.c:574
+msgid "Screen height must be at least 24 lines for the Options menu!"
+msgstr "Konfigurační menu potřebuje obrazovku o alespoň 24 řádcích!"
+
+#. #define OPTION_SCREEN_NEEDS_23
+#: LYMessages.c:576
+msgid "Screen height must be at least 23 lines for the Options menu!"
+msgstr "Konfigurační menu potřebuje obrazovku o alespoň 23 řádcích!"
+
+#. #define OPTION_SCREEN_NEEDS_22
+#: LYMessages.c:578
+msgid "Screen height must be at least 22 lines for the Options menu!"
+msgstr "Konfigurační menu potřebuje obrazovku o alespoň 22 řádcích!"
+
+#: LYMessages.c:580
+msgid "That key requires Advanced User mode."
+msgstr "Tato klávesa funguje pouze v režimu pro pokročilé uživatele."
+
+#: LYMessages.c:581
+#, c-format
+msgid "Content-type: %s"
+msgstr "Typ obsahu: %s"
+
+#: LYMessages.c:582
+msgid "Command: "
+msgstr "Příkaz: "
+
+#: LYMessages.c:583
+msgid "Unknown or ambiguous command"
+msgstr "Neznámý, či nejasný příkaz"
+
+#: LYMessages.c:584
+msgid " Version "
+msgstr " Verze "
+
+#: LYMessages.c:585
+msgid " first"
+msgstr " jako první"
+
+#: LYMessages.c:586
+msgid ", guessing..."
+msgstr ", hádám..."
+
+#: LYMessages.c:587
+msgid "Permissions for "
+msgstr "Přístupová práva pro "
+
+#: LYMessages.c:588
+msgid "Select "
+msgstr "Zvolte "
+
+#: LYMessages.c:589
+msgid "capital letter"
+msgstr "velké písmeno"
+
+#: LYMessages.c:590
+msgid " of option line,"
+msgstr " z volby,"
+
+#: LYMessages.c:591
+msgid " to save,"
+msgstr " pro uložení,"
+
+#: LYMessages.c:592
+msgid " to "
+msgstr " do "
+
+#: LYMessages.c:593
+msgid " or "
+msgstr " či "
+
+#: LYMessages.c:594
+msgid " index"
+msgstr " rejstřík"
+
+#: LYMessages.c:595
+msgid " to return to Lynx."
+msgstr " pro návrat do programu Lynx."
+
+#: LYMessages.c:596
+msgid "Accept Changes"
+msgstr "Přijmout změny"
+
+#: LYMessages.c:597
+msgid "Reset Changes"
+msgstr "Zrušit změny"
+
+#: LYMessages.c:598
+msgid "Left Arrow cancels changes"
+msgstr "Šipka vlevo zruší změny"
+
+#: LYMessages.c:599
+msgid "Save options to disk"
+msgstr "Uložit konfiguraci na disk"
+
+#: LYMessages.c:600
+msgid "Hit RETURN to accept entered data."
+msgstr "Stiskněte RETURN pro přijetí údajů."
+
+#. #define ACCEPT_DATA_OR_DEFAULT
+#: LYMessages.c:602
+msgid "Hit RETURN to accept entered data.  Delete data to invoke the default."
+msgstr "Stiskněte RETURN pro přijetí údajů.  Smazáním vyvoláte implicitní nastavení."
+
+#: LYMessages.c:603
+msgid "Value accepted!"
+msgstr "Hodnota přijmuta!"
+
+#. #define VALUE_ACCEPTED_WARNING_X
+#: LYMessages.c:605
+msgid "Value accepted! -- WARNING: Lynx is configured for XWINDOWS!"
+msgstr "Hodnota přijmuta! -- VAROVÁNÍ: Lynx je nastaven pro XWINDOWS!"
+
+#. #define VALUE_ACCEPTED_WARNING_NONX
+#: LYMessages.c:607
+msgid "Value accepted! -- WARNING: Lynx is NOT configured for XWINDOWS!"
+msgstr "Hodnota přijmuta! -- VAROVÁNÍ: Lynx není nastaven pro XWINDOWS!"
+
+#: LYMessages.c:608
+msgid "You are not allowed to change which editor to use!"
+msgstr "Nemáte oprávnění měnit editor!"
+
+#: LYMessages.c:609
+msgid "Failed to set DISPLAY variable!"
+msgstr "Proměnnou DISPLAY se nepodařilo nastavit!"
+
+#: LYMessages.c:610
+msgid "Failed to clear DISPLAY variable!"
+msgstr "Proměnnou DISPLAY se nepodařilo vynulovat!"
+
+#. #define BOOKMARK_CHANGE_DISALLOWED
+#: LYMessages.c:612
+msgid "You are not allowed to change the bookmark file!"
+msgstr "Nemáte oprávnění měnit soubor záložek!"
+
+#: LYMessages.c:613
+msgid "Terminal does not support color"
+msgstr "Terminál nepodporuje barvy"
+
+#: LYMessages.c:614
+#, c-format
+msgid "Your '%s' terminal does not support color."
+msgstr "Terminál '%s' nepodporuje barvy."
+
+#: LYMessages.c:615
+msgid "Access to dot files is disabled!"
+msgstr "Přístup k tečkovým souborům je zakázán!"
+
+#. #define UA_NO_LYNX_WARNING
+#: LYMessages.c:617
+msgid "User-Agent string does not contain \"Lynx\" or \"L_y_n_x\""
+msgstr "Hlavička User-Agent neobsahuje \"Lynx\" či \"L_y_n_x\""
+
+#. #define UA_PLEASE_USE_LYNX
+#: LYMessages.c:619
+msgid "Use \"L_y_n_x\" or \"Lynx\" in User-Agent, or it looks like intentional deception!"
+msgstr "V User-Agent použijte \"L_y_n_x\" či \"Lynx\", jinak to vypadá jako záměrný podvod!"
+
+#. #define UA_CHANGE_DISABLED
+#: LYMessages.c:621
+msgid "Changing of the User-Agent string is disabled!"
+msgstr "Měnit hodnotu hlavičky User-Agent je zakázáno!"
+
+#. #define CHANGE_OF_SETTING_DISALLOWED
+#: LYMessages.c:623
+msgid "You are not allowed to change this setting."
+msgstr "Nemáte oprávnění měnit tuto volbu."
+
+#: LYMessages.c:624
+msgid "Saving Options..."
+msgstr "Ukládám konfiguraci..."
+
+#: LYMessages.c:625
+msgid "Options saved!"
+msgstr "Konfigurace uložena!"
+
+#: LYMessages.c:626
+msgid "Unable to save Options!"
+msgstr "Konfiguraci nelze uložit!"
+
+#: LYMessages.c:627
+msgid " 'r' to return to Lynx "
+msgstr " 'r' pro návrat do programu Lynx "
+
+#: LYMessages.c:628
+msgid " '>' to save, or 'r' to return to Lynx "
+msgstr " '>' pro uložení či 'r' pro návrat do programu Lynx "
+
+#. #define ANY_KEY_CHANGE_RET_ACCEPT
+#: LYMessages.c:630
+msgid "Hit any key to change value; RETURN to accept."
+msgstr "Stiskněte jakoukoli klávesu pro změnu hodnoty; RETURN pro její přijetí."
+
+#: LYMessages.c:631
+msgid "Error uncompressing temporary file!"
+msgstr "Chyba při dekompresi dočasného souboru!"
+
+#: LYMessages.c:632
+msgid "Unsupported URL scheme!"
+msgstr "Nepodporovaný typ URL!"
+
+#: LYMessages.c:633
+msgid "Unsupported data: URL!  Use SHOWINFO, for now."
+msgstr "Nepodporovaná 'data:' URL! Použijte SHOWINFO."
+
+#: LYMessages.c:634
+#, c-format
+msgid "Redirection limit of %d URL's reached."
+msgstr "Maximální počet přesměrování %d URL byl dosažen."
+
+#: LYMessages.c:635
+msgid "Illegal redirection URL received from server!"
+msgstr "Server zaslal chybné URL pro přesměrování!"
+
+#. #define SERVER_ASKED_FOR_REDIRECTION
+#: LYMessages.c:637
+#, c-format
+msgid "Server asked for %d redirection of POST content to"
+msgstr "Server požaduje %d přesměrování POST obsahu na"
+
+#: LYMessages.c:640
+msgid "P)roceed, use G)ET or C)ancel "
+msgstr "P)Pokračovat, použít G)Získat či C)Zrušit "
+
+#: LYMessages.c:641
+msgid "P)roceed, or C)ancel "
+msgstr "P)Pokračovat či C)Zrušit "
+
+#. #define ADVANCED_POST_GET_REDIRECT
+#: LYMessages.c:643
+msgid "Redirection of POST content.  P)roceed, see U)RL, use G)ET or C)ancel"
+msgstr "Přesměrování POST obsahu.  P)Pokračovat, zobrazit U)RL, použít G)Získat či C)Zrušit"
+
+#. #define ADVANCED_POST_REDIRECT
+#: LYMessages.c:645
+msgid "Redirection of POST content.  P)roceed, see U)RL, or C)ancel"
+msgstr "Přesměrování POST obsahu.  P)Pokračovat, zobrazit U)RL či C)Zrušit"
+
+#. #define CONFIRM_POST_RESUBMISSION
+#: LYMessages.c:647
+msgid "Document from Form with POST content.  Resubmit?"
+msgstr "Dokument z formuláře s POST obsahem?  Odeslat znovu?"
+
+#. #define CONFIRM_POST_RESUBMISSION_TO
+#: LYMessages.c:649
+#, c-format
+msgid "Resubmit POST content to %s ?"
+msgstr "Odeslat znovu POST obsah na %s?"
+
+#. #define CONFIRM_POST_LIST_RELOAD
+#: LYMessages.c:651
+#, c-format
+msgid "List from document with POST data.  Reload %s ?"
+msgstr "Seznam z dokumentu s POST obsahem?  Načíst %s znovu?"
+
+#. #define CONFIRM_POST_DOC_HEAD
+#: LYMessages.c:653
+msgid "Document from POST action, HEAD may not be understood.  Proceed?"
+msgstr "Dokument vznikl z POST akce. Hlavička nemusí být správně zpracována.  Pokračovat?"
+
+#. #define CONFIRM_POST_LINK_HEAD
+#: LYMessages.c:655
+msgid "Form submit action is POST, HEAD may not be understood.  Proceed?"
+msgstr "Akce formuláře používá POST, hlavička nemusí být správně zpracována.  Pokračovat?"
+
+#: LYMessages.c:656
+msgid "Proceed without a username and password?"
+msgstr "Pokračovat bez ověření uživatelským jménem a heslem?"
+
+#: LYMessages.c:657
+#, c-format
+msgid "Proceed (%s)?"
+msgstr "Pokračovat (%s)?"
+
+#: LYMessages.c:658
+msgid "Cannot POST to this host."
+msgstr "Na tento počítač nelze data metodou POST odeslat."
+
+#: LYMessages.c:659
+msgid "POST not supported for this URL - ignoring POST data!"
+msgstr "Pro toto URL není metoda POST podporována - ignoruji POST data!"
+
+#: LYMessages.c:660
+msgid "Discarding POST data..."
+msgstr "Zahazuji POST data..."
+
+#: LYMessages.c:661
+msgid "Document will not be reloaded!"
+msgstr "Dokument nebude znovu načten!"
+
+#: LYMessages.c:662
+msgid "Location: "
+msgstr "Umístění: "
+
+#: LYMessages.c:663
+#, c-format
+msgid "'%s' not found!"
+msgstr "'%s' nebylo nalezeno!"
+
+#: LYMessages.c:664
+msgid "Default Bookmark File"
+msgstr "Implicitní soubor záložek"
+
+#: LYMessages.c:665
+msgid "Screen too small! (8x35 min)"
+msgstr "Obrazovka je příliš malá! (alespoň 8x35)"
+
+#: LYMessages.c:666
+msgid "Select destination or ^G to Cancel: "
+msgstr "Zvolte cíl či zrušte pomocí ^G: "
+
+#. #define MULTIBOOKMARKS_SELECT
+#: LYMessages.c:668
+msgid "Select subbookmark, '=' for menu, or ^G to cancel: "
+msgstr "Zvolte podzáložku, '=' pro menu či ^G pro zrušení: "
+
+#. #define MULTIBOOKMARKS_SELF
+#: LYMessages.c:670
+msgid "Reproduce L)ink in this bookmark file or C)ancel? (l,c): "
+msgstr "L)Duplikovat záložku v tomto souboru či C)Zrušit? (l,c): "
+
+#: LYMessages.c:671
+msgid "Multiple bookmark support is not available."
+msgstr "Dělené záložky nejsou podporovány."
+
+#: LYMessages.c:672
+#, c-format
+msgid " Select Bookmark (screen %d of %d)"
+msgstr " Zvolte záložku (obrazovka %d z %d)"
+
+#: LYMessages.c:673
+msgid "       Select Bookmark"
+msgstr "       Zvolte záložku"
+
+#. #define MULTIBOOKMARKS_EHEAD_MASK
+#: LYMessages.c:675
+#, c-format
+msgid "Editing Bookmark DESCRIPTION and FILEPATH (%d of 2)"
+msgstr "Nastavení CESTY SOUBORU záložek a jejich POPISU (%d ze 2)"
+
+#. #define MULTIBOOKMARKS_EHEAD
+#: LYMessages.c:677
+msgid "         Editing Bookmark DESCRIPTION and FILEPATH"
+msgstr "         Nastavení CESTY SOUBORU záložek a jejich POPISU"
+
+#: LYMessages.c:678
+msgid "Letter: "
+msgstr "Písmeno: "
+
+#. #define USE_PATH_OFF_HOME
+#: LYMessages.c:681
+msgid "Use a filepath off your login directory in SHELL syntax!"
+msgstr "Použijte jméno cesty z přihlašovacího adresáře a v syntaxi SHELLU!"
+
+#: LYMessages.c:683
+msgid "Use a filepath off your home directory!"
+msgstr "Použijte jméno cesty z domácího adresáře!"
+
+#. #define MAXLINKS_REACHED
+#: LYMessages.c:686
+msgid "Maximum links per page exceeded!  Use half-page or two-line scrolling."
+msgstr "Maximální počet odkazů na stránku dosažen!  Použijte posun o 1/2 strany či o dva řádky."
+
+#: LYMessages.c:687
+msgid "No previously visited links available!"
+msgstr "Žádné navštívené odkazy nejsou k dispozici!"
+
+#: LYMessages.c:688
+msgid "Memory exhausted!  Program aborted!"
+msgstr "Došla paměť!  Program přerušen!"
+
+#: LYMessages.c:689
+msgid "Memory exhausted!  Aborting..."
+msgstr "Došla paměť!  Přerušuji..."
+
+#: LYMessages.c:690
+msgid "Not enough memory!"
+msgstr "Došla paměť!"
+
+#: LYMessages.c:691
+msgid "Directory/File Manager not available"
+msgstr "Správce souborů není k dispozici"
+
+#: LYMessages.c:692
+msgid "Location URL is not absolute."
+msgstr "URL není absolutní."
+
+#: LYMessages.c:693
+msgid "Refresh URL is not absolute."
+msgstr "Obnovovací URL není absolutní."
+
+#. #define SENDING_MESSAGE_WITH_BODY_TO
+#: LYMessages.c:695
+msgid ""
+"You are sending a message with body to:\n"
+"  "
+msgstr ""
+"Posíláte zprávu na:\n"
+"  "
+
+#: LYMessages.c:696
+msgid ""
+"You are sending a comment to:\n"
+"  "
+msgstr ""
+"Posíláte komentář na:\n"
+"  "
+
+#: LYMessages.c:697
+msgid ""
+"\n"
+" With copy to:\n"
+"  "
+msgstr ""
+"\n"
+" S kopií na:\n"
+"  "
+
+#: LYMessages.c:698
+msgid ""
+"\n"
+" With copies to:\n"
+"  "
+msgstr ""
+"\n"
+" S kopiemi na:\n"
+"  "
+
+#. #define CTRL_G_TO_CANCEL_SEND
+#: LYMessages.c:700
+msgid ""
+"\n"
+"\n"
+"Use Ctrl-G to cancel if you do not want to send a message\n"
+msgstr ""
+"\n"
+"\n"
+"Odeslání zprávy můžete zrušit pomocí Ctrl-G.\n"
+
+#. #define ENTER_NAME_OR_BLANK
+#: LYMessages.c:702
+msgid ""
+"\n"
+" Please enter your name, or leave it blank to remain anonymous\n"
+msgstr ""
+"\n"
+" Zadejte vaše jméno, nebo ponechte prázdné, aby jste zůstal v anonymitě.\n"
+
+#. #define ENTER_MAIL_ADDRESS_OR_OTHER
+#: LYMessages.c:704
+msgid ""
+"\n"
+" Please enter a mail address or some other\n"
+msgstr ""
+"\n"
+"Pokud chcete dostat odpověď, udejte adresu\n"
+
+#. #define MEANS_TO_CONTACT_FOR_RESPONSE
+#: LYMessages.c:706
+msgid " means to contact you, if you desire a response.\n"
+msgstr " elektronické pošty či jiný kontakt na vás.\n"
+
+#: LYMessages.c:707
+msgid ""
+"\n"
+" Please enter a subject line.\n"
+msgstr ""
+"\n"
+" Zadejte předmět.\n"
+
+#. #define ENTER_ADDRESS_FOR_CC
+#: LYMessages.c:709
+msgid ""
+"\n"
+" Enter a mail address for a CC of your message.\n"
+msgstr ""
+"\n"
+" Zadejte adresu pro odeslání kopie této zprávy.\n"
+
+#: LYMessages.c:710
+msgid " (Leave blank if you don't want a copy.)\n"
+msgstr " (Ponechte prázdné, pokud kopie nechcete poslat.)\n"
+
+#: LYMessages.c:711
+msgid ""
+"\n"
+" Please review the message body:\n"
+"\n"
+msgstr ""
+"\n"
+" Zkontrolujte tělo zprávy:\n"
+"\n"
+
+#: LYMessages.c:712
+msgid ""
+"\n"
+"Press RETURN to continue: "
+msgstr ""
+"\n"
+"Stiskněte RETURN pro pokračování: "
+
+#: LYMessages.c:713
+msgid ""
+"\n"
+"Press RETURN to clean up: "
+msgstr ""
+"\n"
+"Stiskněte RETURN pro úklid: "
+
+#: LYMessages.c:714
+msgid " Use Control-U to erase the default.\n"
+msgstr " Použijte Control-U pro smazání implicitních hodnot.\n"
+
+#: LYMessages.c:715
+msgid ""
+"\n"
+" Please enter your message below."
+msgstr ""
+"\n"
+" Zadejte text vaší zprávy níže."
+
+#. #define ENTER_PERIOD_WHEN_DONE_A
+#: LYMessages.c:717 src/LYNews.c:360
+msgid ""
+"\n"
+" When you are done, press enter and put a single period (.)"
+msgstr ""
+"\n"
+" Až budete hotov, stiskněte enter a napište jednu tečku (.)"
+
+#. #define ENTER_PERIOD_WHEN_DONE_B
+#: LYMessages.c:719 src/LYNews.c:361
+msgid ""
+"\n"
+" on a line and press enter again."
+msgstr ""
+"\n"
+" na začátek řádku a stiskněte opět enter."
+
+#. Cookies messages
+#. #define ADVANCED_COOKIE_CONFIRMATION
+#: LYMessages.c:723
+#, c-format
+msgid "%s cookie: %.*s=%.*s  Allow? (Y/N/Always/neVer)"
+msgstr "%s cookie: %.*s=%.*s   Přijmout? Y)Ano, N)Ne, A)Vždy, V)Nikdy"
+
+#. #define INVALID_COOKIE_DOMAIN_CONFIRMATION
+#: LYMessages.c:725
+#, c-format
+msgid "Accept invalid cookie domain=%s for '%s'?"
+msgstr "Přijmout chybnou cookie doménu (%s) pro '%s'?"
+
+#. #define INVALID_COOKIE_PATH_CONFIRMATION
+#: LYMessages.c:727
+#, c-format
+msgid "Accept invalid cookie path=%s as a prefix of '%s'?"
+msgstr "Přijmout chybnou cookie cestu (%s) jako prefix '%s'?"
+
+#: LYMessages.c:728
+msgid "Allowing this cookie."
+msgstr "Cookie přijmuto."
+
+#: LYMessages.c:729
+msgid "Rejecting this cookie."
+msgstr "Cookie zamítnuto."
+
+#: LYMessages.c:730
+msgid "The Cookie Jar is empty."
+msgstr "Sklad cookies je prázdný."
+
+#: LYMessages.c:731
+msgid "The Cache Jar is empty."
+msgstr "Sklad cache je prázdný."
+
+#. #define ACTIVATE_TO_GOBBLE
+#: LYMessages.c:733
+msgid "Activate links to gobble up cookies or entire domains,"
+msgstr "Aktivovat odkazy pro hromadné přijmutí cookies, nebo"
+
+#: LYMessages.c:734
+msgid "or to change a domain's 'allow' setting."
+msgstr "celých domén, či změnit nastavení domény."
+
+#: LYMessages.c:735
+msgid "(Cookies never allowed.)"
+msgstr "(Cookies zakázány)"
+
+#: LYMessages.c:736
+msgid "(Cookies always allowed.)"
+msgstr "(Cookies vždy povoleny)"
+
+#: LYMessages.c:737
+msgid "(Cookies allowed via prompt.)"
+msgstr "(Přijetí cookies musí potvrdit uživatel.)"
+
+#: LYMessages.c:738
+msgid "(Persistent Cookies.)"
+msgstr "(Trvalé cookies)"
+
+#: LYMessages.c:739
+msgid "(No title.)"
+msgstr "(Žádný titulek)"
+
+#: LYMessages.c:740
+msgid "(No name.)"
+msgstr "(Žádné jméno)"
+
+#: LYMessages.c:741
+msgid "(No value.)"
+msgstr "(Žádná hodnota)"
+
+#: LYMessages.c:742 src/LYOptions.c:2470
+msgid "None"
+msgstr "Nic"
+
+#: LYMessages.c:743
+msgid "(End of session.)"
+msgstr "(Konec sezení)"
+
+#: LYMessages.c:744
+msgid "Delete this cookie?"
+msgstr "Smazat toto cookie?"
+
+#: LYMessages.c:745
+msgid "The cookie has been eaten!"
+msgstr "Cookie bylo smazáno!"
+
+#: LYMessages.c:746
+msgid "Delete this empty domain?"
+msgstr "Smazat tuto prázdnou doménu?"
+
+#: LYMessages.c:747
+msgid "The domain has been eaten!"
+msgstr "Doména byla smazána!"
+
+#. #define DELETE_COOKIES_SET_ALLOW_OR_CANCEL
+#: LYMessages.c:749
+msgid "D)elete domain's cookies, set allow A)lways/P)rompt/neV)er, or C)ancel? "
+msgstr "D)Smazat cookies z domény, přijmout A)Vždy/P)o potvrzení/V)Nikdy či C)Zrušit? "
+
+#. #define DELETE_DOMAIN_SET_ALLOW_OR_CANCEL
+#: LYMessages.c:751
+msgid "D)elete domain, set allow A)lways/P)rompt/neV)er, or C)ancel? "
+msgstr "D)Smazat doménu, přijmout A)Vždy/P)o potvrzení/V)Nikdy či C)Zrušit? "
+
+#: LYMessages.c:752
+msgid "All cookies in the domain have been eaten!"
+msgstr "Všechna cookie v této doméně byly smazána!"
+
+#: LYMessages.c:753
+#, c-format
+msgid "'A'lways allowing from domain '%s'."
+msgstr "A)Vždy přijímám z domény '%s'."
+
+#: LYMessages.c:754
+#, c-format
+msgid "ne'V'er allowing from domain '%s'."
+msgstr "V)Nikdy nepřijímám z domény '%s'."
+
+#: LYMessages.c:755
+#, c-format
+msgid "'P'rompting to allow from domain '%s'."
+msgstr "Přijetí z domény '%s' musíte P)otvrdit."
+
+#: LYMessages.c:756
+msgid "Delete all cookies in this domain?"
+msgstr "Smazat všechny cookies v této doméně?"
+
+#: LYMessages.c:757
+msgid "All of the cookies in the jar have been eaten!"
+msgstr "Ůložna cookies byla vyprázdněna!"
+
+#: LYMessages.c:759
+msgid "Port 19 not permitted in URLs."
+msgstr "URL nesmí obsahovat port 19."
+
+#: LYMessages.c:760
+msgid "Port 25 not permitted in URLs."
+msgstr "URL nesmí obsahovat port 25."
+
+#: LYMessages.c:761
+#, c-format
+msgid "Port %lu not permitted in URLs."
+msgstr "URL nesmí obsahovat port %lu."
+
+#: LYMessages.c:762
+msgid "URL has a bad port field."
+msgstr "URL obsahuje chybný port."
+
+#: LYMessages.c:763
+msgid "Maximum nesting of HTML elements exceeded."
+msgstr "Maximální povolený počet vnoření HTML prvků překročen."
+
+#: LYMessages.c:764
+msgid "Bad partial reference!  Stripping lead dots."
+msgstr "Chybný relativní odkaz!  Odtrhuji úvodní tečky."
+
+#: LYMessages.c:765
+msgid "Trace Log open failed.  Trace off!"
+msgstr "Nepodařilo se otevřít soubor pro záznam činnosti.  Sledování vypnuto!"
+
+#: LYMessages.c:766
+msgid "Lynx Trace Log"
+msgstr "Záznam činnosti programu Lynx"
+
+#: LYMessages.c:767
+msgid "No trace log has been started for this session."
+msgstr "Pro toto sezení nebylo sledování spuštěno."
+
+#. #define MAX_TEMPCOUNT_REACHED
+#: LYMessages.c:769
+msgid "The maximum temporary file count has been reached!"
+msgstr "Maximální povolený počet dočasných souborů překročen!"
+
+#. #define FORM_VALUE_TOO_LONG
+#: LYMessages.c:771
+msgid "Form field value exceeds buffer length!  Trim the tail."
+msgstr "Hodnota pole formuláře přesahuje délku bufferu!  Zkraťte ji."
+
+#. #define FORM_TAIL_COMBINED_WITH_HEAD
+#: LYMessages.c:773
+msgid "Modified tail combined with head of form field value."
+msgstr "Změněný konec hodnoty pole formuláře byl spojen s jejím začátkem."
+
+#. HTFile.c
+#: LYMessages.c:776
+msgid "Directory"
+msgstr "Adresář"
+
+#: LYMessages.c:777
+msgid "Directory browsing is not allowed."
+msgstr "Procházení adresářů je zakázáno."
+
+#: LYMessages.c:778
+msgid "Selective access is not enabled for this directory"
+msgstr "Selektivní přístup k tomuto adresáři není zapnut"
+
+#: LYMessages.c:779
+msgid "Multiformat: directory scan failed."
+msgstr "Multiformat: volání scandir pro adresář se nezdařilo."
+
+#: LYMessages.c:780
+msgid "This directory is not readable."
+msgstr "Tento adresář nelze číst."
+
+#: LYMessages.c:781
+msgid "Can't access requested file."
+msgstr "Přístup k požadovanému souboru nelze získat."
+
+#: LYMessages.c:782
+msgid "Could not find suitable representation for transmission."
+msgstr "Nelze nalézt vhodný formát dat pro přenos."
+
+#: LYMessages.c:783
+msgid "Could not open file for decompression!"
+msgstr "Soubor pro dekompresi nelze otevřít!"
+
+#: LYMessages.c:784
+msgid "Files:"
+msgstr "Soubory:"
+
+#: LYMessages.c:785
+msgid "Subdirectories:"
+msgstr "Podadresáře:"
+
+#: LYMessages.c:786
+msgid " directory"
+msgstr " adresář"
+
+#: LYMessages.c:787
+msgid "Up to "
+msgstr "O úroveň výše do "
+
+#: LYMessages.c:788
+msgid "Current directory is "
+msgstr "Aktuální adresář je "
+
+#. HTFTP.c
+#: LYMessages.c:791
+msgid "Symbolic Link"
+msgstr "Symbol. odkaz"
+
+#. HTGopher.c
+#: LYMessages.c:794
+msgid "No response from server!"
+msgstr "Od serveru nepřišla odpověď!"
+
+#: LYMessages.c:795
+msgid "CSO index"
+msgstr "CSO rejstřík"
+
+#: LYMessages.c:796
+msgid ""
+"\n"
+"This is a searchable index of a CSO database.\n"
+msgstr ""
+"\n"
+"Toto je prohledávatelný rejstřík CSO databáze.\n"
+
+#: LYMessages.c:797
+msgid "CSO Search Results"
+msgstr "Výsledky prohledávání CSO"
+
+#: LYMessages.c:798
+#, c-format
+msgid "Seek fail on %s\n"
+msgstr "Posun ukazovátka pro %s selhal\n"
+
+#: LYMessages.c:799
+msgid ""
+"\n"
+"Press the 's' key and enter search keywords.\n"
+msgstr ""
+"\n"
+"Stiskněte klávesu 's' a zadejte hledaná klíčová slova.\n"
+
+#: LYMessages.c:800
+msgid ""
+"\n"
+"This is a searchable Gopher index.\n"
+msgstr ""
+"\n"
+"Toto je prohledávatelný Gopher rejstřík.\n"
+
+#: LYMessages.c:801
+msgid "Gopher index"
+msgstr "Gopher rejstřík"
+
+#: LYMessages.c:802
+msgid "Gopher Menu"
+msgstr "Gopher Menu"
+
+#: LYMessages.c:803
+msgid " Search Results"
+msgstr " Výsledky hledání"
+
+#: LYMessages.c:804
+msgid "Sending CSO/PH request."
+msgstr "Posílám CSO/PH požadavek."
+
+#: LYMessages.c:805
+msgid "Sending Gopher request."
+msgstr "Posílám Gopher požadavek."
+
+#: LYMessages.c:806
+msgid "CSO/PH request sent; waiting for response."
+msgstr "CSO/PH požadavek poslán; čekám na odpověď."
+
+#: LYMessages.c:807
+msgid "Gopher request sent; waiting for response."
+msgstr "Gopher požadavek poslán; čekám na odpověď."
+
+#: LYMessages.c:808
+msgid ""
+"\n"
+"Please enter search keywords.\n"
+msgstr ""
+"\n"
+"Zadejte hledaná klíčová slova.\n"
+
+#: LYMessages.c:809
+msgid ""
+"\n"
+"The keywords that you enter will allow you to search on a"
+msgstr ""
+"\n"
+"Klíčová slova, která zadáte, vám umožní hledat"
+
+#: LYMessages.c:810
+msgid " person's name in the database.\n"
+msgstr " jméno osoby v databázi.\n"
+
+#. HTNews.c
+#: LYMessages.c:813
+msgid "Connection closed ???"
+msgstr "Spojení uzavřeno ???"
+
+#: LYMessages.c:814
+msgid "Cannot open temporary file for news POST."
+msgstr "Nelze otevřít dočasný soubor pro odeslání diskuzního příspěvku."
+
+#: LYMessages.c:815
+msgid "This client does not contain support for posting to news with SSL."
+msgstr "Tento klient nepodporuje zasílání zpráv do diskuzních skupin přes SSL."
+
+#. HTStyle.c
+#: LYMessages.c:818
+#, c-format
+msgid "Style %d `%s' SGML:%s.  Font %s %.1f point.\n"
+msgstr "Styl %d `%s' SGML:%s. Písmo %s %.1f bodů.\n"
+
+#: LYMessages.c:820
+#, c-format
+msgid "\tAlign=%d, %d tabs. (%.0f before, %.0f after)\n"
+msgstr "\tZarovnání=%d, %d tabů. (%.0f před, %.0f za)\n"
+
+#: LYMessages.c:821
+#, c-format
+msgid "\t\tTab kind=%d at %.0f\n"
+msgstr "\t\tDruh tabů=%d na %.0f\n"
+
+#. HTTP.c
+#: LYMessages.c:824
+msgid "Can't proceed without a username and password."
+msgstr "Bez uživatelského jména a hesla nelze pokračovat."
+
+#: LYMessages.c:825
+msgid "Can't retry with authorization!  Contact the server's WebMaster."
+msgstr "Další pokus s autorizací není možný! Kontaktujte příslušného webmastera."
+
+#: LYMessages.c:826
+msgid "Can't retry with proxy authorization!  Contact the server's WebMaster."
+msgstr "S proxy autorizací není další pokus možný! Kontaktujte příslušného webmastera."
+
+#: LYMessages.c:827
+msgid "Retrying with proxy authorization information."
+msgstr "Zkouším znovu s proxy autorizací."
+
+#: LYMessages.c:828
+#, c-format
+msgid "SSL error:%s-Continue?"
+msgstr "SSL chyba:%s-Pokračovat?"
+
+#. HTWAIS.c
+#: LYMessages.c:831
+msgid "HTWAIS: Return message too large."
+msgstr "HTWAIS: Odpověď je příliš veliká."
+
+#: LYMessages.c:832
+msgid "Enter WAIS query: "
+msgstr "Zadejte WAIS dotaz: "
+
+#. Miscellaneous status
+#: LYMessages.c:835
+msgid "Retrying as HTTP0 request."
+msgstr "Posílám znovu jako HTTP0 požadavek."
+
+#: LYMessages.c:836
+#, c-format
+msgid "Transferred %d bytes"
+msgstr "Přeneseno bajtů: %d"
+
+#: LYMessages.c:837
+msgid "Data transfer complete"
+msgstr "Přenos dat dokončen"
+
+#: LYMessages.c:838
+#, c-format
+msgid "Error processing line %d of %s\n"
+msgstr "Chyba při zpracování %d. řádku souboru%s\n"
+
+#. Lynx internal page titles
+#: LYMessages.c:841
+msgid "Address List Page"
+msgstr "Seznam adres"
+
+#: LYMessages.c:842
+msgid "Bookmark file"
+msgstr "Soubor se záložkami"
+
+#: LYMessages.c:843
+msgid "Configuration Definitions"
+msgstr "Konfigurace"
+
+#: LYMessages.c:844
+msgid "Cookie Jar"
+msgstr "Sklad cookies"
+
+#: LYMessages.c:845
+msgid "Current Edit-Key Map"
+msgstr "Aktuální editovaná klávesová mapa"
+
+#: LYMessages.c:846
+msgid "Current Key Map"
+msgstr "Aktuální klávesová mapa"
+
+#: LYMessages.c:847
+msgid "File Management Options"
+msgstr "Nabídka správce souborů"
+
+#: LYMessages.c:848
+msgid "Download Options"
+msgstr "Možnosti stahování"
+
+#: LYMessages.c:849
+msgid "History Page"
+msgstr "Historie"
+
+#: LYMessages.c:850
+msgid "Cache Jar"
+msgstr "Sklad cache"
+
+#: LYMessages.c:851
+msgid "List Page"
+msgstr "Seznam odkazů"
+
+#: LYMessages.c:852
+msgid "Lynx.cfg Information"
+msgstr "Lynx.cfg Informace"
+
+#: LYMessages.c:853
+msgid "Converted Mosaic Hotlist"
+msgstr "Převedený 'Hotlist' Mosaicu"
+
+#: LYMessages.c:854
+msgid "Options Menu"
+msgstr "Konfigurační menu"
+
+#: LYMessages.c:855
+msgid "File Permission Options"
+msgstr "Menu nastavení práv souboru"
+
+#: LYMessages.c:856
+msgid "Printing Options"
+msgstr "Menu voleb tisku"
+
+#: LYMessages.c:857
+msgid "Information about the current document"
+msgstr "Informace o aktuálním dokumentu"
+
+#: LYMessages.c:858
+msgid "Your recent statusline messages"
+msgstr "Zprávy stavové řádky"
+
+#: LYMessages.c:859
+msgid "Upload Options"
+msgstr "Menu voleb posílání (uploadu)"
+
+#: LYMessages.c:860
+msgid "Visited Links Page"
+msgstr "Navštívené odkazy"
+
+#. CONFIG_DEF_TITLE subtitles
+#: LYMessages.c:863
+msgid "See also"
+msgstr "Viz též"
+
+#: LYMessages.c:864
+msgid "your"
+msgstr "váš"
+
+#: LYMessages.c:865
+msgid "for runtime options"
+msgstr "pro aktuální konfiguraci"
+
+#: LYMessages.c:866
+msgid "compile time options"
+msgstr "volby zadané při sestavování"
+
+#: LYMessages.c:867
+msgid "color-style configuration"
+msgstr "konfigurace barevného stylu"
+
+#: LYMessages.c:868
+msgid "latest release"
+msgstr "poslední verze"
+
+#: LYMessages.c:869
+msgid "pre-release version"
+msgstr "vývojová verze (pre-release)"
+
+#: LYMessages.c:870
+msgid "development version"
+msgstr "vývojová verze"
+
+#. #define AUTOCONF_CONFIG_CACHE
+#: LYMessages.c:872
+msgid ""
+"The following data were derived during the automatic configuration/build\n"
+"process of this copy of Lynx.  When reporting a bug, please include a copy\n"
+"of this page."
+msgstr ""
+"Následující údaje byly získány při automatické konfiguraci a sestavéní této\n"
+"kopie programu Lynx. Při oznamování chyby přiložte kopii této stránky."
+
+#. #define AUTOCONF_LYNXCFG_H
+#: LYMessages.c:876
+msgid ""
+"The following data were used as automatically-configured compile-time\n"
+"definitions when this copy of Lynx was built."
+msgstr ""
+"Následující údaje byly získány při automatické konfiguraci a použity při\n"
+"sestavení této kopie programu Lynx."
+
+#. #define DIRED_NOVICELINE
+#: LYMessages.c:881
+msgid "  C)reate  D)ownload  E)dit  F)ull menu  M)odify  R)emove  T)ag  U)pload     \n"
+msgstr "  C)Vytvořit  D)Stáhnout  E)ditovat  F)Úplné menu  R)Smazat  T)Označit  U)Poslat     \n"
+
+#: LYMessages.c:882
+msgid "Failed to obtain status of current link!"
+msgstr "Nepodařilo se zjistit status aktuálního odkazu!"
+
+#. #define INVALID_PERMIT_URL
+#: LYMessages.c:885
+msgid "Special URL only valid from current File Permission menu!"
+msgstr "Zvláštní URL je platné pouze z aktuálního menu nastavení práv souboru!"
+
+#: LYMessages.c:889
+msgid "External support is currently disabled."
+msgstr "Spouštění externích programů je nyní zakázáno."
+
+#. new with 2.8.4dev.21
+#: LYMessages.c:893
+msgid "Changing working-directory is currently disabled."
+msgstr "Možnost změny pracovního adresáře je nyní vypnuta."
+
+#: LYMessages.c:894
+msgid "Linewrap OFF!"
+msgstr "Zalamování řádků VYPNUTO!"
+
+#: LYMessages.c:895
+msgid "Linewrap ON!"
+msgstr "Zalamování řádků ZAPNUTO!"
+
+#: LYMessages.c:896
+msgid "Parsing nested-tables toggled OFF!  Reloading..."
+msgstr "Zpracování vnořených tabulek VYPNUTO! Znovu načítám..."
+
+#: LYMessages.c:897
+msgid "Parsing nested-tables toggled ON!  Reloading..."
+msgstr "Zpracování vnořených tabulek ZAPNUTO! Znovu načítám..."
+
+#: LYMessages.c:898
+msgid "Shifting is disabled while line-wrap is in effect"
+msgstr "Posouvání je vypnuto, pokud funguje zalamování řádků"
+
+#: LYMessages.c:899
+msgid "Trace not supported"
+msgstr "Sledování není povoleno"
+
+#: LYMessages.c:819
+#, c-format
+msgid "\tIndents: first=%.0f others=%.0f, Height=%.1f Desc=%.1f\n"
+msgstr "\tOdsazení: první=%.0f další=%.0f, Výška=%.1f Popis=%.1f\n"
+
+#: WWW/Library/Implementation/HTAABrow.c:575
+#, c-format
+msgid "username for realm %s changed from %s to %s"
+msgstr "Uživatelské jméno pro server %s změněno z %s na %s"
+
+#: WWW/Library/Implementation/HTAABrow.c:591
+#, c-format
+msgid "password for realm %s user %s changed"
+msgstr "heslo pro server %s uživatele %s změněno"
+
+#: WWW/Library/Implementation/HTAABrow.c:703
+#, c-format
+msgid "Username for '%s' at %s '%s%s':"
+msgstr "Uživatelské jméno pro '%s' na %s '%s%s':"
+
+#: WWW/Library/Implementation/HTAABrow.c:976
+msgid "This client doesn't know how to compose proxy authorization information for scheme"
+msgstr "Tento klient neumí vytvořit proxy autorizační informace pro schéma"
+
+#: WWW/Library/Implementation/HTAABrow.c:1053
+msgid "This client doesn't know how to compose authorization information for scheme"
+msgstr "Tento klient neumí vytvořit autorizační informace pro schéma"
+
+#: WWW/Library/Implementation/HTAABrow.c:1162
+#, c-format
+msgid "Invalid header '%s%s%s%s%s'"
+msgstr "Chybná hlavička '%s%s%s%s%s'"
+
+#: WWW/Library/Implementation/HTAABrow.c:1266
+msgid "Proxy authorization required -- retrying"
+msgstr "Proxy vyžaduje autorizaci -- zkouším znovu"
+
+#: WWW/Library/Implementation/HTAABrow.c:1322
+msgid "Access without authorization denied -- retrying"
+msgstr "Přístup není bez autorizace povolen -- zkouším znovu"
+
+#: WWW/Library/Implementation/HTAccess.c:698
+msgid "Access forbidden by rule"
+msgstr "Přístup odmítnut implicitním pravidlem"
+
+#: WWW/Library/Implementation/HTAccess.c:800
+msgid "Document with POST content not found in cache.  Resubmit?"
+msgstr "Dokument s POST obsahem nenalezen v cache.  Odeslat znovu?"
+
+#: WWW/Library/Implementation/HTAccess.c:953
+msgid "Loading failed, use a previous copy."
+msgstr "Načítání selhalo, použijte dřívější kopii."
+
+#: WWW/Library/Implementation/HTAccess.c:1062 src/GridText.c:8928
+msgid "Loading incomplete."
+msgstr "Načítání nedokončeno."
+
+#: WWW/Library/Implementation/HTAccess.c:1093
+#, c-format
+msgid "**** HTAccess: socket or file number returned by obsolete load routine!\n"
+msgstr "**** HTAccess: soket či číslo souboru vráceno zastaralou load funkcí!\n"
+
+#: WWW/Library/Implementation/HTAccess.c:1095
+#, c-format
+msgid "**** HTAccess: Internal software error.  Please mail lynx-dev@nongnu.org!\n"
+msgstr "**** HTAccess: Vnitřní chyba programu.  Zašlete oznámení na lynx-dev@nongnu.org!\n"
+
+#: WWW/Library/Implementation/HTAccess.c:1096
+#, c-format
+msgid "**** HTAccess: Status returned was: %d\n"
+msgstr "**** HTAccess: Návratový status: %d\n"
+
+#.
+#. * hack: if we fail in HTAccess.c
+#. * avoid duplicating URL, oh.
+#.
+#: WWW/Library/Implementation/HTAccess.c:1102 src/LYMainLoop.c:8076
+msgid "Can't Access"
+msgstr "Nelze získat přístup"
+
+#: WWW/Library/Implementation/HTAccess.c:1110
+msgid "Unable to access document."
+msgstr "Nelze získat přístup k dokumentu."
+
+#: WWW/Library/Implementation/HTFTP.c:870
+#, c-format
+msgid "Enter password for user %s@%s:"
+msgstr "Zadejte heslo pro uživatele %s@%s:"
+
+#: WWW/Library/Implementation/HTFTP.c:898
+msgid "Unable to connect to FTP host."
+msgstr "Nelze navázat spojení s FTP serverem."
+
+#: WWW/Library/Implementation/HTFTP.c:1137
+msgid "close master socket"
+msgstr "zavřít hlavní soket"
+
+#: WWW/Library/Implementation/HTFTP.c:1194
+msgid "socket for master socket"
+msgstr "hlavní soket"
+
+#: WWW/Library/Implementation/HTFTP.c:2922
+msgid "Receiving FTP directory."
+msgstr "Stahuji výpis FTP adresáře."
+
+#: WWW/Library/Implementation/HTFTP.c:3060
+#, c-format
+msgid "Transferred %d bytes (%5d)"
+msgstr "Přeneseno bajtů: %d (%5d)"
+
+#: WWW/Library/Implementation/HTFTP.c:3417
+msgid "connect for data"
+msgstr "datové spojení"
+
+#: WWW/Library/Implementation/HTFTP.c:4094
+msgid "Receiving FTP file."
+msgstr "Stahuji FTP soubor."
+
+#: WWW/Library/Implementation/HTFinger.c:274
+msgid "Could not set up finger connection."
+msgstr "Spojení s finger serverem nelze navázat."
+
+#: WWW/Library/Implementation/HTFinger.c:321
+msgid "Could not load data (no sitename in finger URL)"
+msgstr "Nemohu načíst data (finger URL neobsahuje jméno serveru)"
+
+#: WWW/Library/Implementation/HTFinger.c:325
+msgid "Invalid port number - will only use port 79!"
+msgstr "Chybné číslo portu - používám pouze port 79!"
+
+#: WWW/Library/Implementation/HTFinger.c:391
+msgid "Could not access finger host."
+msgstr "Spojení s finger serverem nelze navázat."
+
+#: WWW/Library/Implementation/HTFinger.c:399
+msgid "No response from finger server."
+msgstr "Od finger serveru nepřišla žádná odpověď."
+
+#: WWW/Library/Implementation/HTNews.c:439
+#, c-format
+msgid "Username for news host '%s':"
+msgstr "Uživatelské jméno na news serveru '%s':"
+
+#: WWW/Library/Implementation/HTNews.c:492
+msgid "Change username?"
+msgstr "Změnit uživatelské jméno?"
+
+#: WWW/Library/Implementation/HTNews.c:496
+msgid "Username:"
+msgstr "Uživatelské jméno:"
+
+#: WWW/Library/Implementation/HTNews.c:521
+#, c-format
+msgid "Password for news host '%s':"
+msgstr "Heslo na news serveru '%s':"
+
+#: WWW/Library/Implementation/HTNews.c:604
+msgid "Change password?"
+msgstr "Změnit heslo?"
+
+#: WWW/Library/Implementation/HTNews.c:1725
+#, c-format
+msgid "No matches for: %s"
+msgstr "%s nic nevyhovuje"
+
+#: WWW/Library/Implementation/HTNews.c:1775
+msgid ""
+"\n"
+"No articles in this group.\n"
+msgstr ""
+"\n"
+"Tato skupina neobsahuje žádné příspěvky.\n"
+
+#: WWW/Library/Implementation/HTNews.c:1787
+msgid ""
+"\n"
+"No articles in this range.\n"
+msgstr ""
+"\n"
+"V zadaném intervalu se nenacházejí žádné příspěvky.\n"
+
+#.
+#. * Set window title.
+#.
+#: WWW/Library/Implementation/HTNews.c:1800
+#, c-format
+msgid "%s,  Articles %d-%d"
+msgstr "%s,  Příspěvky %d-%d"
+
+#: WWW/Library/Implementation/HTNews.c:1823
+msgid "Earlier articles"
+msgstr "Předchozí příspěvky"
+
+#: WWW/Library/Implementation/HTNews.c:1836
+#, c-format
+msgid ""
+"\n"
+"There are about %d articles currently available in %s, IDs as follows:\n"
+"\n"
+msgstr ""
+"\n"
+"Počet článků v %2$s: %1$d. ID jsou následující:\n"
+"\n"
+
+#: WWW/Library/Implementation/HTNews.c:1898
+msgid "All available articles in "
+msgstr "Všechny dostupné příspěvky v "
+
+#: WWW/Library/Implementation/HTNews.c:2112
+msgid "Later articles"
+msgstr "Pozdější příspěvky"
+
+#: WWW/Library/Implementation/HTNews.c:2135
+msgid "Post to "
+msgstr "Poslat do "
+
+#: WWW/Library/Implementation/HTNews.c:2356
+msgid "This client does not contain support for SNEWS URLs."
+msgstr "Tento klient nepodporuje SNEWS URL."
+
+#: WWW/Library/Implementation/HTNews.c:2563
+msgid "No target for raw text!"
+msgstr "Žádný cíl pro prostý text!"
+
+#: WWW/Library/Implementation/HTNews.c:2593
+msgid "Connecting to NewsHost ..."
+msgstr "Navazuji spojení s news serverem..."
+
+#: WWW/Library/Implementation/HTNews.c:2645
+#, c-format
+msgid "Could not access %s."
+msgstr "S %s nelze navázat spojení."
+
+#: WWW/Library/Implementation/HTNews.c:2751
+#, c-format
+msgid "Can't read news info.  News host %.20s responded: %.200s"
+msgstr "Informace o diskuzních skupinách nelze získat.  News server %.20s odpověděl %.200s"
+
+#: WWW/Library/Implementation/HTNews.c:2755
+#, c-format
+msgid "Can't read news info, empty response from host %s"
+msgstr "Informace o diskuzních skupinách nelze získat, prázdná odpověď od serveru %s"
+
+#.
+#. * List available newsgroups.  - FM
+#.
+#: WWW/Library/Implementation/HTNews.c:2959
+msgid "Reading list of available newsgroups."
+msgstr "Čtu seznam dostupných diskuzních skupin."
+
+#: WWW/Library/Implementation/HTNews.c:2980
+msgid "Reading list of articles in newsgroup."
+msgstr "Čtu seznam článků v diskuzní skupině."
+
+#.
+#. * Get an article from a news group.  - FM
+#.
+#: WWW/Library/Implementation/HTNews.c:2986
+msgid "Reading news article."
+msgstr "Čtu příspěvek z diskuzní skupiny."
+
+#: WWW/Library/Implementation/HTNews.c:3016
+msgid "Sorry, could not load requested news."
+msgstr "Lituji, požadované diskuzní příspěvky nelze stáhnout."
+
+#: WWW/Library/Implementation/HTTCP.c:1339
+msgid "Address has invalid port"
+msgstr "Adresa má chybný port"
+
+#: WWW/Library/Implementation/HTTCP.c:1410
+msgid "Address length looks invalid"
+msgstr "Délka adresy se zdá být chybnou"
+
+#: WWW/Library/Implementation/HTTCP.c:1862
+#: WWW/Library/Implementation/HTTCP.c:1880
+#, c-format
+msgid "Unable to locate remote host %s."
+msgstr "Adresu počítače %s nelze zjistit."
+
+#. Not HTProgress, so warning won't be overwritten immediately;
+#. * but not HTAlert, because typically there will be other
+#. * alerts from the callers.  - kw
+#.
+#: WWW/Library/Implementation/HTTCP.c:1877
+#: WWW/Library/Implementation/HTTelnet.c:115
+#, c-format
+msgid "Invalid hostname %s"
+msgstr "Jméno počítače %s je chybné"
+
+#: WWW/Library/Implementation/HTTCP.c:1891
+#, c-format
+msgid "Making %s connection to %s"
+msgstr "Navazuji %s spojení s %s"
+
+#: WWW/Library/Implementation/HTTCP.c:1902
+msgid "socket failed."
+msgstr "chyba soketu."
+
+#: WWW/Library/Implementation/HTTCP.c:1916
+#, c-format
+msgid "socket failed: family %d addr %s port %s."
+msgstr "chyba soketu: rodina %d adresa %s port %s."
+
+#: WWW/Library/Implementation/HTTCP.c:1940
+msgid "Could not make connection non-blocking."
+msgstr "Soket nelze nastavit jako neblokující."
+
+#: WWW/Library/Implementation/HTTCP.c:2006
+msgid "Connection failed (too many retries)."
+msgstr "Spojení se nepodařilo navázat (příliš mnoho pokusů)."
+
+#: WWW/Library/Implementation/HTTCP.c:2201
+msgid "Could not restore socket to blocking."
+msgstr "Soket nelze nastavit jako blokující."
+
+#: WWW/Library/Implementation/HTTCP.c:2271
+msgid "Socket read failed (too many tries)."
+msgstr "Nepodařilo se přečíst soket (příliš mnoho pokusů)."
+
+#: WWW/Library/Implementation/HTTP.c:165
+#, c-format
+msgid "SSL callback:%s, preverify_ok=%d, ssl_okay=%d"
+msgstr "SSL odezva:%s, preverify_ok=%d, ssl_okay=%d"
+
+#: WWW/Library/Implementation/HTTP.c:668
+#, c-format
+msgid "User/password contains only punctuation: %s"
+msgstr "Uživatel/heslo obsahuje pouze interpunkci: %s"
+
+#: WWW/Library/Implementation/HTTP.c:672
+#, c-format
+msgid "User/password may be confused with hostname: '%s' (e.g, '%s')"
+msgstr "Uživatel/heslo by mohlo být zaměněno se jménem počítače: '%s' (např. '%s')"
+
+#: WWW/Library/Implementation/HTTP.c:733
+#, c-format
+msgid "Certificate issued by: %s"
+msgstr "Certifikát vydán: %s"
+
+#: WWW/Library/Implementation/HTTP.c:920
+msgid "This client does not contain support for HTTPS URLs."
+msgstr "Tento klient nepodporuje HTTPS URL."
+
+#: WWW/Library/Implementation/HTTP.c:945
+msgid "Unable to connect to remote host."
+msgstr "Spojení se vzdáleným počítačem nelze navázat."
+
+#: WWW/Library/Implementation/HTTP.c:988
+msgid "Retrying connection without TLS."
+msgstr "Opětovně navazuji spojení bez TLS."
+
+#: WWW/Library/Implementation/HTTP.c:1040
+msgid "GnuTLS error when trying to verify certificate."
+msgstr "Chyba GnuTLS při ověřování certifikátu."
+
+#: WWW/Library/Implementation/HTTP.c:1053
+msgid "the certificate has no known issuer"
+msgstr "certifikát nemá žádného známého vydavatele"
+
+#: WWW/Library/Implementation/HTTP.c:1055
+msgid "no issuer was found"
+msgstr "žádný vydavatel nebyl nalezen"
+
+#: WWW/Library/Implementation/HTTP.c:1057
+msgid "issuer is not a CA"
+msgstr "vydavatel není CA"
+
+#: WWW/Library/Implementation/HTTP.c:1059
+msgid "the certificate has been revoked"
+msgstr "certifikát byl anulován"
+
+#: WWW/Library/Implementation/HTTP.c:1061
+msgid "the certificate is not trusted"
+msgstr "certifikát není důvěryhodný"
+
+#: WWW/Library/Implementation/HTTP.c:1136
+#, c-format
+msgid "Verified connection to %s (cert=%s)"
+msgstr "Ověřené připojení k %s (cert=%s)"
+
+#: WWW/Library/Implementation/HTTP.c:1186
+#: WWW/Library/Implementation/HTTP.c:1228
+#, c-format
+msgid "Verified connection to %s (subj=%s)"
+msgstr "Ověřené připojení k %s (subj=%s)"
+
+#: WWW/Library/Implementation/HTTP.c:1258
+msgid "Can't find common name in certificate"
+msgstr "V certifikátu nelze nalézt společné jméno"
+
+#: WWW/Library/Implementation/HTTP.c:1261
+#, c-format
+msgid "SSL error:host(%s)!=cert(%s)-Continue?"
+msgstr "SSL chyba:počítač(%s)!=cert(%s)-Pokračovat?"
+
+#: WWW/Library/Implementation/HTTP.c:1268
+msgid "SSL error"
+msgstr "SSL chyba"
+
+#: WWW/Library/Implementation/HTTP.c:1276
+#, c-format
+msgid "UNVERIFIED connection to %s (cert=%s)"
+msgstr "NEOVĚŘENÉ připojení k %s (cert=%s)"
+
+#: WWW/Library/Implementation/HTTP.c:1285
+#, c-format
+msgid "Secure %d-bit %s (%s) HTTP connection"
+msgstr "Zabezpečené %d-bitové %s (%s) HTTP připojení."
+
+#: WWW/Library/Implementation/HTTP.c:1755
+msgid "Sending HTTP request."
+msgstr "Odesílám HTTP požadavek."
+
+#: WWW/Library/Implementation/HTTP.c:1797
+msgid "Unexpected network write error; connection aborted."
+msgstr "Neočekávaná chyba při zápisu na soket; spojení uzavřeno."
+
+#: WWW/Library/Implementation/HTTP.c:1803
+msgid "HTTP request sent; waiting for response."
+msgstr "HTTP požadavek odeslán; čekám na odpověď."
+
+#: WWW/Library/Implementation/HTTP.c:1876
+#: WWW/Library/Implementation/HTTP.c:1886
+msgid "Unexpected network read error; connection aborted."
+msgstr "Neočekávaná chyba při čtení ze soketu; spojení uzavřeno."
+
+#.
+#. * HTTP/1.1 Informational statuses.
+#. * 100 Continue.
+#. * 101 Switching Protocols.
+#. * > 101 is unknown.
+#. * We should never get these, and they have only the status
+#. * line and possibly other headers, so we'll deal with them by
+#. * showing the full header to the user as text/plain.  - FM
+#.
+#: WWW/Library/Implementation/HTTP.c:2089
+msgid "Got unexpected Informational Status."
+msgstr "Neočekávané Informační hlášení."
+
+#.
+#. * Reset Content.  The server has fulfilled the request but
+#. * nothing is returned and we should reset any form
+#. * content.  We'll instruct the user to do that, and
+#. * restore the current document.  - FM
+#.
+#: WWW/Library/Implementation/HTTP.c:2123
+msgid "Request fulfilled.  Reset Content."
+msgstr "Požadavek vyřízen.  Obsah formuláře smazán."
+
+#. Not Modified
+#.
+#. * We didn't send an "If-Modified-Since" header, so this
+#. * status is inappropriate.  We'll deal with it by showing
+#. * the full header to the user as text/plain.  - FM
+#.
+#: WWW/Library/Implementation/HTTP.c:2240
+msgid "Got unexpected 304 Not Modified status."
+msgstr "Neočekávané hlášení: 304 Not Modified."
+
+#: WWW/Library/Implementation/HTTP.c:2303
+msgid "Redirection of POST content requires user approval."
+msgstr "Přesměrování POST obsahu vyžaduje souhlas uživatele."
+
+#: WWW/Library/Implementation/HTTP.c:2318
+msgid "Have POST content.  Treating Permanent Redirection as Temporary.\n"
+msgstr "Obsahuje POST data.  Trvalé přesměrování používám pouze jako dočasné.\n"
+
+#: WWW/Library/Implementation/HTTP.c:2364
+msgid "Retrying with access authorization information."
+msgstr "Zkouším to znovu s proxy autorizací."
+
+#: WWW/Library/Implementation/HTTP.c:2376
+msgid "Show the 401 message body?"
+msgstr "Zobrazit tělo 401 hlášení?"
+
+#: WWW/Library/Implementation/HTTP.c:2420
+msgid "Show the 407 message body?"
+msgstr "Zobrazit tělo 407 hlášení?"
+
+#.
+#. * Bad or unknown server_status number.  Take a chance and hope
+#. * there is something to display.  - FM
+#.
+#: WWW/Library/Implementation/HTTP.c:2520
+msgid "Unknown status reply from server!"
+msgstr "Neznámé hlášení od serveru!"
+
+#: WWW/Library/Implementation/HTTelnet.c:113
+#, c-format
+msgid "remote %s session:"
+msgstr "vzdálené %s sezení:"
+
+#: WWW/Library/Implementation/HTWAIS.c:163
+msgid "Could not connect to WAIS server."
+msgstr "Spojení s WAIS serverem nelze navázat."
+
+#: WWW/Library/Implementation/HTWAIS.c:171
+msgid "Could not open WAIS connection for reading."
+msgstr "WAIS nelze pro čtení otevřít."
+
+#: WWW/Library/Implementation/HTWAIS.c:193
+msgid "Diagnostic code is "
+msgstr "Diagnostický kód je "
+
+#: WWW/Library/Implementation/HTWAIS.c:460
+msgid "Index "
+msgstr "Rejstřík "
+
+#: WWW/Library/Implementation/HTWAIS.c:464
+#, c-format
+msgid " contains the following %d item%s relevant to \""
+msgstr " obsahuje %d následujících položek%s vztahujících se k \""
+
+#: WWW/Library/Implementation/HTWAIS.c:472
+msgid "The first figure after each entry is its relative score, "
+msgstr "Za každou položkou následuje nejprve její bodové ohodnocení "
+
+#: WWW/Library/Implementation/HTWAIS.c:473
+msgid "the second is the number of lines in the item."
+msgstr "a poté počet řádků."
+
+#: WWW/Library/Implementation/HTWAIS.c:515
+msgid " (bad file name)"
+msgstr " (chybné jméno souboru)"
+
+#: WWW/Library/Implementation/HTWAIS.c:541
+msgid "(bad doc id)"
+msgstr "(chybné id dokumentu)"
+
+#: WWW/Library/Implementation/HTWAIS.c:557
+msgid "(Short Header record, can't display)"
+msgstr "('Short Header' záznam, nelze zobrazit)"
+
+#: WWW/Library/Implementation/HTWAIS.c:564
+msgid ""
+"\n"
+"Long Header record, can't display\n"
+msgstr ""
+"\n"
+"'Long Header' záznam, nelze zobrazit\n"
+
+#: WWW/Library/Implementation/HTWAIS.c:571
+msgid ""
+"\n"
+"Text record\n"
+msgstr ""
+"\n"
+"Textový záznam\n"
+
+#: WWW/Library/Implementation/HTWAIS.c:580
+msgid ""
+"\n"
+"Headline record, can't display\n"
+msgstr ""
+"\n"
+"'Headline' záznam, nelze zobrazit\n"
+
+#: WWW/Library/Implementation/HTWAIS.c:588
+msgid ""
+"\n"
+"Code record, can't display\n"
+msgstr ""
+"\n"
+"'Code' záznam, nelze zobrazit\n"
+
+#: WWW/Library/Implementation/HTWAIS.c:692
+msgid "Syntax error in WAIS URL"
+msgstr "Syntaktická chyba ve WAIS URL"
+
+#: WWW/Library/Implementation/HTWAIS.c:764
+msgid " (WAIS Index)"
+msgstr " (WAIS rejstřík)"
+
+#: WWW/Library/Implementation/HTWAIS.c:771
+msgid "WAIS Index: "
+msgstr "WAIS rejstřík: "
+
+#: WWW/Library/Implementation/HTWAIS.c:777
+msgid "This is a link for searching the "
+msgstr "Tento odkaz ukazuje na prohledávač "
+
+#: WWW/Library/Implementation/HTWAIS.c:781
+msgid " WAIS Index.\n"
+msgstr " WAIS rejstříku.\n"
+
+#: WWW/Library/Implementation/HTWAIS.c:810
+msgid ""
+"\n"
+"Enter the 's'earch command and then specify search words.\n"
+msgstr ""
+"\n"
+"Stiskněte 's' pro hledání a pak zadejte hledaná slova.\n"
+
+#: WWW/Library/Implementation/HTWAIS.c:832
+msgid " (in "
+msgstr " (v "
+
+#: WWW/Library/Implementation/HTWAIS.c:841
+msgid "WAIS Search of \""
+msgstr "WAIS hledání \""
+
+#: WWW/Library/Implementation/HTWAIS.c:845
+msgid "\" in: "
+msgstr "\" v: "
+
+#: WWW/Library/Implementation/HTWAIS.c:860
+msgid "HTWAIS: Request too large."
+msgstr "HTWAIS: požadavek příliš dlouhý."
+
+#: WWW/Library/Implementation/HTWAIS.c:869
+msgid "Searching WAIS database..."
+msgstr "Prohledávám WAIS databázi..."
+
+#: WWW/Library/Implementation/HTWAIS.c:879
+msgid "Search interrupted."
+msgstr "Hledání přerušeno."
+
+#: WWW/Library/Implementation/HTWAIS.c:930
+msgid "Can't convert format of WAIS document"
+msgstr "Formát WAIS dokumentu nelze převést"
+
+#: WWW/Library/Implementation/HTWAIS.c:974
+msgid "HTWAIS: Request too long."
+msgstr "HTWAIS: požadavek příliš dlouhý."
+
+#.
+#. * Actually do the transaction given by request_message.
+#.
+#: WWW/Library/Implementation/HTWAIS.c:988
+msgid "Fetching WAIS document..."
+msgstr "Stahuji WAIS dokument..."
+
+#. display_search_response(target, retrieval_response,
+#. wais_database, keywords);
+#: WWW/Library/Implementation/HTWAIS.c:1027
+msgid "No text was returned!\n"
+msgstr "Žádná odpověď!\n"
+
+#: WWW/Library/Implementation/HTWSRC.c:302
+msgid " NOT GIVEN in source file; "
+msgstr " NENACHÁZÍ se ve zdrojovém souboru; "
+
+#: WWW/Library/Implementation/HTWSRC.c:325
+msgid " WAIS source file"
+msgstr " zdrojový soubor WAIS"
+
+#: WWW/Library/Implementation/HTWSRC.c:332
+msgid " description"
+msgstr " popis"
+
+#: WWW/Library/Implementation/HTWSRC.c:342
+msgid "Access links"
+msgstr "Odkazy"
+
+#: WWW/Library/Implementation/HTWSRC.c:363
+msgid "Direct access"
+msgstr "Přímý přístup"
+
+#. * Proxy will be used if defined, so let user know that - FM *
+#: WWW/Library/Implementation/HTWSRC.c:366
+msgid " (or via proxy server, if defined)"
+msgstr " (či, pokud je definován, přes proxy server)"
+
+#: WWW/Library/Implementation/HTWSRC.c:381
+msgid "Maintainer"
+msgstr "Správce"
+
+#: WWW/Library/Implementation/HTWSRC.c:389
+msgid "Host"
+msgstr "Počítač"
+
+#: src/GridText.c:723
+msgid "Memory exhausted, display interrupted!"
+msgstr "Došla paměť, zobrazení přerušeno!"
+
+#: src/GridText.c:728
+msgid "Memory exhausted, will interrupt transfer!"
+msgstr "Došla paměť, přenos přerušen!"
+
+#: src/GridText.c:1719
+#, c-format
+msgid " (l%d of %d)"
+msgstr " (l%d z %d)"
+
+#: src/GridText.c:1728
+#, c-format
+msgid " (p%d of %d)"
+msgstr " (s%d z %d)"
+
+#: src/GridText.c:3713
+msgid " *** MEMORY EXHAUSTED ***"
+msgstr " *** DOŠLA PAMĚŤ ***"
+
+#: src/GridText.c:6211
+msgid "text entry field"
+msgstr "textové vstupní pole"
+
+#: src/GridText.c:6214
+msgid "password entry field"
+msgstr "vstupní pole pro heslo"
+
+#: src/GridText.c:6217
+msgid "checkbox"
+msgstr "zaškrtávací políčko"
+
+#: src/GridText.c:6220
+msgid "radio button"
+msgstr "přepínací tlačítko"
+
+#: src/GridText.c:6223
+msgid "submit button"
+msgstr "tlačítko pro odeslání dat serveru"
+
+#: src/GridText.c:6226
+msgid "reset button"
+msgstr "tlačítko pro obnovení implicitních hodnot"
+
+#: src/GridText.c:6229
+msgid "script button"
+msgstr "skriptové tlačítko"
+
+#: src/GridText.c:6232
+msgid "popup menu"
+msgstr "vyskakovací menu"
+
+#: src/GridText.c:6235
+msgid "hidden form field"
+msgstr "skryté pole formuláře"
+
+#: src/GridText.c:6238
+msgid "text entry area"
+msgstr "textová vstupní oblast"
+
+#: src/GridText.c:6241
+msgid "range entry field"
+msgstr "vstupní pole pro interval"
+
+#: src/GridText.c:6244
+msgid "file entry field"
+msgstr "pole pro výběr souboru"
+
+#: src/GridText.c:6247
+msgid "text-submit field"
+msgstr "pole pro odeslání textu"
+
+#: src/GridText.c:6250
+msgid "image-submit button"
+msgstr "tlačítko pro odeslání obrázku"
+
+#: src/GridText.c:6253
+msgid "keygen field"
+msgstr "pole pro vytvoření klíče"
+
+#: src/GridText.c:6256
+msgid "unknown form field"
+msgstr "neznámé pole formuláře"
+
+#: src/GridText.c:6276 src/GridText.c:6283 src/LYList.c:249
+msgid "unknown field or link"
+msgstr "neznámé pole či odkaz"
+
+#: src/GridText.c:10711
+msgid "Can't open file for uploading"
+msgstr "Soubor nelze otevřít pro nahrání (upload)"
+
+#: src/GridText.c:11899
+#, c-format
+msgid "Submitting %s"
+msgstr "Odesílám %s"
+
+#. ugliness has happened; inform user and do the best we can
+#: src/GridText.c:12969
+msgid "Hang Detect: TextAnchor struct corrupted - suggest aborting!"
+msgstr "Zjištěno zablokování: struktura TextAnchor poškozená - doporučuji ukončit!"
+
+#. don't show previous state
+#: src/GridText.c:13128
+msgid "Wrap lines to fit displayed area?"
+msgstr "Zalamovat dlouhé řádky, aby se vešly na obrazovku?"
+
+#: src/GridText.c:13758
+msgid "Very long lines have been truncated!"
+msgstr "Příliš dlouhé řádky byly ořezány!"
+
+#: src/HTAlert.c:164 src/LYShowInfo.c:389 src/LYShowInfo.c:393
+msgid "bytes"
+msgstr "bajtů"
+
+#.
+#. * If we know the total size of the file, we can compute
+#. * a percentage, and show a corresponding progress bar.
+#.
+#: src/HTAlert.c:328 src/HTAlert.c:354
+#, c-format
+msgid "Read %s of data"
+msgstr "Množství přenesených dat: %s"
+
+#: src/HTAlert.c:351
+#, c-format
+msgid "Read %s of %s of data"
+msgstr "Množství přenesených dat: %s/%s"
+
+#: src/HTAlert.c:360
+#, c-format
+msgid ", %s/sec"
+msgstr ", %s/s"
+
+#: src/HTAlert.c:374
+#, c-format
+msgid " (stalled for %s)"
+msgstr " (zamrznut %s)"
+
+#: src/HTAlert.c:378
+#, c-format
+msgid ", ETA %s"
+msgstr ", zbývá %s"
+
+#: src/HTAlert.c:400
+msgid " (Press 'z' to abort)"
+msgstr " (Stiskněte 'z' pro ukončení)"
+
+#. Meta-note: don't move the following note from its place right
+#. in front of the first gettext().  As it is now, it should
+#. automatically appear in generated lynx.pot files. - kw
+#.
+#. NOTE TO TRANSLATORS:  If you provide a translation for "yes", lynx
+#. * will take the first byte of the translation as a positive response
+#. * to Yes/No questions.  If you provide a translation for "no", lynx
+#. * will take the first byte of the translation as a negative response
+#. * to Yes/No questions.  For both, lynx will also try to show the
+#. * first byte in the prompt as a character, instead of (y) or (n),
+#. * respectively.  This will not work right for multibyte charsets!
+#. * Don't translate "yes" and "no" for CJK character sets (or translate
+#. * them to "yes" and "no").  For a translation using UTF-8, don't
+#. * translate if the translation would begin with anything but a 7-bit
+#. * (US_ASCII) character.  That also means do not translate if the
+#. * translation would begin with anything but a 7-bit character, if
+#. * you use a single-byte character encoding (a charset like ISO-8859-n)
+#. * but anticipate that the message catalog may be used re-encoded in
+#. * UTF-8 form.
+#. * For translations using other character sets, you may also wish to
+#. * leave "yes" and "no" untranslated, if using (y) and (n) is the
+#. * preferred behavior.
+#. * Lynx will also accept y Y n N as responses unless there is a conflict
+#. * with the first letter of the "yes" or "no" translation.
+#.
+#: src/HTAlert.c:438 src/HTAlert.c:486
+msgid "yes"
+msgstr "ano"
+
+#: src/HTAlert.c:441 src/HTAlert.c:487
+msgid "no"
+msgstr "ne"
+
+#.
+#. * Special-purpose workaround for gettext support (we should do
+#. * this in a more general way) -TD
+#. *
+#. * NOTE TO TRANSLATORS:  If the prompt has been rendered into
+#. * another language, and if yes/no are distinct, assume the
+#. * translator can make an ordered list in parentheses with one
+#. * capital letter for each as we assumed in HTConfirmDefault().
+#. * The list has to be in the same order as in the original message,
+#. * and the four capital letters chosen to not match those in the
+#. * original unless they have the same position.
+#. *
+#. * Example:
+#. * (Y/N/Always/neVer)              - English (original)
+#. * (O/N/Toujours/Jamais)           - French
+#.
+#: src/HTAlert.c:938
+msgid "Y/N/A/V"
+msgstr "A/N/V/K"
+
+#: src/HTML.c:5767
+msgid "Description:"
+msgstr "Popis:"
+
+#: src/HTML.c:5772
+msgid "(none)"
+msgstr "(žádný)"
+
+#: src/HTML.c:5776
+msgid "Filepath:"
+msgstr "Cesta:"
+
+#: src/HTML.c:5782
+msgid "(unknown)"
+msgstr "(neznámá)"
+
+#: src/HTML.c:7220
+msgid "Document has only hidden links.  Use the 'l'ist command."
+msgstr "Dokument obsahuje pouze skryté odkazy. Použijte 'l' pro jejich vypsání."
+
+#: src/HTML.c:7721
+msgid "Source cache error - disk full?"
+msgstr "Chyba při práci s vyrovnávací pamětí pro dokumenty - došlo místo na disku?"
+
+#: src/HTML.c:7734
+msgid "Source cache error - not enough memory!"
+msgstr "Chyba při práci s vyrovnávací pamětí pro dokumenty - došla paměť!"
+
+#: src/LYBookmark.c:167
+msgid ""
+"     This file is an HTML representation of the X Mosaic hotlist file.\n"
+"     Outdated or invalid links may be removed by using the\n"
+"     remove bookmark command, it is usually the 'R' key but may have\n"
+"     been remapped by you or your system administrator."
+msgstr ""
+"     Tento soubor je HTML obdobou 'hotlistu' programu 'X Mosaic'. Zastaralé\n"
+"     či chybné odkazy mohou být smazány pomocí klávesy 'R'. Správce\n"
+"     systému ale mohl tuto funkci svázat s jinou klávesou."
+
+#: src/LYBookmark.c:380
+#, c-format
+msgid ""
+"     You can delete links by the 'R' key<br>\n"
+"<ol>\n"
+msgstr ""
+"      Klávesou 'R' můžete mazat odkazy<br>\n"
+"<ol>\n"
+
+#: src/LYBookmark.c:383
+msgid ""
+"     You can delete links using the remove bookmark command.  It is usually\n"
+"     the 'R' key but may have been remapped by you or your system\n"
+"     administrator."
+msgstr ""
+"     Odkazy mohou být smazány pomocí klávesy 'R'. Správce\n"
+"     systému ale mohl tuto funkci svázat s jinou klávesou."
+
+#: src/LYBookmark.c:387
+msgid ""
+"     This file also may be edited with a standard text editor to delete\n"
+"     outdated or invalid links, or to change their order."
+msgstr ""
+"     Mazání odkazů či změna jejich pořadí může být provedena i pomocí úprav\n"
+"     tohoto souboru běžným textovým editorem."
+
+#: src/LYBookmark.c:390
+msgid ""
+"Note: if you edit this file manually\n"
+"      you should not change the format within the lines\n"
+"      or add other HTML markup.\n"
+"      Make sure any bookmark link is saved as a single line."
+msgstr ""
+"Poznámka: pokud budete upravovat tento soubor ručně, neměl byste\n"
+"          měnit jeho formát, či přidávat další HTML značky.\n"
+"          Žádná záložka nesmí zabírat více než jeden řádek."
+
+#: src/LYBookmark.c:686
+#, c-format
+msgid "File may be recoverable from %s during this session"
+msgstr "Během tohoto sezení lze soubor obnovit z %s"
+
+#: src/LYCgi.c:161
+#, c-format
+msgid "Do you want to execute \"%s\"?"
+msgstr "Chcete spustit \"%s\"?"
+
+#.
+#. * Neither the path as given nor any components examined by backing up
+#. * were stat()able.  - kw
+#.
+#: src/LYCgi.c:276
+msgid "Unable to access cgi script"
+msgstr "Nelze získat přístup k cgi skriptu"
+
+#: src/LYCgi.c:709 src/LYCgi.c:712
+msgid "Good Advice"
+msgstr "Dobrá rada"
+
+#: src/LYCgi.c:716
+msgid "An excellent http server for VMS is available via"
+msgstr "Vynikající http server pro VMS je dostupný přes"
+
+#: src/LYCgi.c:723
+msgid "this link"
+msgstr "tento odkaz"
+
+#: src/LYCgi.c:727
+msgid "It provides state of the art CGI script support.\n"
+msgstr "Poskytuje výbornou podporu pro cgi skripty.\n"
+
+#: src/LYClean.c:115
+msgid "Exiting via interrupt:"
+msgstr "Končím kvůli přerušení:"
+
+#: src/LYCookie.c:2651
+msgid "(from a previous session)"
+msgstr "(z předchozího sezení)"
+
+#: src/LYCookie.c:2712
+msgid "Maximum Gobble Date:"
+msgstr "Maximální hromadné přijmutí:"
+
+#: src/LYCookie.c:2751
+msgid "Internal"
+msgstr "Vnitřní"
+
+#: src/LYCookie.c:2752
+msgid "cookie_domain_flag_set error, aborting program"
+msgstr "chyba cookie_domain_flag_set, ukončuji program"
+
+#: src/LYCurses.c:1127
+msgid "Terminal reinitialisation failed - unknown terminal type?"
+msgstr "Opetovná inicializace terminálu se nezdařila - neznámý typ terminálu?"
+
+#: src/LYCurses.c:1334
+msgid "Terminal initialisation failed - unknown terminal type?"
+msgstr "Inicializace terminálu se nezdařila - neznámý typ terminálu?"
+
+#: src/LYCurses.c:1828
+msgid "Terminal ="
+msgstr "Terminál ="
+
+#: src/LYCurses.c:1832
+msgid "You must use a vt100, 200, etc. terminal with this program."
+msgstr "Tento program vyžaduje terminál typu vt100, 200 etc."
+
+#: src/LYCurses.c:1881
+msgid "Your Terminal type is unknown!"
+msgstr "Typ vašeho terminálu je neznámý!"
+
+#: src/LYCurses.c:1882
+msgid "Enter a terminal type:"
+msgstr "Zadejte typ terminálu:"
+
+#: src/LYCurses.c:1896
+msgid "TERMINAL TYPE IS SET TO"
+msgstr "TYP TERMINÁLU JE NASTAVEN NA"
+
+#: src/LYCurses.c:2455
+#, c-format
+msgid ""
+"\n"
+"A Fatal error has occurred in %s Ver. %s\n"
+msgstr ""
+"\n"
+"V programu %s verze %s nastala fatální chyba.\n"
+
+#: src/LYCurses.c:2458
+#, c-format
+msgid ""
+"\n"
+"Please notify your system administrator to confirm a bug, and if\n"
+"confirmed, to notify the lynx-dev list.  Bug reports should have concise\n"
+"descriptions of the command and/or URL which causes the problem, the\n"
+"operating system name with version number, the TCPIP implementation, the\n"
+"TRACEBACK if it can be captured, and any other relevant information.\n"
+msgstr ""
+"\n"
+"Zeptejte se vašeho správce systému, zda se vskutku jedná o chybu a pokud ano,\n"
+"uvědomte o ní účastníky konference lynx-dev. Chybová hlášení by měla obsahovat\n"
+"stručný popis příkazu a/nebo URL, který chybu způsobil, jméno a verzi operačního\n"
+"systému, TCPIP implementaci, TRACEBACK a všechny další relevantní informace.\n"
+
+#: src/LYEdit.c:272
+#, c-format
+msgid "Error starting editor, %s"
+msgstr "Chyba při spouštění editoru, %s"
+
+#: src/LYEdit.c:275
+msgid "Editor killed by signal"
+msgstr "Editor ukončen signálem"
+
+#: src/LYEdit.c:280
+#, c-format
+msgid "Editor returned with error status %s"
+msgstr "Editor skončil s chybovým návratovým statusem %s"
+
+#: src/LYDownload.c:511
+msgid "Downloaded link:"
+msgstr "Stažený odkaz:"
+
+#: src/LYDownload.c:516
+msgid "Suggested file name:"
+msgstr "Doporučené jméno souboru:"
+
+#: src/LYDownload.c:521
+msgid "Standard download options:"
+msgstr "Standardní menu nabídek pro stahování:"
+
+#: src/LYDownload.c:522
+msgid "Download options:"
+msgstr "Menu nabídek pro stahování:"
+
+#: src/LYDownload.c:538
+msgid "Save to disk"
+msgstr "Uložit na disk"
+
+#: src/LYDownload.c:552
+msgid "View temporary file"
+msgstr "Zobrazit dočasný soubor"
+
+#: src/LYDownload.c:559
+msgid "Save to disk disabled."
+msgstr "Ukládání na disk je zakázáno."
+
+#: src/LYDownload.c:563 src/LYPrint.c:1331
+msgid "Local additions:"
+msgstr "Místní rozšíření:"
+
+#: src/LYDownload.c:574 src/LYUpload.c:206
+msgid "No Name Given"
+msgstr "Nebylo zadáno žádné jméno"
+
+#: src/LYHistory.c:676
+msgid "You selected:"
+msgstr "Vybráno:"
+
+#: src/LYHistory.c:700 src/LYHistory.c:929
+msgid "(no address)"
+msgstr "(žádná adresa)"
+
+#: src/LYHistory.c:704
+msgid " (internal)"
+msgstr " (vnitřní)"
+
+#: src/LYHistory.c:706
+msgid " (was internal)"
+msgstr " (původně vnitřní)"
+
+#: src/LYHistory.c:804
+msgid " (From History)"
+msgstr " (z historie)"
+
+#: src/LYHistory.c:849
+msgid "You visited (POSTs, bookmark, menu and list files excluded):"
+msgstr "Navštívené odkazy (POST, záložky, menu a seznamy odkazů vynechány):"
+
+#: src/LYHistory.c:1151
+msgid "(No messages yet)"
+msgstr "(Zatím žádné zprávy)"
+
+#: src/LYLeaks.c:222
+msgid "Invalid pointer detected."
+msgstr "Nalezen chybný ukazatel."
+
+#: src/LYLeaks.c:224 src/LYLeaks.c:262
+msgid "Sequence:"
+msgstr "Sekvence:"
+
+#: src/LYLeaks.c:227 src/LYLeaks.c:265
+msgid "Pointer:"
+msgstr "Ukazatel:"
+
+#: src/LYLeaks.c:236 src/LYLeaks.c:243 src/LYLeaks.c:284
+msgid "FileName:"
+msgstr "Jméno souboru:"
+
+#: src/LYLeaks.c:239 src/LYLeaks.c:246 src/LYLeaks.c:287 src/LYLeaks.c:298
+msgid "LineCount:"
+msgstr "Řádek:"
+
+#: src/LYLeaks.c:260
+msgid "Memory leak detected."
+msgstr "Zjištěn problém s pamětí."
+
+#: src/LYLeaks.c:268
+msgid "Contains:"
+msgstr "Obsahuje:"
+
+#: src/LYLeaks.c:281
+msgid "ByteSize:"
+msgstr "Velikost v bajtech:"
+
+#: src/LYLeaks.c:295
+msgid "realloced:"
+msgstr "realokováno:"
+
+#: src/LYLeaks.c:316
+msgid "Total memory leakage this run:"
+msgstr "Celkový počet problémů s pamětí:"
+
+#: src/LYLeaks.c:320
+msgid "Peak allocation"
+msgstr "Největší alokace"
+
+#: src/LYLeaks.c:322
+msgid "Bytes allocated"
+msgstr "Alokováno bytů"
+
+#: src/LYLeaks.c:324
+msgid "Total mallocs"
+msgstr "Celkem špatně alokovaných"
+
+#: src/LYLeaks.c:326
+msgid "Total frees"
+msgstr "Celkem volných"
+
+#: src/LYList.c:89
+msgid "References in "
+msgstr "Odkazy v "
+
+#: src/LYList.c:92
+msgid "this document:"
+msgstr "v tomto dokumentu:"
+
+#: src/LYList.c:98 src/LYList.c:362
+msgid "Visible links:"
+msgstr "Viditelné odkazy:"
+
+#: src/LYList.c:202 src/LYList.c:321
+msgid "Hidden links:"
+msgstr "Skryté odkazy:"
+
+#: src/LYList.c:358
+msgid "References"
+msgstr "Reference"
+
+#: src/LYLocal.c:289
+#, c-format
+msgid "Unable to get status of '%s'."
+msgstr "Status '%s' nelze zjistit."
+
+#: src/LYLocal.c:354
+msgid "The selected item is not a file or a directory!  Request ignored."
+msgstr "Vybraný předmět není souborem ani adresářem!  Požadavek ignorován."
+
+#: src/LYLocal.c:456
+#, c-format
+msgid "Unable to %s due to system error!"
+msgstr "%s selhalo kvůli systémové chybě!"
+
+#: src/LYLocal.c:490
+#, c-format
+msgid "Probable failure to %s due to system error!"
+msgstr "%s pravděpodobně selhalo kvůli systémové chybě!"
+
+#: src/LYLocal.c:555 src/LYLocal.c:578
+#, c-format
+msgid "remove %s"
+msgstr "smazat %s"
+
+#: src/LYLocal.c:598
+#, c-format
+msgid "touch %s"
+msgstr "změnit datum poslední změny souboru %s na dnes"
+
+#: src/LYLocal.c:628
+#, c-format
+msgid "move %s to %s"
+msgstr "přesunout %s do %s"
+
+#: src/LYLocal.c:676
+msgid "There is already a directory with that name!  Request ignored."
+msgstr "Byl nalezen adresář stejného jména!  Požadavek ignorován."
+
+#: src/LYLocal.c:678
+msgid "There is already a file with that name!  Request ignored."
+msgstr "Byl nalezen soubor stejného jména!  Požadavek ignorován."
+
+#: src/LYLocal.c:680
+msgid "The specified name is already in use!  Request ignored."
+msgstr "Zadané jméno je již používáno!  Požadavek ignorován."
+
+#: src/LYLocal.c:692
+msgid "Destination has different owner!  Request denied."
+msgstr "Cíl má jiného vlastníka!  Požadavek zamítnut."
+
+#: src/LYLocal.c:695
+msgid "Destination is not a valid directory!  Request denied."
+msgstr "Cíl není platným adresářem!  Požadavek zamítnut."
+
+#: src/LYLocal.c:711
+msgid "Source and destination are the same location!  Request ignored!"
+msgstr "Zdroj a cíl označují jedno a to samé místo!  Požadavek zamítnut!"
+
+#: src/LYLocal.c:735
+msgid "Remove all tagged files and directories?"
+msgstr "Smazat všechny označené soubory a adresáře?"
+
+#: src/LYLocal.c:808
+msgid "Enter new location for tagged items: "
+msgstr "Zadejte nové místo určení pro označené předměty: "
+
+#: src/LYLocal.c:906
+msgid "Enter new name for directory: "
+msgstr "Zadejte nové jméno adresáře: "
+
+#: src/LYLocal.c:908
+msgid "Enter new name for file: "
+msgstr "Zadejte nové jméno souboru: "
+
+#: src/LYLocal.c:920
+msgid "Illegal character (path-separator) found! Request ignored."
+msgstr "Nalezen chybný znak (oddělovač cesty)! Požadavek ignorován."
+
+#: src/LYLocal.c:970
+msgid "Enter new location for directory: "
+msgstr "Zadejte nové místo určení pro adresář: "
+
+#: src/LYLocal.c:972
+msgid "Enter new location for file: "
+msgstr "Zadejte nové místo určení pro soubor: "
+
+#: src/LYLocal.c:999
+msgid "Unexpected failure - unable to find trailing path separator"
+msgstr "Neočekávaná chyba - koncový oddělovač cesty nelze nalézt"
+
+#: src/LYLocal.c:1061
+msgid "Modify name, location, or permission (n, l, or p): "
+msgstr "Změnit jméno (n), umístění (l) či přístupová práva (p)? (n,l či p): "
+
+#: src/LYLocal.c:1063
+msgid "Modify name or location (n or l): "
+msgstr "Změnit jméno (n) či umístění (l) (n či l): "
+
+#.
+#. * Code for changing ownership needed here.
+#.
+#: src/LYLocal.c:1092
+msgid "This feature not yet implemented!"
+msgstr "Tato funkce zatím nebyla implementována!"
+
+#: src/LYLocal.c:1113
+msgid "Enter name of file to create: "
+msgstr "Zadejte jméno souboru, který mám vytvořit: "
+
+#: src/LYLocal.c:1116 src/LYLocal.c:1153
+msgid "Illegal redirection \"//\" found! Request ignored."
+msgstr "Nalezeno chybné přesměrování \"//\"! Požadavek ignorován."
+
+#: src/LYLocal.c:1150
+msgid "Enter name for new directory: "
+msgstr "Zadejte nové jméno adresáře: "
+
+#: src/LYLocal.c:1191
+msgid "Create file or directory (f or d): "
+msgstr "Vytvořit soubor(f) či adresář(d)? (f či d):"
+
+#: src/LYLocal.c:1233
+#, c-format
+msgid "Remove directory '%s'?"
+msgstr "Smazat adresář '%s'?"
+
+#: src/LYLocal.c:1236
+msgid "Remove directory?"
+msgstr "Smazat adresář?"
+
+#: src/LYLocal.c:1241
+#, c-format
+msgid "Remove file '%s'?"
+msgstr "Smazat soubor '%s'?"
+
+#: src/LYLocal.c:1243
+msgid "Remove file?"
+msgstr "Smazat soubor?"
+
+#: src/LYLocal.c:1248
+#, c-format
+msgid "Remove symbolic link '%s'?"
+msgstr "Smazat symbolický odkaz '%s'?"
+
+#: src/LYLocal.c:1250
+msgid "Remove symbolic link?"
+msgstr "Smazat symbolický odkaz?"
+
+#: src/LYLocal.c:1348
+msgid "Sorry, don't know how to permit non-UNIX files yet."
+msgstr "Nevím jak nastavit přístupová práva na ne-UNIXOVÉM systému souborů."
+
+#: src/LYLocal.c:1377
+msgid "Unable to open permit options file"
+msgstr "Soubor s menu nastavení práv souborů nelze otevřít"
+
+#: src/LYLocal.c:1405
+msgid "Specify permissions below:"
+msgstr "Zadejte přístupová práva:"
+
+#: src/LYLocal.c:1406 src/LYShowInfo.c:291
+msgid "Owner:"
+msgstr "Vlastník:"
+
+#: src/LYLocal.c:1422
+msgid "Group"
+msgstr "Skupina"
+
+#: src/LYLocal.c:1438
+msgid "Others:"
+msgstr "Ostatní:"
+
+#: src/LYLocal.c:1456
+msgid "form to permit"
+msgstr "formulář ke schávlení"
+
+#: src/LYLocal.c:1552
+msgid "Invalid mode format."
+msgstr "Chybný formát."
+
+#: src/LYLocal.c:1556
+msgid "Invalid syntax format."
+msgstr "Chybná syntaxe."
+
+#: src/LYLocal.c:1743
+msgid "Warning!  UUDecoded file will exist in the directory you started Lynx."
+msgstr "Varování!  UUdekódovaný soubor bude vytvořen v adresáři, ze kterého byl Lynx spuštěn."
+
+#: src/LYLocal.c:1933
+msgid "NULL URL pointer"
+msgstr "NULOVÝ URL ukazatel"
+
+#: src/LYLocal.c:2015
+#, c-format
+msgid "Executing %s "
+msgstr "Spouštím %s "
+
+#: src/LYLocal.c:2018
+msgid "Executing system command. This might take a while."
+msgstr "Spouští se systémový příkaz. Okamžik, prosím."
+
+#: src/LYLocal.c:2092
+msgid "Current directory:"
+msgstr "Aktuální adresář:"
+
+#: src/LYLocal.c:2095 src/LYLocal.c:2113
+msgid "Current selection:"
+msgstr "Zvolené položky:"
+
+#: src/LYLocal.c:2099
+msgid "Nothing currently selected."
+msgstr "Žádné položky nejsou zvoleny."
+
+#: src/LYLocal.c:2115
+msgid "tagged item:"
+msgstr "označena položka:"
+
+#: src/LYLocal.c:2116
+msgid "tagged items:"
+msgstr "označené položky:"
+
+#: src/LYLocal.c:2216 src/LYLocal.c:2225
+msgid "Illegal filename; request ignored."
+msgstr "Chybné jméno souboru; požadavek ignorován."
+
+#. directory not writable
+#: src/LYLocal.c:2323 src/LYLocal.c:2382
+msgid "Install in the selected directory not permitted."
+msgstr "Instalace do zvoleného adresáře není povolena."
+
+#: src/LYLocal.c:2378
+msgid "The selected item is not a directory!  Request ignored."
+msgstr "Zvolená položka není adresářem!  Požadavek ignorován."
+
+#: src/LYLocal.c:2387
+msgid "Just a moment, ..."
+msgstr "Okamžik, prosím ..."
+
+#: src/LYLocal.c:2404
+msgid "Error building install args"
+msgstr "Chyba při sestavování instalačních argumentů"
+
+#: src/LYLocal.c:2419 src/LYLocal.c:2450
+#, c-format
+msgid "Source and target are the same: %s"
+msgstr "Zdroj je totožný s cílem: %s"
+
+#: src/LYLocal.c:2426 src/LYLocal.c:2457
+#, c-format
+msgid "Already in target directory: %s"
+msgstr "Cílový adresář %s je totožný s aktuálním"
+
+#: src/LYLocal.c:2475
+msgid "Installation complete"
+msgstr "Instalace dokončena"
+
+#: src/LYLocal.c:2678
+msgid "Temporary URL or list would be too long."
+msgstr "Dočasné URL nebo seznam by bylo příliš dlouhé."
+
+#: src/LYMail.c:566
+msgid "Sending"
+msgstr "Posílám"
+
+#: src/LYMail.c:1050
+#, c-format
+msgid "The link   %s :?: %s \n"
+msgstr "Odkaz   %s :?: %s \n"
+
+#: src/LYMail.c:1052
+#, c-format
+msgid "called \"%s\"\n"
+msgstr "volaný \"%s\"\n"
+
+#: src/LYMail.c:1053
+#, c-format
+msgid "in the file \"%s\" called \"%s\"\n"
+msgstr "v souboru \"%s\" se jménem \"%s\"\n"
+
+#: src/LYMail.c:1054
+msgid "was requested but was not available."
+msgstr "byl požadován, ale nebyl dostupný."
+
+#: src/LYMail.c:1055
+msgid "Thought you might want to know."
+msgstr "Chtěli jsme Vám to dát vědět."
+
+#: src/LYMail.c:1057
+msgid "This message was automatically generated by"
+msgstr "Tato zpráva byla vytvořena automaticky programem"
+
+#: src/LYMail.c:1770
+msgid "No system mailer configured"
+msgstr "Není nakonfigurován žádný systémový mailer"
+
+#: src/LYMain.c:1088
+msgid "No Winsock found, sorry."
+msgstr "Winsock nenalezen. lituji."
+
+#: src/LYMain.c:1278
+msgid "You MUST define a valid TMP or TEMP area!"
+msgstr "MUSÍTE zadat platný TMP či TEMP prostor!"
+
+#: src/LYMain.c:1331 src/LYMainLoop.c:5285
+msgid "No such directory"
+msgstr "Adresář neexistuje"
+
+#: src/LYMain.c:1525
+#, c-format
+msgid ""
+"\n"
+"Configuration file \"%s\" is not available.\n"
+"\n"
+msgstr ""
+"\n"
+"Konfigurační soubor %s je nedostupný.\n"
+"\n"
+
+#: src/LYMain.c:1535
+#, c-format
+msgid ""
+"\n"
+"Lynx character sets not declared.\n"
+"\n"
+msgstr ""
+"\n"
+"Znakové sady Lynxu nejsou deklarovány.\n"
+"\n"
+
+#: src/LYMain.c:1691
+#, c-format
+msgid "Ignored %d characters from standard input.\n"
+msgstr "Ignorováno %d znaků z obecného vstupu.\n"
+
+#: src/LYMain.c:1693
+#, c-format
+msgid "Use \"-stdin\" or \"-\" to tell how to handle piped input.\n"
+msgstr "Použijte \"-stdin\" nebo \"-\" k určení, jak má být zpracován vstup.\n"
+
+#: src/LYMain.c:1851
+msgid "Warning:"
+msgstr "Varování:"
+
+#: src/LYMain.c:2419
+msgid "persistent cookies state will be changed in next session only."
+msgstr "stav trvalých cookies bude změněn až při příštím sezení."
+
+#: src/LYMain.c:2654 src/LYMain.c:2698
+#, c-format
+msgid "Lynx: ignoring unrecognized charset=%s\n"
+msgstr "Lynx: Ignoruji neznámou znakovou sadu=%s\n"
+
+#: src/LYMain.c:3215
+#, c-format
+msgid "%s Version %s (%s)"
+msgstr "%s Verze %s (%s)"
+
+#: src/LYMain.c:3256
+#, c-format
+msgid "Built on %s%s.\n"
+msgstr "Sestaven na %s%s.\n"
+
+#: src/LYMain.c:3270
+msgid "Copyrights held by the Lynx Developers Group,"
+msgstr "Autorská práva patří Lynx Developers Group,"
+
+#: src/LYMain.c:3271
+msgid "the University of Kansas, CERN, and other contributors."
+msgstr "Kansaské univerzitě, CERN a ostatním autorům."
+
+#: src/LYMain.c:3272
+msgid "Distributed under the GNU General Public License (Version 2)."
+msgstr "Šířeno podle podmínek Obecné veřejné licence GNU (2. verze)."
+
+#: src/LYMain.c:3273
+msgid "See https://lynx.invisible-island.net/ and the online help for more information."
+msgstr "Podrobnější informace získáte na https://lynx.invisible-island.net/ a z nápovědy k programu."
+
+#: src/LYMain.c:4120
+#, c-format
+msgid "USAGE: %s [options] [file]\n"
+msgstr "Použití: %s [přepínače] [soubor]\n"
+
+#: src/LYMain.c:4121
+#, c-format
+msgid "Options are:\n"
+msgstr "Přepínače:\n"
+
+#: src/LYMain.c:4424
+#, c-format
+msgid "%s: Invalid Option: %s\n"
+msgstr "%s: Chybný přepínač: %s\n"
+
+#: src/LYMainLoop.c:572
+#, c-format
+msgid "Internal error: Invalid mouse link %d!"
+msgstr "Vnitřní chyba: chybný myší odkaz %d!"
+
+#: src/LYMainLoop.c:693 src/LYMainLoop.c:5307
+msgid "A URL specified by the user"
+msgstr "URL zadané uživatelem"
+
+#: src/LYMainLoop.c:1142
+msgid "Enctype multipart/form-data not yet supported!  Cannot submit."
+msgstr "Kódování multipart/form-data není zatím podporováno.  Nelze odeslat."
+
+#.
+#. * Make a name for this help file.
+#.
+#: src/LYMainLoop.c:3197
+msgid "Help Screen"
+msgstr "Nápověda"
+
+#: src/LYMainLoop.c:3328
+msgid "System Index"
+msgstr "Systémový index"
+
+#: src/LYMainLoop.c:3577
+#, c-format
+msgid "Query parameter %d: "
+msgstr "Parametr dotazu %d:"
+
+#: src/LYMainLoop.c:3806 src/LYMainLoop.c:5583
+msgid "Entry into main screen"
+msgstr "Vstup na hlavní obrazovku"
+
+#: src/LYMainLoop.c:4064
+msgid "No next document present"
+msgstr "Žádný další dokument není přítomen"
+
+#: src/LYMainLoop.c:4359
+msgid "charset for this document specified explicitly, sorry..."
+msgstr "znaková sada tohoto dokumentu je explicitně zadána, lituji..."
+
+#: src/LYMainLoop.c:5265
+msgid "cd to:"
+msgstr "změn adresář na:"
+
+#: src/LYMainLoop.c:5288
+msgid "A component of path is not a directory"
+msgstr "Součást cesty není adresář"
+
+#: src/LYMainLoop.c:5291
+msgid "failed to change directory"
+msgstr "chyba při změně adresáře"
+
+#: src/LYMainLoop.c:6517
+msgid "Reparsing document under current settings..."
+msgstr "Znovu zpracovávám dokument za použití nových nastavení..."
+
+#: src/LYMainLoop.c:6811
+#, c-format
+msgid "Fatal error - could not open output file %s\n"
+msgstr "Fatální chyba - výstupní soubor %s nelze otevřít\n"
+
+#: src/LYMainLoop.c:7153
+msgid "TABLE center enable."
+msgstr "Vystředění TABULKY zapnuto."
+
+#: src/LYMainLoop.c:7156
+msgid "TABLE center disable."
+msgstr "Vystředění TABULKY vypnuto."
+
+#: src/LYMainLoop.c:7236
+msgid "Current URL is empty."
+msgstr "Aktuální URL je prázdná."
+
+#: src/LYMainLoop.c:7238 src/LYUtils.c:1909
+msgid "Copy to clipboard failed."
+msgstr "Kopírování do schránky selhalo."
+
+#: src/LYMainLoop.c:7240
+msgid "Document URL put to clipboard."
+msgstr "Dokument URL, který má být vložen do schránky."
+
+#: src/LYMainLoop.c:7242
+msgid "Link URL put to clipboard."
+msgstr "Link URL, který má být vložen do schránky."
+
+#: src/LYMainLoop.c:7269
+msgid "No URL in the clipboard."
+msgstr "Ve schránce není žádné URL."
+
+#: src/LYMainLoop.c:7962 src/LYMainLoop.c:8133
+msgid "-index-"
+msgstr "-rejstřík-"
+
+#: src/LYMainLoop.c:8071
+msgid "lynx: Can't access startfile"
+msgstr "lynx: startovní soubor nelze otevřít"
+
+#: src/LYMainLoop.c:8083
+msgid "lynx: Start file could not be found or is not text/html or text/plain"
+msgstr "lynx: startovní soubor nelze nalézt, nebo není ani typu text/html ani text/plain"
+
+#: src/LYMainLoop.c:8084
+msgid "      Exiting..."
+msgstr "      Končím..."
+
+#: src/LYMainLoop.c:8127
+msgid "-more-"
+msgstr "-pokračování-"
+
+#. Enable scrolling.
+#: src/LYNews.c:186
+msgid "You will be posting to:"
+msgstr "Budete posílat na:"
+
+#.
+#. * Get the mail address for the From header, offering personal_mail_address
+#. * as default.
+#.
+#: src/LYNews.c:195
+msgid ""
+"\n"
+"\n"
+" Please provide your mail address for the From: header\n"
+msgstr ""
+"\n"
+"\n"
+"Zadejte adresu pro hlavičku From:\n"
+
+#.
+#. * Get the Subject header, offering the current document's title as the
+#. * default if this is a followup rather than a new post.  - FM
+#.
+#: src/LYNews.c:212
+msgid ""
+"\n"
+"\n"
+" Please provide or edit the Subject: header\n"
+msgstr ""
+"\n"
+"\n"
+"Zadejte předmět zprávy\n"
+
+#: src/LYNews.c:302
+msgid ""
+"\n"
+"\n"
+" Please provide or edit the Organization: header\n"
+msgstr ""
+"\n"
+"\n"
+"Zadejte hodnotu pro hlavičku Organization:\n"
+
+#.
+#. * Use the built in line editior.
+#.
+#: src/LYNews.c:359
+msgid ""
+"\n"
+"\n"
+" Please enter your message below."
+msgstr ""
+"\n"
+"\n"
+"Zadejte text zprávy."
+
+#: src/LYNews.c:405
+msgid "Message has no original text!"
+msgstr "Zpráva neobsahuje žádný původní text!"
+
+#: src/LYOptions.c:774
+msgid "review/edit B)ookmarks files"
+msgstr "zobrazit/editovat soubory se záložkami (B)"
+
+#: src/LYOptions.c:776
+msgid "B)ookmark file: "
+msgstr "Soubor se záložkami (B):"
+
+#: src/LYOptions.c:2131 src/LYOptions.c:2138
+msgid "ON"
+msgstr "ZAPNUTO"
+
+#. verbose_img variable
+#. LYCollapseBRs variable
+#. LYtrimBlankLines variable
+#: src/LYOptions.c:2132 src/LYOptions.c:2137 src/LYOptions.c:2321
+#: src/LYOptions.c:2330 src/LYOptions.c:2339 src/LYOptions.c:2350
+msgid "OFF"
+msgstr "VYPNUTO"
+
+#: src/LYOptions.c:2133
+msgid "NEVER"
+msgstr "NIDKY"
+
+#: src/LYOptions.c:2134
+msgid "ALWAYS"
+msgstr "VŽDY"
+
+#: src/LYOptions.c:2150 src/LYOptions.c:2313
+msgid "ignore"
+msgstr "ignorovat"
+
+#: src/LYOptions.c:2151
+msgid "ask user"
+msgstr "zeptat se uživatele"
+
+#: src/LYOptions.c:2152
+msgid "accept all"
+msgstr "přijmout vše"
+
+#: src/LYOptions.c:2164
+msgid "ALWAYS OFF"
+msgstr "VŽDY VYPNUTO"
+
+#: src/LYOptions.c:2165
+msgid "FOR LOCAL FILES ONLY"
+msgstr "POUZE PRO MÍSTNÍ SOUBORY"
+
+#: src/LYOptions.c:2167
+msgid "ALWAYS ON"
+msgstr "VŽDY ZAPNUTO"
+
+#: src/LYOptions.c:2179
+msgid "Numbers act as arrows"
+msgstr "Čísla se chovají jako šipky"
+
+#: src/LYOptions.c:2181
+msgid "Links are numbered"
+msgstr "Odkazy jsou očíslovány"
+
+#: src/LYOptions.c:2184
+msgid "Links and form fields are numbered"
+msgstr "Odkazy a pole formulářů jsou očíslovány"
+
+#: src/LYOptions.c:2187
+msgid "Form fields are numbered"
+msgstr "Pole formulářů jsou očíslovány"
+
+#: src/LYOptions.c:2202
+msgid "Case insensitive"
+msgstr "Nezáleží na velkých písmenech"
+
+#: src/LYOptions.c:2203
+msgid "Case sensitive"
+msgstr "Záleží na velkých písmenech"
+
+#: src/LYOptions.c:2237
+msgid "prompt normally"
+msgstr "příkazový řádek se chová normálně"
+
+#: src/LYOptions.c:2238
+msgid "force yes-response"
+msgstr "vždy odpovídat \"ano\""
+
+#: src/LYOptions.c:2239
+msgid "force no-response"
+msgstr "vždy odpovídat \"ne\""
+
+#: src/LYOptions.c:2249
+msgid "RFC 2109"
+msgstr "RFC 2109"
+
+#: src/LYOptions.c:2250
+msgid "RFC 2965"
+msgstr "RFC 2965"
+
+#: src/LYOptions.c:2251
+msgid "RFC 6265"
+msgstr "RFC 6265"
+
+#: src/LYOptions.c:2268
+msgid "Novice"
+msgstr "Začátečník"
+
+#: src/LYOptions.c:2269
+msgid "Intermediate"
+msgstr "Pokročilý"
+
+#: src/LYOptions.c:2270
+msgid "Advanced"
+msgstr "Profesionál"
+
+#: src/LYOptions.c:2279
+msgid "By First Visit"
+msgstr "Podle Prvního Zobrazení"
+
+#: src/LYOptions.c:2281
+msgid "By First Visit Reversed"
+msgstr "Porlde Prvního Zobrazení Obráceně"
+
+#: src/LYOptions.c:2282
+msgid "As Visit Tree"
+msgstr "Jako Strom Zobrazení"
+
+#: src/LYOptions.c:2283
+msgid "By Last Visit"
+msgstr "Podle Poslední Zobrazení"
+
+#: src/LYOptions.c:2285
+msgid "By Last Visit Reversed"
+msgstr "Podle Poslední Zobrazení Obráceně"
+
+#. Old_DTD variable
+#: src/LYOptions.c:2296
+msgid "relaxed (TagSoup mode)"
+msgstr "volné (TagSoup mód)"
+
+#: src/LYOptions.c:2297
+msgid "strict (SortaSGML mode)"
+msgstr "přísné (SortaSGML mód)"
+
+#: src/LYOptions.c:2304
+msgid "Ignore"
+msgstr "Ignorovat"
+
+#: src/LYOptions.c:2305
+msgid "Add to trace-file"
+msgstr "Přidat do trasovacího souboru"
+
+#: src/LYOptions.c:2306
+msgid "Add to LYNXMESSAGES"
+msgstr "Přidat do LYNXMESSAGES"
+
+#: src/LYOptions.c:2307
+msgid "Warn, point to trace-file"
+msgstr "Upozorni, směřuj do trasovacího souboru"
+
+#: src/LYOptions.c:2314
+msgid "as labels"
+msgstr "jako štítky"
+
+#: src/LYOptions.c:2315
+msgid "as links"
+msgstr "jako odkazy"
+
+#: src/LYOptions.c:2322
+msgid "show filename"
+msgstr "zobrazit jméno souboru"
+
+#: src/LYOptions.c:2331
+msgid "collapse"
+msgstr "složit"
+
+#: src/LYOptions.c:2340
+msgid "trim-lines"
+msgstr "ořezové čáry"
+
+#: src/LYOptions.c:2351
+msgid "STANDARD"
+msgstr "STANDARTNÍ"
+
+#: src/LYOptions.c:2352
+msgid "ADVANCED"
+msgstr "POKROČILÝ"
+
+#: src/LYOptions.c:2386
+msgid "Directories first"
+msgstr "Nejdřív adresáře"
+
+#: src/LYOptions.c:2387
+msgid "Files first"
+msgstr "Nejdřív soubory"
+
+#: src/LYOptions.c:2388
+msgid "Mixed style"
+msgstr "Společně"
+
+#: src/LYOptions.c:2396 src/LYOptions.c:2416
+msgid "By Name"
+msgstr "Podle Jména"
+
+#: src/LYOptions.c:2397 src/LYOptions.c:2417
+msgid "By Type"
+msgstr "Podle Typu"
+
+#: src/LYOptions.c:2398 src/LYOptions.c:2418
+msgid "By Size"
+msgstr "Podle Velikosti"
+
+#: src/LYOptions.c:2399 src/LYOptions.c:2419
+msgid "By Date"
+msgstr "Podle Data"
+
+#: src/LYOptions.c:2400
+msgid "By Mode"
+msgstr "Podle Módu"
+
+#: src/LYOptions.c:2402
+msgid "By User"
+msgstr "Podle Uživatele"
+
+#: src/LYOptions.c:2403
+msgid "By Group"
+msgstr "Podle Skupiny"
+
+#: src/LYOptions.c:2428
+msgid "Do not show rate"
+msgstr "Nezobrazuj hodnotu přenosu dat"
+
+#: src/LYOptions.c:2429 src/LYOptions.c:2430
+#, c-format
+msgid "Show %s/sec rate"
+msgstr "Zobrazuj %s/sec hodnotu přenosu dat"
+
+#: src/LYOptions.c:2432 src/LYOptions.c:2433
+#, c-format
+msgid "Show %s/sec, ETA"
+msgstr "Zobrazuj %s/sec, doba do skončení"
+
+#: src/LYOptions.c:2434 src/LYOptions.c:2435
+#, c-format
+msgid "Show %s/sec (2-digits), ETA"
+msgstr "Zobrazuj %s/sec (2-číselně), doba do skončení"
+
+#: src/LYOptions.c:2438
+msgid "Show progressbar"
+msgstr "Zobrazuj ukazatel průběhu"
+
+#: src/LYOptions.c:2459
+msgid "Accept lynx's internal types"
+msgstr "Přijímat vnitřní typy lynxu"
+
+#: src/LYOptions.c:2460
+msgid "Also accept lynx.cfg's types"
+msgstr "Také přijímat typy lynx.cfg"
+
+#: src/LYOptions.c:2461
+msgid "Also accept user's types"
+msgstr "Také přijímat uživatelské typy"
+
+#: src/LYOptions.c:2462
+msgid "Also accept system's types"
+msgstr "Také přijímat systémové typy"
+
+#: src/LYOptions.c:2463
+msgid "Accept all types"
+msgstr "Přijímat všechny typy"
+
+#: src/LYOptions.c:2472
+msgid "gzip"
+msgstr "gzip"
+
+#: src/LYOptions.c:2473
+msgid "deflate"
+msgstr "bezztrátová komprese"
+
+#: src/LYOptions.c:2476
+msgid "compress"
+msgstr "komprese"
+
+#: src/LYOptions.c:2479
+msgid "bzip2"
+msgstr "bzip2"
+
+#: src/LYOptions.c:2481
+msgid "All"
+msgstr "Vše"
+
+#: src/LYOptions.c:2491
+msgid "HTTP 1.0"
+msgstr "HTTP 1.0"
+
+#: src/LYOptions.c:2492
+msgid "HTTP 1.1"
+msgstr "HTTP 1.1"
+
+#: src/LYOptions.c:2851 src/LYOptions.c:2880
+#, c-format
+msgid "Use %s to invoke the Options menu!"
+msgstr "Pomocí %s můžete aktivovat Konfigurační menu!"
+
+#: src/LYOptions.c:3772
+msgid "(options marked with (!) will not be saved)"
+msgstr "(volby označené (!) nebudou uloženy)"
+
+#: src/LYOptions.c:3780
+msgid "General Preferences"
+msgstr "Všeobecná nastavení"
+
+#. ***************************************************************
+#. User Mode: SELECT
+#: src/LYOptions.c:3784
+msgid "User mode"
+msgstr "Uživatelský režim"
+
+#. Editor: INPUT
+#: src/LYOptions.c:3790
+msgid "Editor"
+msgstr "Editor"
+
+#. Search Type: SELECT
+#: src/LYOptions.c:3795
+msgid "Type of Search"
+msgstr "Druh hledání"
+
+#: src/LYOptions.c:3800
+msgid "Security and Privacy"
+msgstr "Bezpečnost a Soukromí"
+
+#. ***************************************************************
+#. Cookies: SELECT
+#: src/LYOptions.c:3804
+msgid "Cookies"
+msgstr "Cookies"
+
+#. Cookie Version: SELECT
+#: src/LYOptions.c:3818
+msgid "Cookie RFC-version"
+msgstr "RFC verze cookie"
+
+#. Cookie Prompting: SELECT
+#: src/LYOptions.c:3824
+msgid "Invalid-Cookie Prompting"
+msgstr "Přijimání chybného cookie"
+
+#. SSL Prompting: SELECT
+#: src/LYOptions.c:3831
+msgid "SSL Prompting"
+msgstr "Přijímání SSL"
+
+#: src/LYOptions.c:3836
+msgid "SSL client certificate file"
+msgstr "Soubor certifikátu SSL klienta"
+
+#: src/LYOptions.c:3840
+msgid "SSL client key file"
+msgstr "Soubor klíče SSL klienta"
+
+#: src/LYOptions.c:3846
+msgid "Keyboard Input"
+msgstr "Nastavení klávesnice"
+
+#. ***************************************************************
+#. Keypad Mode: SELECT
+#: src/LYOptions.c:3850
+msgid "Keypad mode"
+msgstr "Režim numerické klávesnice"
+
+#. Emacs keys: ON/OFF
+#: src/LYOptions.c:3856
+msgid "Emacs keys"
+msgstr "Emacs klávesy"
+
+#. VI Keys: ON/OFF
+#: src/LYOptions.c:3862
+msgid "VI keys"
+msgstr "VI klávesy"
+
+#. Line edit style: SELECT
+#. well, at least 2 line edit styles available
+#: src/LYOptions.c:3869
+msgid "Line edit style"
+msgstr "Styl úpravy řádků"
+
+#. Keyboard layout: SELECT
+#: src/LYOptions.c:3881
+msgid "Keyboard layout"
+msgstr "Rozložení klávesnice"
+
+#.
+#. * Display and Character Set
+#.
+#: src/LYOptions.c:3895
+msgid "Display and Character Set"
+msgstr "Displej a Znaková sada"
+
+#. Use locale-based character set: ON/OFF
+#: src/LYOptions.c:3900
+msgid "Use locale-based character set"
+msgstr "Použít místní znakovou sadu (locale)"
+
+#: src/LYOptions.c:3907
+msgid "Use HTML5 charset replacements"
+msgstr "Použít HTML5 náhrady znakové sady"
+
+#. Display Character Set: SELECT
+#: src/LYOptions.c:3913
+msgid "Display character set"
+msgstr "Místní znaková sada"
+
+#: src/LYOptions.c:3944
+msgid "Assumed document character set"
+msgstr "Předpokládaná znaková sada"
+
+#.
+#. * Since CJK people hardly mixed with other world
+#. * we split the header to make it more readable:
+#. * "CJK mode" for CJK display charsets, and "Raw 8-bit" for others.
+#.
+#: src/LYOptions.c:3964
+msgid "CJK mode"
+msgstr "CJK režim"
+
+#: src/LYOptions.c:3966
+msgid "Raw 8-bit"
+msgstr "Přímý 8bitový režim"
+
+#. X Display: INPUT
+#: src/LYOptions.c:3974
+msgid "X Display"
+msgstr "X Display"
+
+#.
+#. * Document Appearance
+#.
+#: src/LYOptions.c:3980
+msgid "Document Appearance"
+msgstr "Vzhled dokumentu"
+
+#: src/LYOptions.c:3986
+msgid "Show color"
+msgstr "Zobrazovat barvy"
+
+#: src/LYOptions.c:4012
+msgid "Color style"
+msgstr "Styl barev"
+
+#: src/LYOptions.c:4022
+msgid "Default colors"
+msgstr "Implicitní barvy"
+
+#. Show cursor: ON/OFF
+#: src/LYOptions.c:4030
+msgid "Show cursor"
+msgstr "Zobrazovat kurzor"
+
+#. Underline links: ON/OFF
+#: src/LYOptions.c:4036
+msgid "Underline links"
+msgstr "Podtrhávat odkazy"
+
+#. Show scrollbar: ON/OFF
+#: src/LYOptions.c:4043
+msgid "Show scrollbar"
+msgstr "Zobrazovat posuvník"
+
+#. Select Popups: ON/OFF
+#: src/LYOptions.c:4050
+msgid "Popups for select fields"
+msgstr "Vyskakovací menu pro zvolená pole"
+
+#. HTML error recovery: SELECT
+#: src/LYOptions.c:4056
+msgid "HTML error recovery"
+msgstr "Zotavení po chybách HTML"
+
+#. Bad HTML messages: SELECT
+#: src/LYOptions.c:4062
+msgid "Bad HTML messages"
+msgstr "Chybné HTML zprávy"
+
+#. Show Images: SELECT
+#: src/LYOptions.c:4068
+msgid "Show images"
+msgstr "Zobrazovat obrázky"
+
+#. Verbose Images: ON/OFF
+#: src/LYOptions.c:4082
+msgid "Verbose images"
+msgstr "Doslovné obrázky"
+
+#. Collapse BR Tags: ON/OFF
+#: src/LYOptions.c:4088
+msgid "Collapse BR tags"
+msgstr "Složit BR tagy"
+
+#. Trim blank lines: ON/OFF
+#: src/LYOptions.c:4094
+msgid "Trim blank lines"
+msgstr "Zkracovat prázdné řádky"
+
+#.
+#. * Headers Transferred to Remote Servers
+#.
+#: src/LYOptions.c:4102
+msgid "Headers Transferred to Remote Servers"
+msgstr "Hlavičky přenášené na Vzdálené Servery"
+
+#. ***************************************************************
+#. Mail Address: INPUT
+#: src/LYOptions.c:4106
+msgid "Personal mail address"
+msgstr "Osobní adresa elektronické pošty"
+
+#: src/LYOptions.c:4111
+msgid "Personal name for mail"
+msgstr "Osobní jméno pro email"
+
+#: src/LYOptions.c:4118
+msgid "Password for anonymous ftp"
+msgstr "Heslo pro anonymní ftp"
+
+#. Preferred content type: SELECT
+#: src/LYOptions.c:4124
+msgid "Preferred content type"
+msgstr "Upřednostńovaný typ obsahu"
+
+#. Preferred media type: SELECT
+#: src/LYOptions.c:4130
+msgid "Preferred media type"
+msgstr "Upřednostňovaný typ médií"
+
+#. Preferred encoding: SELECT
+#: src/LYOptions.c:4136
+msgid "Preferred encoding"
+msgstr "Upřednostňované kódování"
+
+#. Preferred Document Character Set: INPUT
+#: src/LYOptions.c:4142
+msgid "Preferred document character set"
+msgstr "Upřednostňovaná znaková sada"
+
+#. Preferred Document Language: INPUT
+#: src/LYOptions.c:4147
+msgid "Preferred document language"
+msgstr "Upřednostňovaný jazyk dokumentu"
+
+#. HTTP protocol SELECT
+#: src/LYOptions.c:4152
+msgid "HTTP protocol"
+msgstr "HTTP protokol"
+
+#: src/LYOptions.c:4159
+msgid "Send User-Agent header"
+msgstr "Poslat hlavičku 'User-Agent'"
+
+#: src/LYOptions.c:4161
+msgid "User-Agent header"
+msgstr "Hlavička 'User-Agent'"
+
+#.
+#. * Listing and Accessing Files
+#.
+#: src/LYOptions.c:4169
+msgid "Listing and Accessing Files"
+msgstr "Zobrazování adresářů a přístup k souborům"
+
+#. FTP sort: SELECT
+#: src/LYOptions.c:4174
+msgid "Use Passive FTP"
+msgstr "Použít Pasivní FTP"
+
+#. FTP sort: SELECT
+#: src/LYOptions.c:4180
+msgid "FTP sort criteria"
+msgstr "Řazení FTP adresářů"
+
+#. Local Directory Sort: SELECT
+#: src/LYOptions.c:4188
+msgid "Local directory sort criteria"
+msgstr "Kritérium řazení lokálních adresářů"
+
+#. Local Directory Order: SELECT
+#: src/LYOptions.c:4194
+msgid "Local directory sort order"
+msgstr "Pořadí řazení lokálních adresářů"
+
+#: src/LYOptions.c:4203
+msgid "Show dot files"
+msgstr "Zobrazovat tečkové soubory"
+
+#: src/LYOptions.c:4211
+msgid "Execution links"
+msgstr "Spustitelné odkazy"
+
+#: src/LYOptions.c:4229
+msgid "Pause when showing message"
+msgstr "Pozastavit, když zobrazuji oznámení"
+
+#. Show transfer rate: SELECT
+#: src/LYOptions.c:4236
+msgid "Show transfer rate"
+msgstr "Zobrazit hodnotu přenosu dat"
+
+#.
+#. * Special Files and Screens
+#.
+#: src/LYOptions.c:4256
+msgid "Special Files and Screens"
+msgstr "Zvláštní soubory a stránky"
+
+#: src/LYOptions.c:4261
+msgid "Multi-bookmarks"
+msgstr "Dělené záložky"
+
+#: src/LYOptions.c:4269
+msgid "Review/edit Bookmarks files"
+msgstr "Editace souborů se záložkami"
+
+#: src/LYOptions.c:4272
+msgid "Goto multi-bookmark menu"
+msgstr "Menu dělených záložek"
+
+#: src/LYOptions.c:4274
+msgid "Bookmarks file"
+msgstr "Soubor se záložkami"
+
+#. Auto Session: ON/OFF
+#: src/LYOptions.c:4281
+msgid "Auto Session"
+msgstr "Automatické Sezení"
+
+#. Session File Menu: INPUT
+#: src/LYOptions.c:4287
+msgid "Session file"
+msgstr "Soubor sezení"
+
+#. Visited Pages: SELECT
+#: src/LYOptions.c:4293
+msgid "Visited Pages"
+msgstr "Navštívené Stránky"
+
+#: src/LYOptions.c:4298
+msgid "View the file "
+msgstr "Zobrazit soubor "
+
+#: src/LYPrint.c:956
+#, c-format
+msgid " Print job complete.\n"
+msgstr " Tisk dokončen.\n"
+
+#: src/LYPrint.c:1283
+msgid "Document:"
+msgstr "Dokument:"
+
+#: src/LYPrint.c:1284
+msgid "Number of lines:"
+msgstr "Počet řádků:"
+
+#: src/LYPrint.c:1285
+msgid "Number of pages:"
+msgstr "Počet stran:"
+
+#: src/LYPrint.c:1286
+msgid "pages"
+msgstr "stran(y)"
+
+#: src/LYPrint.c:1286
+msgid "page"
+msgstr "strana"
+
+#: src/LYPrint.c:1287
+msgid "(approximately)"
+msgstr "(přibližně)"
+
+#: src/LYPrint.c:1294
+msgid "Some print functions have been disabled!"
+msgstr "Některé funkce tisku byly vypnuty!"
+
+#: src/LYPrint.c:1298
+msgid "Standard print options:"
+msgstr "Standardní menu voleb tisku:"
+
+#: src/LYPrint.c:1299
+msgid "Print options:"
+msgstr "Menu voleb tisku:"
+
+#: src/LYPrint.c:1306
+msgid "Save to a local file"
+msgstr "Uložit do místního souboru"
+
+#: src/LYPrint.c:1308
+msgid "Save to disk disabled"
+msgstr "Ukládání na disk je vypnuto"
+
+#: src/LYPrint.c:1315
+msgid "Mail the file"
+msgstr "Poslat soubor poštou"
+
+#: src/LYPrint.c:1322
+msgid "Print to the screen"
+msgstr "Vytisknout na obrazovku"
+
+#: src/LYPrint.c:1327
+msgid "Print out on a printer attached to your vt100 terminal"
+msgstr "Vytisknout na tiskárnu připojenou k vašemu vt100 terminálu"
+
+#: src/LYReadCFG.c:437
+#, c-format
+msgid ""
+"Syntax Error parsing COLOR in configuration file:\n"
+"The line must be of the form:\n"
+"COLOR:INTEGER:FOREGROUND:BACKGROUND\n"
+"\n"
+"Here FOREGROUND and BACKGROUND must be one of:\n"
+"The special strings 'nocolor' or 'default', or\n"
+msgstr ""
+"Byla nalezena syntaktická chyba při zpracování COLOR v konfiguračním souboru:\n"
+"Řádek musí být ve formátu:\n"
+"COLOR:CELÉ ČÍSLO:POPŘEDÍ:POZADÍ\n"
+"\n"
+"Zde POPŘEDÍ a POZADÍ  musí být jedno z:\n"
+"Zvláštní řetězec 'nocolor' nebo 'default', nebo\n"
+
+#: src/LYReadCFG.c:450
+msgid "Offending line:"
+msgstr "Kritický řádek:"
+
+#: src/LYReadCFG.c:764
+#, c-format
+msgid "key remapping of %s to %s for %s failed\n"
+msgstr "chyba při přemapovávání klávesy %1$s pro %3$s na %2$s\n"
+
+#: src/LYReadCFG.c:771
+#, c-format
+msgid "key remapping of %s to %s failed\n"
+msgstr "chyba při přemapovávání klávesy %s na %s\n"
+
+#: src/LYReadCFG.c:792
+#, c-format
+msgid "invalid line-editor selection %s for key %s, selecting all\n"
+msgstr "volba %s řádkového editoru pro klávesu %s je chybná, volím vše\n"
+
+#: src/LYReadCFG.c:817 src/LYReadCFG.c:829
+#, c-format
+msgid "setting of line-editor binding for key %s (0x%x) to 0x%x for %s failed\n"
+msgstr "klávesu %1$s (0x%2$x) se s funkcí %4$s (0x%3$x) řádkového editoru nepodařilo svázat\n"
+
+#: src/LYReadCFG.c:833
+#, c-format
+msgid "setting of line-editor binding for key %s (0x%x) for %s failed\n"
+msgstr "klávesu %s (0x%x) se s funkcí %s řádkového editoru nepodařilo svázat\n"
+
+#: src/LYReadCFG.c:929
+#, c-format
+msgid "Lynx: cannot start, CERN rules file %s is not available\n"
+msgstr "Lynx: nelze spustit, soubor %s s pravidly CERN není dostupný\n"
+
+#: src/LYReadCFG.c:930
+msgid "(no name)"
+msgstr "(žádné jméno)"
+
+#: src/LYReadCFG.c:2076
+#, c-format
+msgid "More than %d nested lynx.cfg includes -- perhaps there is a loop?!?\n"
+msgstr "Více než %d vnořených vložení z lynx.cfg -- nejedná se o nekonečnou smyčku?!?\n"
+
+#: src/LYReadCFG.c:2078
+#, c-format
+msgid "Last attempted include was '%s',\n"
+msgstr "Poslední vložený soubor je '%s'.\n"
+
+#: src/LYReadCFG.c:2079
+#, c-format
+msgid "included from '%s'.\n"
+msgstr "vložený z '%s'.\n"
+
+#: src/LYReadCFG.c:2490 src/LYReadCFG.c:2503 src/LYReadCFG.c:2561
+msgid "The following is read from your lynx.cfg file."
+msgstr "Následující údaje jsou čteny z vašeho lynx.cfg."
+
+#: src/LYReadCFG.c:2491 src/LYReadCFG.c:2504
+msgid "Please read the distribution"
+msgstr "Přečtěte si implicitní dodávaný s distribucí"
+
+#: src/LYReadCFG.c:2497 src/LYReadCFG.c:2507
+msgid "for more comments."
+msgstr "pro více informací."
+
+#: src/LYReadCFG.c:2543
+msgid "RELOAD THE CHANGES"
+msgstr "NAČÍST ZMĚNY"
+
+#: src/LYReadCFG.c:2551
+msgid "Your primary configuration"
+msgstr "Vaše primární konfigurace"
+
+#: src/LYShowInfo.c:116
+msgid "URL:"
+msgstr "URL:"
+
+#: src/LYShowInfo.c:200
+msgid "Directory that you are currently viewing"
+msgstr "Adresář, který právě prohlížíte"
+
+#: src/LYShowInfo.c:203
+msgid "Name:"
+msgstr "Jméno:"
+
+#: src/LYShowInfo.c:220
+msgid "Directory that you have currently selected"
+msgstr "Adresář, který jste právě zvolil"
+
+#: src/LYShowInfo.c:222
+msgid "File that you have currently selected"
+msgstr "Soubor, který jste právě zvolil"
+
+#: src/LYShowInfo.c:225
+msgid "Symbolic link that you have currently selected"
+msgstr "Symbolický odkaz, který jste právě zvolil"
+
+#: src/LYShowInfo.c:228
+msgid "Item that you have currently selected"
+msgstr "Položka, kterou jste právě zvolil"
+
+#: src/LYShowInfo.c:230
+msgid "Full name:"
+msgstr "Celé jméno:"
+
+#: src/LYShowInfo.c:243
+msgid "Unable to follow link"
+msgstr "Odkaz nelze následovat"
+
+#: src/LYShowInfo.c:245
+msgid "Points to file:"
+msgstr "Odkazuje do souboru:"
+
+#: src/LYShowInfo.c:250
+msgid "Name of owner:"
+msgstr "Jméno vlastníka:"
+
+#: src/LYShowInfo.c:253
+msgid "Group name:"
+msgstr "Jméno skupiny:"
+
+#: src/LYShowInfo.c:255
+msgid "File size:"
+msgstr "Velikost souboru:"
+
+#: src/LYShowInfo.c:257
+msgid "(bytes)"
+msgstr "(bajtů)"
+
+#.
+#. * Include date and time information.
+#.
+#: src/LYShowInfo.c:262
+msgid "Creation date:"
+msgstr "Datum vytvoření:"
+
+#: src/LYShowInfo.c:265
+msgid "Last modified:"
+msgstr "Poslední změna:"
+
+#: src/LYShowInfo.c:268
+msgid "Last accessed:"
+msgstr "Poslední přístup:"
+
+#: src/LYShowInfo.c:274
+msgid "Access Permissions"
+msgstr "Přístupová práva"
+
+#: src/LYShowInfo.c:309
+msgid "Group:"
+msgstr "Skupina:"
+
+#: src/LYShowInfo.c:329
+msgid "World:"
+msgstr "Svět:"
+
+#: src/LYShowInfo.c:336
+msgid "File that you are currently viewing"
+msgstr "Soubor, který si právě prohlížíte"
+
+#: src/LYShowInfo.c:344 src/LYShowInfo.c:444
+msgid "Linkname:"
+msgstr "Jméno odkazu:"
+
+#: src/LYShowInfo.c:350 src/LYShowInfo.c:365
+msgid "Charset:"
+msgstr "Znaková sada:"
+
+#: src/LYShowInfo.c:364
+msgid "(assumed)"
+msgstr "(předpokládá se)"
+
+#: src/LYShowInfo.c:371
+msgid "Server:"
+msgstr "Server:"
+
+#: src/LYShowInfo.c:374
+msgid "Date:"
+msgstr "Datum:"
+
+#: src/LYShowInfo.c:377
+msgid "Last Mod:"
+msgstr "Poslední modifikace:"
+
+#: src/LYShowInfo.c:381
+msgid "Expires:"
+msgstr "Expiruje:"
+
+#: src/LYShowInfo.c:384
+msgid "Cache-Control:"
+msgstr "Kontrola Vyrovnávací Paměti:"
+
+#: src/LYShowInfo.c:387
+msgid "Content-Length:"
+msgstr "Délka Obsahu:"
+
+#: src/LYShowInfo.c:391
+msgid "Length:"
+msgstr "Délka:"
+
+#: src/LYShowInfo.c:396
+msgid "Language:"
+msgstr "Jazyk:"
+
+#: src/LYShowInfo.c:402
+msgid "Post Data:"
+msgstr "Post Data:"
+
+#: src/LYShowInfo.c:405
+msgid "Post Content Type:"
+msgstr "Typ Obsahu Post:"
+
+#: src/LYShowInfo.c:408
+msgid "Owner(s):"
+msgstr "Vlastníci:"
+
+#: src/LYShowInfo.c:413
+msgid "size:"
+msgstr "velikost:"
+
+#: src/LYShowInfo.c:415
+msgid "lines"
+msgstr "řádky"
+
+#: src/LYShowInfo.c:419
+msgid "forms mode"
+msgstr "formulářový režim"
+
+#: src/LYShowInfo.c:421
+msgid "source"
+msgstr "zdroj"
+
+#: src/LYShowInfo.c:422
+msgid "normal"
+msgstr "běžný"
+
+#: src/LYShowInfo.c:424
+msgid ", safe"
+msgstr ", bezpečný"
+
+#: src/LYShowInfo.c:426
+msgid ", via internal link"
+msgstr ", přes vnitřní odkaz"
+
+#: src/LYShowInfo.c:430
+msgid ", no-cache"
+msgstr ", žádná vyrovnávací paměť"
+
+#: src/LYShowInfo.c:432
+msgid ", ISMAP script"
+msgstr ", ISMAP skript"
+
+#: src/LYShowInfo.c:434
+msgid ", bookmark file"
+msgstr ", soubor záložek"
+
+#: src/LYShowInfo.c:437
+msgid "mode:"
+msgstr "režim:"
+
+#: src/LYShowInfo.c:443
+msgid "Link that you currently have selected"
+msgstr "Odkaz, který jste právě zvolil"
+
+#: src/LYShowInfo.c:452
+msgid "Method:"
+msgstr "Metoda:"
+
+#: src/LYShowInfo.c:456
+msgid "Enctype:"
+msgstr "Typ kódování:"
+
+#: src/LYShowInfo.c:462
+msgid "Action:"
+msgstr "Akce:"
+
+#: src/LYShowInfo.c:468
+msgid "(Form field)"
+msgstr "(Pole formuláře)"
+
+#: src/LYShowInfo.c:478
+msgid "No Links on the current page"
+msgstr "Aktuální stránka neobsahuje žádné odkazy"
+
+#: src/LYShowInfo.c:483
+msgid "Server Headers:"
+msgstr "Hlavičky serveru:"
+
+#: src/LYStyle.c:332
+#, c-format
+msgid ""
+"Syntax Error parsing style in lss file:\n"
+"[%s]\n"
+"The line must be of the form:\n"
+"OBJECT:MONO:COLOR (ie em:bold:brightblue:white)\n"
+"where OBJECT is one of EM,STRONG,B,I,U,BLINK etc.\n"
+"\n"
+msgstr ""
+"Syntaktická chyba při zpracování stylu v lss souboru:\n"
+"[%s]\n"
+"Řádek musí mít formát:\n"
+"OBJEKT:MONO:BARVA (t.j. em:bold:brightblue:white)\n"
+"kde OBJEKT je jedno z EM,STRONG,B,I,U,BLINK etc.\n"
+"\n"
+
+#: src/LYStyle.c:939
+#, c-format
+msgid ""
+"\n"
+"Lynx file \"%s\" is not available.\n"
+"\n"
+msgstr ""
+"\n"
+"Soubor lynxu \"%s\" není dostupný.\n"
+"\n"
+
+#: src/LYTraversal.c:111
+msgid "here is a list of the history stack so that you may rebuild"
+msgstr "zde je výpis historie zásobníku pro případ opětovného sestavení"
+
+#: src/LYUpload.c:77
+msgid "ERROR! - upload command is misconfigured"
+msgstr "CHYBA! - příkaz pro nahrání (upload) je špatně nakonfigurovaný"
+
+#: src/LYUpload.c:98
+msgid "Illegal redirection \"../\" found! Request ignored."
+msgstr "Chybné přesměrování obsahuje \"../\"! Požadavek ignorován."
+
+#: src/LYUpload.c:101
+msgid "Illegal character \"/\" found! Request ignored."
+msgstr "Nalezen chybný znak \"/\"! Požadavek ignorován."
+
+#: src/LYUpload.c:104
+msgid "Illegal redirection using \"~\" found! Request ignored."
+msgstr "Cyhbné přesměrování obsahuje \"~\"! Požadavek ignorován."
+
+#: src/LYUpload.c:157
+msgid "Unable to upload file."
+msgstr "Soubor nelze nahrát (upload)."
+
+#: src/LYUpload.c:196
+msgid "Upload To:"
+msgstr "Nahrát (upload) na:"
+
+#: src/LYUpload.c:197
+msgid "Upload options:"
+msgstr "Menu voleb nahrání (upload):"
+
+#: src/LYUtils.c:1911
+msgid "Download document URL put to clipboard."
+msgstr "Stáhnout dokument URL, který je ve schránce."
+
+#: src/LYUtils.c:2658
+msgid "Unexpected access protocol for this URL scheme."
+msgstr "Neočekávaný protokol pro tento typ URL."
+
+#: src/LYUtils.c:3571
+msgid "Too many tempfiles"
+msgstr "Příliš mnoho dočasných souborů"
+
+#: src/LYUtils.c:3871
+msgid "unknown restriction"
+msgstr "neznámé omezení"
+
+#: src/LYUtils.c:3902
+#, c-format
+msgid "No restrictions set.\n"
+msgstr "Žádná omezení.\n"
+
+#: src/LYUtils.c:3905
+#, c-format
+msgid "Restrictions set:\n"
+msgstr "Zapnutá omezení:\n"
+
+#: src/LYUtils.c:5202
+msgid "Cannot find HOME directory"
+msgstr "Nemohu nalézt DOMOVSKÝ adresář"
+
+#: src/LYrcFile.c:16
+msgid "Normally disabled.  See ENABLE_LYNXRC in lynx.cfg\n"
+msgstr "Implicitně vypnuté. Viz ENABLE_LYNXRC v lynx.cfg\n"
+
+#: src/LYrcFile.c:363
+msgid ""
+"accept_all_cookies allows the user to tell Lynx to automatically\n"
+"accept all cookies if desired.  The default is \"FALSE\" which will\n"
+"prompt for each cookie.  Set accept_all_cookies to \"TRUE\" to accept\n"
+"all cookies.\n"
+msgstr ""
+"accept_all_cookies říká Lynxu, aby automaticky přijímal všechna cookie.\n"
+"Implicitní  nastavení je \"FALSE\", při kterém budete muset potvrdit přijetí\n"
+"každého cookie. Přijetí každého cookie zapnete nastavením accept_all_cookies\n"
+"na \"TRUE\".\n"
+
+#: src/LYrcFile.c:371
+msgid ""
+"anonftp_password allows the user to tell Lynx to use the personal\n"
+"email address as the password for anonymous ftp.  If no value is given,\n"
+"Lynx will use the personal email address.  Set anonftp_password\n"
+"to a different value if you choose.\n"
+msgstr ""
+"anonftp_password umožní uživatel Lynxu použít osobní\n"
+"emailovou adresu jako heslo pro anonymní ftp.  Pokud není nastavena\n"
+"žádná hodnota, Lynx použije osobní emailovou adresu.  Nastavte\n"
+"anonftp_password na libovolnou hodnotu.\n"
+"\n"
+
+#: src/LYrcFile.c:380
+msgid ""
+"bookmark_file specifies the name and location of the default bookmark\n"
+"file into which the user can paste links for easy access at a later\n"
+"date.\n"
+msgstr ""
+"bookmark_file udává jméno implicitního souboru se záložkami,\n"
+"do kterého si uživatel může ukládat odkazy pro pozdější použití.\n"
+
+#: src/LYrcFile.c:385
+msgid ""
+"If case_sensitive_searching is \"on\" then when the user invokes a search\n"
+"using the 's' or '/' keys, the search performed will be case sensitive\n"
+"instead of case INsensitive.  The default is usually \"off\".\n"
+msgstr ""
+"Pokud je volba case_sensitive_searching zapnuta (\"on\"), uživatel při vyhledávání,\n"
+"které spustí klávesou 's' či '/' , bude toto brát ohled na velikost písmen.\n"
+"Tato volba je implicitně vypnuta (\"off\").\n"
+
+#: src/LYrcFile.c:390
+msgid ""
+"The character_set definition controls the representation of 8 bit\n"
+"characters for your terminal.  If 8 bit characters do not show up\n"
+"correctly on your screen you may try changing to a different 8 bit\n"
+"set or using the 7 bit character approximations.\n"
+"Current valid characters sets are:\n"
+msgstr ""
+"Volba character_set definuje způsob zobrazení 8bitových znaků na vašem\n"
+"terminálu.  Pokud se na vaší obrazovce 8bitové znaky nezobrazují správně,\n"
+"můžete zkusit jiné 8bitové kódování, či použít 7bitové aproximace.\n"
+"Možné znakové sady:\n"
+
+#: src/LYrcFile.c:398
+msgid ""
+"cookie_accept_domains and cookie_reject_domains are comma-delimited\n"
+"lists of domains from which Lynx should automatically accept or reject\n"
+"all cookies.  If a domain is specified in both options, rejection will\n"
+"take precedence.  The accept_all_cookies parameter will override any\n"
+"settings made here.\n"
+msgstr ""
+"cookie_accept_domains a cookie_reject_domains jsou dvojtečkou oddělený seznam\n"
+"domén, z kterých Lynx automaticky přijme, či odmítne jakékoliv cookie. Pokud\n"
+"je doména uvedena v obou seznamech, má cookie_reject_domains přednost. Volba\n"
+"accept_all_cookies má vyšší prioritu, než obě tyto volby.\n"
+
+#: src/LYrcFile.c:406
+msgid ""
+"cookie_file specifies the file from which to read persistent cookies.\n"
+"The default is ~/"
+msgstr ""
+"cookie_file udává soubor, ve kterém se ukládají trvalé cookies.\n"
+"Implicitním hodnotou je ~/"
+
+#: src/LYrcFile.c:411
+msgid ""
+"cookie_loose_invalid_domains, cookie_strict_invalid_domains, and\n"
+"cookie_query_invalid_domains are comma-delimited lists of which domains\n"
+"should be subjected to varying degrees of validity checking.  If a\n"
+"domain is set to strict checking, strict conformance to RFC2109 will\n"
+"be applied.  A domain with loose checking will be allowed to set cookies\n"
+"with an invalid path or domain attribute.  All domains will default to\n"
+"querying the user for an invalid path or domain.\n"
+msgstr ""
+"cookie_loose_invalid_domains, cookie_strict_invalid_domains a\n"
+"cookie_query_invalid_domains jsou dvojtečkou oddělený seznam domén,\n"
+"které by měly být podrobeny nejrůznějším stupňům ověřování. Pokud je\n"
+"doména nastavena na 'strict' ověřování, bude postupováno přesně dle RFC2109.\n"
+"Doména s 'loose' ověřováním bude moci nastavovat cookies s chybnou cestou\n"
+"či doménovým atributem (implicitním nastavením je zeptat se uživatele - query).\n"
+
+#: src/LYrcFile.c:425
+msgid ""
+"dir_list_order specifies the directory list order under DIRED_SUPPORT\n"
+"(if implemented).  The default is \"ORDER_BY_NAME\"\n"
+msgstr ""
+"dir_list_order specifikuje seznamd adresářů pod DIRED_SUPPORT\n"
+"(pokud je podporováno).  Implicitně je nastaveno \"ORDER_BY_NAME\",\n"
+"které seřadí adresáře podle jména\n"
+
+#: src/LYrcFile.c:430
+msgid ""
+"dir_list_styles specifies the directory list style under DIRED_SUPPORT\n"
+"(if implemented).  The default is \"MIXED_STYLE\", which sorts both\n"
+"files and directories together.  \"FILES_FIRST\" lists files first and\n"
+"\"DIRECTORIES_FIRST\" lists directories first.\n"
+msgstr ""
+"dir_list_styles udává použitý styl pro výpis adresářů pod DIRED_SUPPORT\n"
+"(pokud je podporováno).  Implicitní nastavení je \"MIXED_STYLE\", které způsobí\n"
+"vzájemné promíchání souborů s adresáři. \"FILES_FIRST\" vypíše jako první\n"
+"soubory a \"DIRED_SUPPORT\" adresáře.\n"
+
+#: src/LYrcFile.c:438
+msgid ""
+"If emacs_keys is to \"on\" then the normal EMACS movement keys:\n"
+"  ^N = down    ^P = up\n"
+"  ^B = left    ^F = right\n"
+"will be enabled.\n"
+msgstr ""
+"Pokud je volba emacs_keys nastavena na \"on\", pak jsou běžné EMACS klávesy pro pohyb:\n"
+"  ^N = dolů   ^P = nahoru\n"
+"  ^B = vlevo   ^F = vpravo\n"
+"zapnuty.\n"
+
+#: src/LYrcFile.c:444
+msgid ""
+"file_editor specifies the editor to be invoked when editing local files\n"
+"or sending mail.  If no editor is specified, then file editing is disabled\n"
+"unless it is activated from the command line, and the built-in line editor\n"
+"will be used for sending mail.\n"
+msgstr ""
+"file_editor udává, který editor bude použit k úpravám místních souborů\n"
+"a psaní mailů.  Jestliže není specifikován žádný editor, tak, pokud nejsou\n"
+"povoleny z příkazové řádky, jsou úpravy souborů zakázány. Pro psaní mailů\n"
+"bude použit vestavěný editor.\n"
+
+#: src/LYrcFile.c:451
+msgid ""
+"The file_sorting_method specifies which value to sort on when viewing\n"
+"file lists such as FTP directories.  The options are:\n"
+"   BY_FILENAME -- sorts on the name of the file\n"
+"   BY_TYPE     -- sorts on the type of the file\n"
+"   BY_SIZE     -- sorts on the size of the file\n"
+"   BY_DATE     -- sorts on the date of the file\n"
+msgstr ""
+"Metoda řazení souborů udává klíč, dle kterého budou řazeny seznamy souborů,\n"
+"jako jsou například FTP adresáře.  Možné volby jsou:\n"
+"   BY_FILENAME -- řadí dle jména souboru\n"
+"   BY_TYPE     -- řadí dle typu souboru\n"
+"   BY_SIZE     -- řadí dle velikosti souboru\n"
+"   BY_DATE     -- řadí dle data souboru\n"
+
+#: src/LYrcFile.c:478
+msgid ""
+"lineedit_mode specifies the key binding used for inputting strings in\n"
+"prompts and forms.  If lineedit_mode is set to \"Default Binding\" then\n"
+"the following control characters are used for moving and deleting:\n"
+"\n"
+"             Prev  Next       Enter = Accept input\n"
+"   Move char: <-    ->        ^G    = Cancel input\n"
+"   Move word: ^P    ^N        ^U    = Erase line\n"
+" Delete char: ^H    ^R        ^A    = Beginning of line\n"
+" Delete word: ^B    ^F        ^E    = End of line\n"
+"\n"
+"Current lineedit modes are:\n"
+msgstr ""
+"lineedit_mode specifikuje funkce kláves pro řádkový editor a formuláře.\n"
+"Pokud je tato volba nastavena na \"Default Binding\", pak jsou pro posun\n"
+"kurzoru a mazání textu použity následující klávesy:\n"
+"\n"
+"                Prev  Next      Enter = Přijme zadaný text\n"
+" Posun o znak:  <-    ->        ^G    = Zruší zadávání\n"
+" Posun o slovo: ^P    ^N        ^U    = Smaže řádek\n"
+" Smaže znak:    ^H    ^R        ^A    = Začátek řádku\n"
+" Smaže slovo:   ^B    ^F        ^E    = Konec řádku\n"
+"\n"
+"Možné režimy řádkového editoru:\n"
+
+#: src/LYrcFile.c:496
+msgid ""
+"The following allow you to define sub-bookmark files and descriptions.\n"
+"The format is multi_bookmark<capital_letter>=<filename>,<description>\n"
+"Up to 26 bookmark files (for the English capital letters) are allowed.\n"
+"We start with \"multi_bookmarkB\" since 'A' is the default (see above).\n"
+msgstr ""
+"Zde můžete nastavit jména podsouborů záložek a jejich popisy. Formát je:\n"
+"multi_bookmark<velké_písmeno>=<jméno souboru>,<popis>. Může být zadáno až 26\n"
+"podsouborů záložek (každý odpovídá jednomu velkému písmenu anglické abecedy).\n"
+"Začíná se s \"multi_bookmarkB\", protože 'A' je implicitní (viz výše).\n"
+
+#: src/LYrcFile.c:502
+msgid ""
+"personal_mail_address specifies your personal mail address.  The\n"
+"address will be sent during HTTP file transfers for authorization and\n"
+"logging purposes, and for mailed comments.\n"
+"If you do not want this information given out, set the NO_FROM_HEADER\n"
+"to TRUE in lynx.cfg, or use the -nofrom command line switch.  You also\n"
+"could leave this field blank, but then you won't have it included in\n"
+"your mailed comments.\n"
+msgstr ""
+"personal_mail_address udává vaši osobní adresu elektronické pošty. Bude\n"
+"použita při HTTP přenosech souborů pro autorizaci a záznam činnosti a při\n"
+"zasílání komentářů.\n"
+"Pokud chcete, aby tato informace zůstala důvěrnou, nastavte v konfiguračním\n"
+"souboru lynx.cfg volbu NO_FROM_HEADER na TRUE, či použijte přepínač -nofrom\n"
+"z příkazového řádku.  Je možné nechat toto pole prázdné, ale pak by nebylo\n"
+"začleněno do vámi odeslaných komentářů.\n"
+
+#: src/LYrcFile.c:511
+msgid ""
+"personal_mail_name specifies your personal name, for mail.  The\n"
+"name is sent for mailed comments.  Lynx will prompt for this,\n"
+"showing the configured value as a default when sending mail.\n"
+"This is not necessarily the same as a name provided as part of the\n"
+"personal_mail_address.\n"
+"Lynx does not save your changes to that default value as a side-effect\n"
+"of sending email.  To update the default value, you must use the options\n"
+"menu, or modify this file directly.\n"
+msgstr ""
+"personal_mail_name specifikuje vaše osobní jméno pro email.  Jméno\n"
+"je posíláno s komentáři.  Při posílání emailu se Lynx vždy zeptá a nabídne\n"
+"nakonfigurované jméno jako implicitní možnost.  Nemusí to být stejné jako\n"
+"jméno použité při osobní emailové adrese.\n"
+
+#: src/LYrcFile.c:521
+msgid ""
+"preferred_charset specifies the character set in MIME notation (e.g.,\n"
+"ISO-8859-2, ISO-8859-5) which Lynx will indicate you prefer in requests\n"
+"to http servers using an Accept-Charset header.  The value should NOT\n"
+"include ISO-8859-1 or US-ASCII, since those values are always assumed\n"
+"by default.  May be a comma-separated list.\n"
+"If a file in that character set is available, the server will send it.\n"
+"If no Accept-Charset header is present, the default is that any\n"
+"character set is acceptable.  If an Accept-Charset header is present,\n"
+"and if the server cannot send a response which is acceptable\n"
+"according to the Accept-Charset header, then the server SHOULD send\n"
+"an error response, though the sending of an unacceptable response\n"
+"is also allowed.\n"
+msgstr ""
+"preferred_charset udává, ve kterých znakových sadách bude Lynx přednostně\n"
+"požadovat dokumenty od http serverů. Znaková sada musí být zadána v MIME notaci\n"
+"(ISO-8859-2, ISO-8859-5). Sady ISO-8859-1 a US-ASCII by NEMĚLY být použity,\n"
+"neboť tyto znakové sady jsou vždy implicitně předpokládány. Znakových sad\n"
+"může být uvedeno více a musí být odděleny čárkou.\n"
+"Pokud je dokument v této znakové sadě k dispozici, server jej zašle. V případě,\n"
+"že hlavička Accept-Charset není přítomna, se implicitně předpokládá, že bude\n"
+"akceptována jakákoli znaková sada. Jestliže je hlavička Accept-Charset přítomna\n"
+"a server nemůže zaslat dokument v pořadované znakové sadě, MĚL BY zaslat\n"
+"chybovou hlášku. Může však také poslat dokument v jiné, než požadované\n"
+"znakové sadě.\n"
+
+#: src/LYrcFile.c:539
+msgid ""
+"preferred_language specifies the language in MIME notation (e.g., en,\n"
+"fr, may be a comma-separated list in decreasing preference)\n"
+"which Lynx will indicate you prefer in requests to http servers.\n"
+"If a file in that language is available, the server will send it.\n"
+"Otherwise, the server will send the file in its default language.\n"
+msgstr ""
+"preferred_language udává, v kterých jazycích bude Lynx přednostně\n"
+"požadovat dokumenty od http serverů. Jazyk musí být zadán v MIME notaci (např.\n"
+"en, fr; může jich být zadáno více oddělených čárkou v sestupném pořadí dle\n"
+"preference). Pokud bude dokument v tomto jazyce k dispozici, server jej zašle.\n"
+"V opačném případě jej zašle ve svém implicitním jazyce.\n"
+
+#: src/LYrcFile.c:550
+msgid ""
+"If run_all_execution_links is set \"on\" then all local execution links\n"
+"will be executed when they are selected.\n"
+"\n"
+"WARNING - This is potentially VERY dangerous.  Since you may view\n"
+"          information that is written by unknown and untrusted sources\n"
+"          there exists the possibility that Trojan horse links could be\n"
+"          written.  Trojan horse links could be written to erase files\n"
+"          or compromise security.  This should only be set to \"on\" if\n"
+"          you are viewing trusted source information.\n"
+msgstr ""
+"Pokud je volba run_all_execution_links zapnuta (\"on\"), pak všechny programy\n"
+"budou při zvolení odkazu na tento program spuštěny.\n"
+"\n"
+"VAROVÁNÍ - Tato volba je VELICE nebezpečná. Jelikož si můžete prohlížet\n"
+"           informace, které pocházejí z neznámých a nedůvěryhodných zdrojů,\n"
+"           existuje možnost, že některé odkazy vedou k programům typu 'trojský\n"
+"           kůň'. Účelem odkazů na 'trojské koně' může být smazání souborů či\n"
+"           narušení bezpečnosti systému. Tato volba by měla být zapnuta pouze\n"
+"           tehdy, jestliže soubory, které prohlížíte, pocházejí z důvěryhodných\n"
+"           zdrojů.\n"
+
+#: src/LYrcFile.c:561
+msgid ""
+"If run_execution_links_on_local_files is set \"on\" then all local\n"
+"execution links that are found in LOCAL files will be executed when they\n"
+"are selected.  This is different from run_all_execution_links in that\n"
+"only files that reside on the local system will have execution link\n"
+"permissions.\n"
+"\n"
+"WARNING - This is potentially dangerous.  Since you may view\n"
+"          information that is written by unknown and untrusted sources\n"
+"          there exists the possibility that Trojan horse links could be\n"
+"          written.  Trojan horse links could be written to erase files\n"
+"          or compromise security.  This should only be set to \"on\" if\n"
+"          you are viewing trusted source information.\n"
+msgstr ""
+"Pokud je volba run_execution_links_on_local_files zapnuta (\"on\"), pak\n"
+"všechny místní programy, na které je odkaz v MÍSTNÍCH souborech, budou při\n"
+"zvolení tohoto odkazu spuštěny. Tato volba se od volby run_all_execution_links\n"
+"odlišuje v tom, že povoluje spouštění pouze těch programů, na něž vedou odkazy\n"
+"z MÍSTNÍCH souborů.\n"
+"\n"
+"VAROVÁNÍ - Tato volba je potenciálně nebezpečná. Jelikož si můžete prohlížet\n"
+"           informace, které pocházejí z neznámých a nedůvěryhodných zdrojů,\n"
+"           existuje možnost, že některé odkazy vedou k programům typu 'trojský\n"
+"           kůň'. Účelem odkazů na 'trojské koně' může být smazání souborů či\n"
+"           narušení bezpečnosti systému. Tato volba by měla být zapnuta pouze\n"
+"           tehdy, jestliže soubory, které prohlížíte, pocházejí z důvěryhodných\n"
+"           zdrojů.\n"
+
+#: src/LYrcFile.c:579
+msgid ""
+"select_popups specifies whether the OPTIONs in a SELECT block which\n"
+"lacks a MULTIPLE attribute are presented as a vertical list of radio\n"
+"buttons or via a popup menu.  Note that if the MULTIPLE attribute is\n"
+"present in the SELECT start tag, Lynx always will create a vertical list\n"
+"of checkboxes for the OPTIONs.  A value of \"on\" will set popup menus\n"
+"as the default while a value of \"off\" will set use of radio boxes.\n"
+"The default can be overridden via the -popup command line toggle.\n"
+msgstr ""
+"select_popups udává, zda volby (OPTION) uvnitř prvku SELECT, který\n"
+"nemá specifikován atribut MULTIPLE, budou zobrazeny jako vertikální seznam\n"
+"přepínacích tlačítek či jako vyskakovací menu. Pokud je atribut MULTIPLE\n"
+"specifikován, pak Lynx vždy vytvoří vertikální seznam zaškrtávacích polí.\n"
+"Nastavení této volby na \"on\" zapne používání vyskakovacích menu. Nastavení\n"
+"na \"off\" zapne používání přepínacích tlačítek. Implicitní nastavení může být\n"
+"potlačeno přepínačem -popup.\n"
+
+#: src/LYrcFile.c:590
+msgid ""
+"show_color specifies how to set the color mode at startup.  A value of\n"
+"\"never\" will force color mode off (treat the terminal as monochrome)\n"
+"at startup even if the terminal appears to be color capable.  A value of\n"
+"\"always\" will force color mode on even if the terminal appears to be\n"
+"monochrome, if this is supported by the library used to build lynx.\n"
+"A value of \"default\" will yield the behavior of assuming\n"
+"a monochrome terminal unless color capability is inferred at startup\n"
+"based on the terminal type, or the -color command line switch is used, or\n"
+"the COLORTERM environment variable is set.  The default behavior always is\n"
+"used in anonymous accounts or if the \"option_save\" restriction is set.\n"
+"The effect of the saved value can be overridden via\n"
+"the -color and -nocolor command line switches.\n"
+"The mode set at startup can be changed via the \"show color\" option in\n"
+"the 'o'ptions menu.  If the option settings are saved, the \"on\" and\n"
+"\"off\" \"show color\" settings will be treated as \"default\".\n"
+msgstr ""
+"show_color udává, jak bude nastaven barevný režim po spuštění programu.\n"
+"Hodnota \"never\" znamená, že terminál bude chápán jako monochromatický\n"
+"(i kdyby podporoval barvy). Hodnota \"always\" zapne barevný režim i když se\n"
+"terminál zdá být monochromatickým. Barvy musí být podporovány knihovnou, se\n"
+"kterou byl Lynx přeložen. Hodnota \"default\" znamená, že pokud bude splněna\n"
+"jedna z následujících podmínek, bude terminál považován za barevný, jinak za\n"
+"monochromatický: terminál podporuje barvy, byl použit přepínač -color či je\n"
+"nastavena proměnná COLORTERM. Implicitní chování je vždy použito pro anonymní\n"
+"účty, nebo pokud je nastaveno omezení \"option_save\".\n"
+"Nastavení této volby může být potlačeno přepínači -color či -nocolor.\n"
+"Režim nastavený při startu může být změněn pomocí volby \"show color\"\n"
+"v konfiguračním menu (do něj vstoupíte klávesou 'o'). Pokud je hodnota volby\n"
+"\"show color\" uložena, je považována za implicitní nastavení.\n"
+
+#: src/LYrcFile.c:607
+msgid ""
+"show_cursor specifies whether to 'hide' the cursor to the right (and\n"
+"bottom, if possible) of the screen, or to place it to the left of the\n"
+"current link in documents, or current option in select popup windows.\n"
+"Positioning the cursor to the left of the current link or option is\n"
+"helpful for speech or braille interfaces, and when the terminal is\n"
+"one which does not distinguish the current link based on highlighting\n"
+"or color.  A value of \"on\" will set positioning to the left as the\n"
+"default while a value of \"off\" will set 'hiding' of the cursor.\n"
+"The default can be overridden via the -show_cursor command line toggle.\n"
+msgstr ""
+"show_cursor udává, zda 'schovat' kurzor k pravému (a pokud možno\n"
+"i dolnímu) kraji obrazovky, či zda jej umístit vlevo k aktuálnímu odkazu\n"
+"(v dokumentech) nebo volbě (ve vyskakovacích menu). Zobrazení kurzoru vlevo\n"
+"od aktuálního odkazu je užitečné pro braille terminály a pro terminály, které\n"
+"neumí zvýraznit aktuální odkaz zvýrazněním či barvou.\n"
+"Nastavení této volby na \"on\" způsobí zobrazování kurzoru vlevo od aktuálního\n"
+"odkazu. Nastavení na \"off\" zapne 'schovávání' kurzoru. Implicitní nastavení\n"
+"může být potlačeno přepínačem -show_cursor.\n"
+
+#: src/LYrcFile.c:618
+msgid ""
+"show_dotfiles specifies that the directory listing should include\n"
+"\"hidden\" (dot) files/directories.  If set \"on\", this will be\n"
+"honored only if enabled via userdefs.h and/or lynx.cfg, and not\n"
+"restricted via a command line switch.  If display of hidden files\n"
+"is disabled, creation of such files via Lynx also is disabled.\n"
+msgstr ""
+"show_dotfiles říká, že výpisy obsahu adresářů by měly zahrnovat\n"
+"\"skryté\" (tečkou začínající) soubory/adresáře. Na zapnutí této volby (nastavení\n"
+"na \"on\"), bude brán zřetel pouze tehdy, jestliže je zapnuta také v lynx.cfg\n"
+"a/nebo v userdefs.h a zároveň není vypnuta z příkazové řádky. Pokud je\n"
+"zobrazování skrytých souborů vypnuto, nebude je možné z Lynxu ani vytvářet.\n"
+
+#: src/LYrcFile.c:629
+msgid ""
+"If sub_bookmarks is not turned \"off\", and multiple bookmarks have\n"
+"been defined (see below), then all bookmark operations will first\n"
+"prompt the user to select an active sub-bookmark file.  If the default\n"
+"Lynx bookmark_file is defined (see above), it will be used as the\n"
+"default selection.  When this option is set to \"advanced\", and the\n"
+"user mode is advanced, the 'v'iew bookmark command will invoke a\n"
+"statusline prompt instead of the menu seen in novice and intermediate\n"
+"user modes.  When this option is set to \"standard\", the menu will be\n"
+"presented regardless of user mode.\n"
+msgstr ""
+"Pokud není volba sub_bookmarks vypnuta (\"off\") a bylo specifikováno více\n"
+"souborů se záložkami (viz níže), pak při všech operacích se záložkami bude\n"
+"uživatel nejprve vyzván, aby vybral některý ze souborů. Jestliže je nastavena\n"
+"volba bookmark_file, pak bude implicitně použita její hodnota.\n"
+"Jestliže je sub_bookmarks nastaveno na \"advanced\" a uživatelský režim je také\n"
+"\"advanced\", tak příkaz pro zobrazení záložek ('v') vyvolá místo menu\n"
+"prompt.  Nastavení této volby na \"standard\" způsobí zobrazení menu bez\n"
+"ohledu na uživatelský režim.\n"
+
+#: src/LYrcFile.c:644
+msgid ""
+"user_mode specifies the users level of knowledge with Lynx.  The\n"
+"default is \"NOVICE\" which displays two extra lines of help at the\n"
+"bottom of the screen to aid the user in learning the basic Lynx\n"
+"commands.  Set user_mode to \"INTERMEDIATE\" to turn off the extra info.\n"
+"Use \"ADVANCED\" to see the URL of the currently selected link at the\n"
+"bottom of the screen.\n"
+msgstr ""
+"user_mode udává úroveň znalostí uživatele o programu Lynx. Implicitní\n"
+"nastavení je \"NOVICE\", které způsobí zobrazení 2 řádek s nápovědou v dolní\n"
+"části obrazovky. Nastavení \"INTERMEDIATE\" vypne tuto nápovědu a nastavení\n"
+"\"ADVANCED\" způsobí vypsání URL aktuálního odkazu v dolní části obrazovky.\n"
+
+#: src/LYrcFile.c:653
+msgid ""
+"If verbose_images is \"on\", lynx will print the name of the image\n"
+"source file in place of [INLINE], [LINK] or [IMAGE]\n"
+"See also VERBOSE_IMAGES in lynx.cfg\n"
+msgstr ""
+"Pokud je volba verbose_images zapnuta (\"on\"), lynx bude zobrazovat jména\n"
+"souborů s obrázky místo [INLINE], [LINK] či [IMAGE].\n"
+"Viz též volbu VERBOSE_IMAGES v lynx.cfg.\n"
+
+#: src/LYrcFile.c:658
+msgid ""
+"If vi_keys is set to \"on\", then the normal VI movement keys:\n"
+"  j = down    k = up\n"
+"  h = left    l = right\n"
+"will be enabled.  These keys are only lower case.\n"
+"Capital 'H', 'J' and 'K will still activate help, jump shortcuts,\n"
+"and the keymap display, respectively.\n"
+msgstr ""
+"Pokud je volba vi_keys nastavena na \"on\", pak jsou běžné VI klávesy pro pohyb:\n"
+"  j = dolů    k = nahoru\n"
+"  h = vlevo   l = vpravo\n"
+"zapnuty.  Fungují pouze malá písmena.\n"
+"Velké 'H', 'J' a 'K zapínají nápovědu, zkrácená URL a výpis klávesové mapy.\n"
+
+#: src/LYrcFile.c:666
+msgid ""
+"The visited_links setting controls how Lynx organizes the information\n"
+"in the Visited Links Page.\n"
+msgstr ""
+"Volba visited_links určuje uspořádání informací na stránce\n"
+"Navštívených odkazů\n"
+
+#: src/LYrcFile.c:910
+msgid ""
+"If keypad_mode is set to \"NUMBERS_AS_ARROWS\", then the numbers on\n"
+"your keypad when the numlock is on will act as arrow keys:\n"
+"            8 = Up Arrow\n"
+"  4 = Left Arrow    6 = Right Arrow\n"
+"            2 = Down Arrow\n"
+"and the corresponding keyboard numbers will act as arrow keys,\n"
+"regardless of whether numlock is on.\n"
+msgstr ""
+"Pokud je volba keypad_mode nastavena na \"NUMBERS_AS_ARROWS\", pak se čísla na\n"
+"numerické klávesnici při zapnutém numlock budou chovat jako kurzorové klávesy:\n"
+"            8 = Nahoru\n"
+"  4 = Vlevo         6 = Vpravo\n"
+"            2 = Dolů\n"
+"Čísla na hlavní klávesnici se budou chovat jako kurzorové klávesy bez ohledu\n"
+"na stav numlock.\n"
+
+#: src/LYrcFile.c:919
+msgid ""
+"If keypad_mode is set to \"LINKS_ARE_NUMBERED\", then numbers will\n"
+"appear next to each link and numbers are used to select links.\n"
+msgstr ""
+"Pokud je volba keypad_mode nastavena na \"LINKS_ARE_NUMBERED\", pak všechny\n"
+"odkazy budou viditelně očíslovány a čísla budou použita ke zvolení příslušného odkazu.\n"
+
+#: src/LYrcFile.c:923
+msgid ""
+"If keypad_mode is set to \"LINKS_AND_FORM_FIELDS_ARE_NUMBERED\", then\n"
+"numbers will appear next to each link and visible form input field.\n"
+"Numbers are used to select links, or to move the \"current link\" to a\n"
+"form input field or button.  In addition, options in popup menus are\n"
+"indexed so that the user may type an option number to select an option in\n"
+"a popup menu, even if the option isn't visible on the screen.  Reference\n"
+"lists and output from the list command also enumerate form inputs.\n"
+msgstr ""
+"Pokud je volba keypad_mode nastavena na \"LINKS_AND_FORM_FIELDS_ARE_NUMBERED\",\n"
+"pak všechny odkazy a viditelná pole formulářů budou viditelně očíslovány. Čísla\n"
+"budou použita ke zvolení příslušného odkazu či přesunu na vstupní pole formuláře\n"
+"či tlačítko. Volby vyskakovacích menu jsou indexovány, takže uživatel může\n"
+"zvolit položku napsáním jejího čísla i když tato není viditelná na obrazovce.\n"
+"Seznamy odkazů a výstup příkazu 'list' jsou také číslovány.\n"
+
+#: src/LYrcFile.c:932
+msgid ""
+"NOTE: Some fixed format documents may look disfigured when\n"
+"\"LINKS_ARE_NUMBERED\" or \"LINKS_AND_FORM_FIELDS_ARE_NUMBERED\" are\n"
+"enabled.\n"
+msgstr ""
+"POZOR: Formát některých dokumentů s pevnou strukturou může při zapnutých volbách\n"
+"\"LINKS_ARE_NUMBERED\" a \"LINKS_AND_FORM_FIELDS_ARE_NUMBERED\" vypadat jako\n"
+"poškozený.\n"
+
+#: src/LYrcFile.c:964
+msgid ""
+"Lynx User Defaults File\n"
+"\n"
+msgstr ""
+"Soubor Implicitních Uživatelských Nastavení Lynxu\n"
+"\n"
+
+#: src/LYrcFile.c:973
+msgid ""
+"This file contains options saved from the Lynx Options Screen (normally\n"
+"with the 'o' key).  To save options with that screen, you must select the\n"
+"checkbox:\n"
+msgstr ""
+"Tento soubor obsahuje nastavení z Obrazovky Nastavní Lynxu (obyčejně\n"
+"dostupné klávesou 'o').  Aby se uložily nastavení z této obrazovky musíte\n"
+"zašrktnout políčko:\n"
+
+#: src/LYrcFile.c:980
+msgid ""
+"You must then save the settings using the link on the line above the\n"
+"checkbox:\n"
+msgstr ""
+"Poté musíte uložit natavení tím, že použijete odkaz na řádku nad\n"
+"zaškrtávacím políčkem:\n"
+
+#: src/LYrcFile.c:987
+msgid ""
+"You may also use the command-line option \"-forms_options\", which displays\n"
+"the simpler Options Menu instead.  Save options with that using the '>' key.\n"
+"\n"
+msgstr ""
+"Také můžete použít volbu příkazové řádky \"-forms_options\", která zobrazí\n"
+"jednodušší Menu Voleb. Uložte tyto volby tlačítkem '>' . \n"
+
+#: src/LYrcFile.c:994
+msgid ""
+"This file contains options saved from the Lynx Options Screen (normally\n"
+"with the '>' key).\n"
+"\n"
+msgstr ""
+"Tento soubor obsahuje možnosti uložené z Obrazovky Nastavení Lynx\n"
+"(obyčejně dostupné klávesou '>' ).\n"
+"\n"
+
+#: src/LYrcFile.c:1001
+msgid ""
+"There is normally no need to edit this file manually, since the defaults\n"
+"here can be controlled from the Options Screen, and the next time options\n"
+"are saved from the Options Screen this file will be completely rewritten.\n"
+"You have been warned...\n"
+"\n"
+"If you are looking for the general configuration file - it is normally\n"
+"called \"lynx.cfg\".  It has different content and a different format.\n"
+"It is not this file.\n"
+msgstr ""
+"Tento soubor není třeba upravovat přímo, jelikož implicitní nastavení\n"
+"mohou být změněna z Konfiguračního menu a když jsou preference\n"
+" z Konfiguračního menu uloženy, tento soubor bude celý přepsán. \n"
+"Byl jste varován...\n"
+"\n"
+"Všeobecný konfigurační soubor, který možná hledáte se normálně \n"
+"jmenuje lynx.cfg a má jiný obsah a jiný formát.  Není to tento soubor.\n"
+
+#~ msgid "HREF in BASE tag is not an absolute URL."
+#~ msgstr "Cílové URL v BASE značce není absolutní."
+
+#~ msgid "Visible links"
+#~ msgstr "Viditelné odkazy"
+
+#~ msgid ""
+#~ "\n"
+#~ "Lynx edit map not declared.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Editovací mapy Lynxu nejsou deklarovány.\n"
+#~ "\n"
+
+#~ msgid "Comment request cancelled!!!"
+#~ msgstr "Odeslání komentáře zrušeno!!!"
+
+#~ msgid "You are not allowed to goto \"file:\" URLs"
+#~ msgstr "\"file:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"finger:\" URLs"
+#~ msgstr "\"finger:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"ftp:\" URLs"
+#~ msgstr "\"ftp:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"gopher:\" URLs"
+#~ msgstr "\"gopher:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"http:\" URLs"
+#~ msgstr "\"http:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"https:\" URLs"
+#~ msgstr "\"https:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"lynxcgi:\" URLs"
+#~ msgstr "\"lynxcgi:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"lynxexec:\" URLs"
+#~ msgstr "\"lynxexec:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"lynxprog:\" URLs"
+#~ msgstr "\"lynxprog:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"mailto:\" URLs"
+#~ msgstr "\"mailto:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"news:\" URLs"
+#~ msgstr "\"news:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"nntp:\" URLs"
+#~ msgstr "\"nntp:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"rlogin:\" URLs"
+#~ msgstr "\"rlogin:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"snews:\" URLs"
+#~ msgstr "\"snews:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"telnet:\" URLs"
+#~ msgstr "\"telnet:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"tn3270:\" URLs"
+#~ msgstr "\"tn3270:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "You are not allowed to goto \"wais:\" URLs"
+#~ msgstr "\"wais:\" URL nesmíte použít jako cíl!"
+
+#~ msgid "This special URL is not allowed as a goto!"
+#~ msgstr "Toto zvláštní URL nesmíte použít jako cíl!"
+
+#~ msgid "Option choice (or page) number: "
+#~ msgstr "Zvolte číslo možnosti (či strany): "
+
+#~ msgid "Choice number %d already is current."
+#~ msgstr "Možnost číslo %d je právě aktivní."
+
+#~ msgid "You are already at the end of this choice list."
+#~ msgstr "Jste na konci seznamu možností."
+
+#~ msgid "You are already at the beginning of this choice list."
+#~ msgstr "Jste na začátku seznamu možností."
+
+#~ msgid "You are already at page %d of this choice list."
+#~ msgstr "Již jste na straně %d seznamu možností."
+
+#~ msgid "You have entered an invalid choice number."
+#~ msgstr "Zadal jste chybné číslo možnosti."
+
+#~ msgid "History List maximum reached!  Document not pushed."
+#~ msgstr "Maximální velikost seznamu historie dosažena! Dokument nebyl zaznamenán."
+
+#~ msgid "Socket read failed for 180,000 tries."
+#~ msgstr "180 000 neúspěšných pokusů číst ze soketu."
+
+#~ msgid "reason unknown."
+#~ msgstr "důvod není znám."
+
+#~ msgid "Very long lines have been wrapped!"
+#~ msgstr "Příliš dlouhé řádky byly zalomeny!"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "Read %ld of %ld %s of data"
+#~ msgstr "Množství přenesených dat: %ld/%ld %s"
+
+#~ msgid "Read %ld %s of data"
+#~ msgstr "Množství přenesených dat: %ld %s"
+
+#~ msgid ", %ld %s/sec."
+#~ msgstr ", %ld %s/s."
+
+#~ msgid "(From Cookie Jar)"
+#~ msgstr "(Ze skladu cookies)"
+
+#~ msgid "Path too long"
+#~ msgstr "Cesta je příliš dlouhá."
+
+#~ msgid "Source and destination are the same location - request ignored!"
+#~ msgstr "Zdroj a cíl označují jedno a to samé místo - požadavek zamítnut!"
+
+#~ msgid "create %s"
+#~ msgstr "vytvořit %s"
+
+#~ msgid "Remove '%s' and all of its contents?"
+#~ msgstr "Smazat '%s' a veškerý jeho obsah?"
+
+#~ msgid "Remove directory and all of its contents?"
+#~ msgstr "Smazat adresář a veškerý jeho obsah?"
+
+#~ msgid "Unable to open file management menu file."
+#~ msgstr "Nelze otevřít soubor s menu správce souborů."
+
+#~ msgid "Lynx ver. %s"
+#~ msgstr "Lynx ver. %s"
+
+#~ msgid "X_Personal_name: "
+#~ msgstr "X_Osobní jméno: "
+
+#~ msgid "Personal Name: "
+#~ msgstr "Osobní jméno: "
+
+#~ msgid "Inactive text input, activate to edit (e.g., press ENTER)"
+#~ msgstr "neaktivní textový vstup, aktivujte pro editaci (např. stiskněte ENTER)"
+
+#~ msgid "Ignoring invalid HOME"
+#~ msgstr "Ignoruji chybnou hodnotu HOME"
+
+#~ msgid ""
+#~ "partial_thres specifies the number of lines Lynx should download and render\n"
+#~ "before we redraw the screen in Partial Display logic\n"
+#~ "e.g., partial_thres=2\n"
+#~ "would have Lynx redraw every 2 lines that it renders\n"
+#~ "partial_thres=-1 would use the entire screensize\n"
+#~ msgstr ""
+#~ "Volba partial_thres udává počet řádků, které by Lynx měl stáhnout než bude,\n"
+#~ "vykreslena obrazovka. T.j. partial_thres=2 způsobí, že Lynx zobrazí\n"
+#~ "každé 2 řádky, které stáhne. partial_thres=-1 znamená celou obrazovku.\n"

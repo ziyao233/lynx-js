@@ -1382,6 +1382,9 @@ then
 fi
 AC_SUBST(MAKE_WAIS)
 
+AC_CHECK_LIB(quickjs, JS_SetPrototype, [CF_ADD_LIB(quickjs)],
+	     [AC_ERROR(could not find quickjs library)])
+
 dnl --------------------------------------------------------------------------
 dnl DirEd (directory-editor) options
 dnl --------------------------------------------------------------------------

@@ -1,48 +1,48 @@
 # $LynxId: makefile.in,v 1.77 2021/02/28 15:56:53 tom Exp $
 # template-makefile for Lynx src directory
 
-SHELL		= @CONFIG_SHELL@
+SHELL		= /bin/sh
 CDPATH		= .
 
-@SET_MAKE@
-prefix		= @prefix@
-datarootdir	= @datarootdir@
-exec_prefix	= @exec_prefix@
-top_srcdir	= @top_srcdir@
-srcdir		= @srcdir@
-VPATH		= .:$(srcdir)
+
+prefix		= /usr/local
+datarootdir	= ${prefix}/share
+exec_prefix	= ${prefix}
+top_srcdir	= ..
+srcdir		= .
+VPATH		= .
 
 top_builddir	= ..
 
 # see po/makefile
-localedir	= @NLS_DATADIR@/locale
+localedir	= /usr/local/share/locale
 
 # Symbols which the configure script can set in each makefile:
-CC		= @CC@
-CPP		= @CPP@
-CFLAGS		= @CFLAGS@ @EXTRA_CPPFLAGS@
-DEFS		= @DEFS@
-CHARSET_DEFS	= @CHARSET_DEFS@
-CPPFLAGS	= @CPPFLAGS@
+CC		= gcc
+CPP		= gcc -E -C
+CFLAGS		= -O2  
+DEFS		= -DHAVE_CONFIG_H
+CHARSET_DEFS	= 
+CPPFLAGS	= -D_LARGE_FILES -D_POSIX_C_SOURCE=199506L -DLINUX -D_GNU_SOURCE -D_XOPEN_SOURCE_EXTENDED
 
-x		= @EXEEXT@
-o		= .@OBJEXT@
+x		= 
+o		= .o
 
-BUILD_CC	= @BUILD_CC@
-BUILD_CPP	= @BUILD_CPP@
-BUILD_CFLAGS	= @BUILD_CFLAGS@
-BUILD_CPPFLAGS	= @BUILD_CPPFLAGS@ @DEFS@
-BUILD_EXEEXT	= @BUILD_EXEEXT@
-BUILD_LDFLAGS	= @BUILD_LDFLAGS@
-BUILD_LIBS	= @BUILD_LIBS@
+BUILD_CC	= ${CC}
+BUILD_CPP	= ${CPP}
+BUILD_CFLAGS	= ${CFLAGS}
+BUILD_CPPFLAGS	= ${CPPFLAGS} -DHAVE_CONFIG_H
+BUILD_EXEEXT	= $x
+BUILD_LDFLAGS	= ${LDFLAGS}
+BUILD_LIBS	= ${LIBS}
 
-MAKE_RECUR	= $(MAKE) @cf_cv_makeflags@ DESTDIR="$(DESTDIR)" CC="$(CC)"
+MAKE_RECUR	= $(MAKE)  DESTDIR="$(DESTDIR)" CC="$(CC)"
 
-YACC		= @YACC@
-WINDRES		= @WINDRES@
+YACC		= bison -y
+WINDRES		= none
 
-LIBS		= @LIBS@ $(RESOLVLIB) $(WAISLIB) $(SITE_LIBS)
-LDFLAGS		= @EXTRA_LDFLAGS@ @LDFLAGS@
+LIBS		=  -lquickjs -lncurses $(RESOLVLIB) $(WAISLIB) $(SITE_LIBS)
+LDFLAGS		= -Wl,-rpath,/usr/lib/quickjs   -L/lib -L/usr/lib/quickjs
 
 # Symbols inherited from the top-level makefile
 RESOLVLIB	= # FIXME: set in parent makefile
@@ -53,8 +53,8 @@ WAISLIB		= # FIXME: set in parent makefile
 WWWINC		= WWW/Library/Implementation
 WWWLIB		= $(top_builddir)/WWW/Library/Implementation/libwww.a
 
-INTLLIB		= @INTLLIBS@
-INTLDIR_CPPFLAGS= @INTLDIR_CPPFLAGS@-I$(top_srcdir)/intl
+INTLLIB		= 
+INTLDIR_CPPFLAGS= #-I$(top_srcdir)/intl
 
 CPP_OPTS	= $(DEFS) $(CHARSET_DEFS) \
 		-DLOCALEDIR=\"$(localedir)\" \
@@ -68,13 +68,13 @@ CPP_OPTS	= $(DEFS) $(CHARSET_DEFS) \
 		$(INTLDIR_CPPFLAGS) $(SITE_DEFS) $(CPPFLAGS)
 CC_OPTS		= $(CFLAGS) $(CPP_OPTS)
 
-LINT		= @LINT@
+LINT		= 
 LINTOPTS	=
 
-CTAGS		= @CTAGS@
+CTAGS		= 
 
-COMPRESS_PROG	=@COMPRESS_PROG@
-COMPRESS_EXT	=@COMPRESS_EXT@
+COMPRESS_PROG	=
+COMPRESS_EXT	=
 
 CHARTRANS_OBJS	= UCdomap$o UCAux$o UCAuto$o
 JS_OBJS		= $(patsubst %.c, %.o, $(wildcard js/*.c))
@@ -91,7 +91,7 @@ OBJS		= \
 	LYMap$o LYCookie$o LYStyle$o LYHash$o LYPrettySrc$o		\
 	TRSTable$o parsdate$o						\
 	$(JS_OBJS)							\
-	$(CHARTRANS_OBJS) @EXTRA_OBJS@ @LIBOBJS@
+	$(CHARTRANS_OBJS)  LYSession$o LYLocal$o 
 
 C_SRC		= $(OBJS:$o=.c)
 
@@ -101,12 +101,12 @@ all: lynx-js$x
 
 # yacc builds .c in target directory, not $(srcdir)
 .c$o:
-	@RULE_CC@
-	@ECHO_CC@$(CC) $(CC_OPTS) -c $< -o $@
+	
+	$(CC) $(CC_OPTS) -c $< -o $@
 
 .c.i:
-	@RULE_CC@
-	@ECHO_CC@$(CPP) $(CPP_OPTS) $< >$@
+	
+	$(CPP) $(CPP_OPTS) $< >$@
 
 lynx-js$x:   message $(top_builddir)/LYHelp.h $(OBJS) $(WWWLIB)
 	@echo "Linking and creating Lynx executable"

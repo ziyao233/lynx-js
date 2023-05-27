@@ -1,398 +1,1131 @@
-/*
- * $LynxId: config.hin,v 1.152 2021/07/29 23:16:41 tom Exp $
- * vile:cmode
- *
- * The configure script translates "config.hin" into "lynx_cfg.h"
- */
-#ifndef LYNX_CFG_H
-#define LYNX_CFG_H 1
+/* config.hin.  Generated from configure.in by autoheader.  */
 
+/* Define to 0 if xxx */
+#undef ALL_CHARSETS
+
+/* Define to 1 if if curses supports alternate-character set */
+#undef ALT_CHAR_SET
+
+/* Define to 1 if you wish to allow extracting from archives via DirEd */
+#undef ARCHIVE_ONLY
+
+/* Define to provide args for BROTLI */
+#undef BROTLI_ARGS
+
+/* Define to pathname BROTLI */
+#undef BROTLI_PATH
+
+/* Define to provide args for BZIP2 */
+#undef BZIP2_ARGS
+
+/* Define to pathname BZIP2 */
+#undef BZIP2_PATH
+
+/* Define to 1 if we can set errno */
+#undef CAN_SET_ERRNO
+
+/* Define to 1 if C compiler supports prototypes */
+#undef CC_HAS_PROTOS
+
+/* Define to 1 if CJK logic should be used */
+#undef CJK_EX
+
+/* Define to 1 if if curses supports color attributes */
+#undef COLOR_CURSES
+
+/* Define to provide args for COMPRESS */
+#undef COMPRESS_ARGS
+
+/* Define to pathname COMPRESS */
+#undef COMPRESS_PATH
+
+/* Define to 1 ifr curses performance tradeoff available */
+#undef CURS_PERFORMANCE
+
+/* Define to 1 if using 'alloca.c'. */
+#undef C_ALLOCA
+
+/* Define to 1 if we want dired support */
+#undef DIRED_SUPPORT
+
+/* Define to 1 if bibp: URLs should be supported */
+#undef DISABLE_BIBP
+
+/* Define to 1 if you want to exclude FINGER code */
+#undef DISABLE_FINGER
+
+/* Define to 1 if you want to exclude FTP code */
+#undef DISABLE_FTP
+
+/* Define to 1 if you want to exclude GOPHER code */
+#undef DISABLE_GOPHER
+
+/* Define to 1 if you want to exclude NEWS code */
+#undef DISABLE_NEWS
+
+/* Define to 1 if partial-display should be used */
+#undef DISP_PARTIAL
+
+/* Define to 1 if the tm-struct defines .tm_gmtoff member */
+#undef DONT_HAVE_TM_GMTOFF
+
+/* Define to 1 if we should enable ipv6 */
+#undef ENABLE_IPV6
+
+/* Define to 1 if translation of program messages to the user's native
+   language is requested. */
+#undef ENABLE_NLS
+
+/* Define to 1 if you want change-exec support */
+#undef ENABLE_OPTS_CHANGE_EXEC
+
+/* Define to 1 if you want exec-links support */
+#undef EXEC_LINKS
+
+/* Define to 1 if you want exec-scripts support */
+#undef EXEC_SCRIPTS
+
+/* Define to 1 if you want to use setfont support */
+#undef EXP_CHARTRANS_AUTOSWITCH
+
+/* Define to 1 if Chinese UTF-8 logic should be used */
+#undef EXP_CHINESEUTF8_SUPPORT
+
+/* Define to 1 if experimental keyboard-layout logic should be used */
+#undef EXP_KEYBOARD_LAYOUT
+
+/* Define to 1 if experimental nested-table logic should be used */
+#undef EXP_NESTED_TABLES
+
+/* Define to 1 if experimental wcwidth/UTF-8 logic should be used */
+#undef EXP_WCWIDTH_SUPPORT
+
+/* Define to FALSE if curses.h does not define */
+#undef FALSE
+
+/* Define to 1 if curses supports fancy attributes */
+#undef FANCY_CURSES
+
+/* Define to noreturn-attribute for gcc */
+#undef GCC_NORETURN
+
+/* Define to 1 if the compiler supports gcc-like printf attribute. */
+#undef GCC_PRINTF
+
+/* Define to printf-attribute for gcc */
+#undef GCC_PRINTFLIKE
+
+/* Define to 1 if the compiler supports gcc-like scanf attribute. */
+#undef GCC_SCANF
+
+/* Define to sscanf-attribute for gcc */
+#undef GCC_SCANFLIKE
+
+/* Define to unused-attribute for gcc */
+#undef GCC_UNUSED
+
+/* Define to the type of elements in the array set by `getgroups'. Usually
+   this is either `int' or `gid_t'. */
+#undef GETGROUPS_T
+
+/* Define to provide args for GZIP */
+#undef GZIP_ARGS
+
+/* Define to pathname GZIP */
+#undef GZIP_PATH
+
+/* Define to 1 if you have 'alloca', as a function or macro. */
+#undef HAVE_ALLOCA
+
+/* Define to 1 if <alloca.h> works. */
+#undef HAVE_ALLOCA_H
+
+/* Define to 1 if you have the <argz.h> header file. */
+#undef HAVE_ARGZ_H
+
+/* Define to 1 if you have the <arpa/inet.h> header file. */
+#undef HAVE_ARPA_INET_H
+
+/* Define to 1 if you have the `atoll' function. */
+#undef HAVE_ATOLL
+
+/* Define to 1 if bsd/random.h header should be used */
+#undef HAVE_BSD_RANDOM_H
+
+/* Define to 1 if bsd/stdlib.h header should be used */
+#undef HAVE_BSD_STDLIB_H
+
+/* Define to 1 if curses has bsd-style touchline */
+#undef HAVE_BSD_TOUCHLINE
+
+/* Define to 1 if you have the `ctermid' function. */
+#undef HAVE_CTERMID
+
+/* Define to 1 if we have cursesX.h */
+#undef HAVE_CURSESX_H
+
+/* Define to 1 if you have the `curses_exit' function. */
+#undef HAVE_CURSES_EXIT
+
+/* Define to 1 if we have curses_version function */
+#undef HAVE_CURSES_VERSION
+
+/* Define to 1 if you have the `cuserid' function. */
+#undef HAVE_CUSERID
+
+/* Define to 1 if you have the `dcgettext' function. */
+#undef HAVE_DCGETTEXT
+
+/* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_DIRENT_H
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `feof_unlocked' function. */
+#undef HAVE_FEOF_UNLOCKED
+
+/* Define to 1 if you have the `fgets_unlocked' function. */
+#undef HAVE_FGETS_UNLOCKED
+
+/* Define to 1 if you have the `fork' function. */
+#undef HAVE_FORK
+
+/* Define to 1 if fseeko (and presumably ftello) exists and is declared. */
+#undef HAVE_FSEEKO
+
+/* Define to 1 if you have the `ftime' function. */
+#undef HAVE_FTIME
+
+/* Define to 1 if we have gai_strerror function */
+#undef HAVE_GAI_STRERROR
+
+/* Define to 1 if we have getaddrinfo function */
+#undef HAVE_GETADDRINFO
+
+/* Define to 1 if curses has getbkgd function */
+#undef HAVE_GETBKGD
+
+/* Define to 1 if you have the `getcwd' function. */
+#undef HAVE_GETCWD
+
+/* Define to 1 if you have the `getegid' function. */
+#undef HAVE_GETEGID
+
+/* Define to 1 if you have the `geteuid' function. */
+#undef HAVE_GETEUID
+
+/* Define to 1 if you have the `getgid' function. */
+#undef HAVE_GETGID
+
+/* Define to 1 if you have the `getgroups' function. */
+#undef HAVE_GETGROUPS
+
+/* Define to 1 if you have the `gethostbyname' function. */
+#undef HAVE_GETHOSTBYNAME
+
+/* Define to 1 if you have the `gethostname' function. */
+#undef HAVE_GETHOSTNAME
+
+/* Define to 1 if you have the `getpagesize' function. */
+#undef HAVE_GETPAGESIZE
+
+/* Define to 1 if we have gettext function */
+#undef HAVE_GETTEXT
+
+/* Define to 1 if you have the `gettimeofday' function. */
+#undef HAVE_GETTIMEOFDAY
+
+/* Define to 1 if you have the `getuid' function. */
+#undef HAVE_GETUID
+
+/* Define to 1 if you have the `gnutls_protocol_set_priority' function. */
+#undef HAVE_GNUTLS_PROTOCOL_SET_PRIORITY
+
+/* Define to 1 if we have gnutls_rnd */
+#undef HAVE_GNUTLS_RND
+
+/* Define if you have the iconv() function. */
+#undef HAVE_ICONV
+
+/* Define to 1 if we have inet_aton */
+#undef HAVE_INET_ATON
+
+/* Define to 1 if you have the `inet_ntoa' function. */
+#undef HAVE_INET_NTOA
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <jcurses.h> header file. */
+#undef HAVE_JCURSES_H
+
+/* Define if you have <langinfo.h> and nl_langinfo(CODESET). */
+#undef HAVE_LANGINFO_CODESET
+
+/* Define to 1 if you have the <lastlog.h> header file. */
+#undef HAVE_LASTLOG_H
+
+/* Define if your <locale.h> file defines LC_MESSAGES. */
+#undef HAVE_LC_MESSAGES
+
+/* Define to 1 if you have the `c_s' library (-lc_s). */
+#undef HAVE_LIBC_S
+
+/* Define to 1 if you have the `dbmalloc' library (-ldbmalloc). */
+#undef HAVE_LIBDBMALLOC
+
+/* Define to 1 if you have the `dmalloc' library (-ldmalloc). */
+#undef HAVE_LIBDMALLOC
+
+/* Define to 1 if we have libgettext.h */
+#undef HAVE_LIBGETTEXT_H
+
+/* Define to 1 if we have header-file for libintl */
+#undef HAVE_LIBINTL_H
+
+/* Define to 1 if you have the `nss_compat_ossl' library (-lnss_compat_ossl).
+   */
+#undef HAVE_LIBNSS_COMPAT_OSSL
+
+/* Define to 1 if we should include libutf8.h */
+#undef HAVE_LIBUTF8_H
+
+/* Define to 1 if we can compile with the Xt library */
+#undef HAVE_LIBXT
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define to 1 if you have the <locale.h> header file. */
+#undef HAVE_LOCALE_H
+
+/* Define to 1 if compiler supports long long type */
+#undef HAVE_LONG_LONG
+
+/* Define to 1 if we have lstat */
+#undef HAVE_LSTAT
+
+/* Define to 1 if you have the <malloc.h> header file. */
+#undef HAVE_MALLOC_H
+
+/* Define to 1 if math functions are available */
+#undef HAVE_MATH_FUNCS
+
+/* Define to 1 if we have mbstate_t type */
+#undef HAVE_MBSTATE_T
+
+/* Define to 1 if you have the `mempcpy' function. */
+#undef HAVE_MEMPCPY
+
+/* Define to 1 if you have the `mkdtemp' function. */
+#undef HAVE_MKDTEMP
+
+/* Define to 1 if you have the `mktemp' function. */
+#undef HAVE_MKTEMP
+
+/* Define to 1 if you have the `mktime' function. */
+#undef HAVE_MKTIME
+
+/* Define to 1 if you have a working `mmap' system call. */
+#undef HAVE_MMAP
+
+/* Define to 1 if you have the `munmap' function. */
+#undef HAVE_MUNMAP
+
+/* Define to 1 if we have ncursesw/ncurses.h */
+#undef HAVE_NCURSESW_NCURSES_H
+
+/* Define to 1 if we have ncursesw/term.h */
+#undef HAVE_NCURSESW_TERM_H
+
+/* Define to 1 if we have ncursesw/unctrl.h */
+#undef HAVE_NCURSESW_UNCTRL_H
+
+/* Define to 1 if we have ncurses.h */
+#undef HAVE_NCURSES_H
+
+/* Define to 1 if we have ncurses/ncurses.h */
+#undef HAVE_NCURSES_NCURSES_H
+
+/* Define to 1 if we have ncurses/term.h */
+#undef HAVE_NCURSES_TERM_H
+
+/* Define to 1 if we have ncurses/unctrl.h */
+#undef HAVE_NCURSES_UNCTRL_H
+
+/* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
+#undef HAVE_NDIR_H
+
+/* Define to 1 if you have the <nl_types.h> header file. */
+#undef HAVE_NL_TYPES_H
+
+/* Define to 1 if you have the <paths.h> header file. */
+#undef HAVE_PATHS_H
+
+/* Define to 1 if you have the `popen' function. */
+#undef HAVE_POPEN
+
+/* Define to 1 if you have the `putenv' function. */
+#undef HAVE_PUTENV
+
+/* Define to 1 if you have the `readdir' function. */
+#undef HAVE_READDIR
+
+/* Define to 1 if you have the `setenv' function. */
+#undef HAVE_SETENV
+
+/* Define to 1 if you have the `setlocale' function. */
+#undef HAVE_SETLOCALE
+
+/* Define to 1 if you have the `setuid' function. */
+#undef HAVE_SETUID
+
+/* Define to 1 if we have sigaction */
+#undef HAVE_SIGACTION
+
+/* Define to 1 if sizechange declarations are provided */
+#undef HAVE_SIZECHANGE
+
+/* Define to 1 if you have the `sleep' function. */
+#undef HAVE_SLEEP
+
+/* Define to 1 if you have the `socket' function. */
+#undef HAVE_SOCKET
+
+/* Define to 1 if you have the <stddef.h> header file. */
+#undef HAVE_STDDEF_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#undef HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define if <stdnoreturn.h> header is available and working */
+#undef HAVE_STDNORETURN_H
+
+/* Define to 1 if you have the `stpcpy' function. */
+#undef HAVE_STPCPY
+
+/* Define to 1 if you have the `strcasecmp' function. */
+#undef HAVE_STRCASECMP
+
+/* Define to 1 if you have the `strchr' function. */
+#undef HAVE_STRCHR
+
+/* Define to 1 if you have the `strdup' function. */
+#undef HAVE_STRDUP
+
+/* Define to 1 if you have the `strerror' function. */
+#undef HAVE_STRERROR
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the `strstr' function. */
+#undef HAVE_STRSTR
+
+/* Define to 1 if you have the `strtoul' function. */
+#undef HAVE_STRTOUL
+
+/* Define to 1 if we have struct dirent64 */
+#undef HAVE_STRUCT_DIRENT64
+
+/* Define to 1 if you have the <syslog.h> header file. */
+#undef HAVE_SYSLOG_H
+
+/* Define to 1 if curses has sysv-style touchline */
+#undef HAVE_SYSV_TOUCHLINE
+
+/* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_DIR_H
+
+/* Define to 1 if you have the <sys/fcntl.h> header file. */
+#undef HAVE_SYS_FCNTL_H
+
+/* Define to 1 if you have the <sys/filio.h> header file. */
+#undef HAVE_SYS_FILIO_H
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_NDIR_H
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#undef HAVE_SYS_PARAM_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/termio.h> header file. */
+#undef HAVE_SYS_TERMIO_H
+
+/* Define to 1 if you have the <sys/timeb.h> header file. */
+#undef HAVE_SYS_TIMEB_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/wait.h> header file. */
+#undef HAVE_SYS_WAIT_H
+
+/* Define to 1 if you have the <termios.h> header file. */
+#undef HAVE_TERMIOS_H
+
+/* Define to 1 if you have the <termio.h> header file. */
+#undef HAVE_TERMIO_H
+
+/* Define to 1 if we have term.h */
+#undef HAVE_TERM_H
+
+/* Define to 1 if you have the `truncate' function. */
+#undef HAVE_TRUNCATE
+
+/* Define to 1 if you have the `tsearch' function. */
+#undef HAVE_TSEARCH
+
+/* Define to 1 if you have the `ttyname' function. */
+#undef HAVE_TTYNAME
+
+/* Define to 1 if ttytype is declared in curses library */
+#undef HAVE_TTYTYPE
+
+/* Define to 1 if chtype is declared */
+#undef HAVE_TYPE_CHTYPE
+
+/* Define to 1 if type unionwait is declared */
+#undef HAVE_TYPE_UNIONWAIT
+
+/* Define to 1 if we have unctrl.h */
+#undef HAVE_UNCTRL_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if you have the `unsetenv' function. */
+#undef HAVE_UNSETENV
+
+/* Define to 1 if you have the `usleep' function. */
+#undef HAVE_USLEEP
+
+/* Define to 1 if the utmp interface is available */
+#undef HAVE_UTMP
+
+/* Define to 1 if UTMP/UTMPX struct defines ut_host member */
+#undef HAVE_UTMP_UT_HOST
+
+/* Define to 1 if UTMP/UTMPX struct defines ut_session member */
+#undef HAVE_UTMP_UT_SESSION
+
+/* Define to 1 if UTMP/UTMPX struct defines ut_syslen member */
+#undef HAVE_UTMP_UT_SYSLEN
+
+/* Define to 1 if UTMP/UTMPX has exit-status member */
+#undef HAVE_UTMP_UT_XSTATUS
+
+/* Define to 1 if UTMP/UTMPX struct defines ut_xtime member */
+#undef HAVE_UTMP_UT_XTIME
+
+/* Define to 1 if we have vasprintf */
+#undef HAVE_VASPRINTF
+
+/* Define to 1 if you have the `vfork' function. */
+#undef HAVE_VFORK
+
+/* Define to 1 if you have the <vfork.h> header file. */
+#undef HAVE_VFORK_H
+
+/* Define to 1 if you have the <wais.h> header file. */
+#undef HAVE_WAIS_H
+
+/* Define to 1 if you have the `waitpid' function. */
+#undef HAVE_WAITPID
+
+/* Define to 1 if you have the <waitstatus.h> header file. */
+#undef HAVE_WAITSTATUS_H
+
+/* Define to 1 if you have the <wait.h> header file. */
+#undef HAVE_WAIT_H
+
+/* Define to 1 if you have the <wchar.h> header file. */
+#undef HAVE_WCHAR_H
+
+/* Define to 1 if you have the `wcwidth' function. */
+#undef HAVE_WCWIDTH
+
+/* Define to 1 if you have the <windows.h> header file. */
+#undef HAVE_WINDOWS_H
+
+/* Define to 1 if you have the <winsock2.h> header file. */
+#undef HAVE_WINSOCK2_H
+
+/* Define to 1 if you have the <winsock.h> header file. */
+#undef HAVE_WINSOCK_H
+
+/* Define to 1 if `fork' works. */
+#undef HAVE_WORKING_FORK
+
+/* Define to 1 if `vfork' works. */
+#undef HAVE_WORKING_VFORK
+
+/* Define to 1 if using PDCurses on Unix */
+#undef HAVE_XCURSES
+
+/* Define to 1 if you have the `zError' function. */
+#undef HAVE_ZERROR
+
+/* Define to 1 if you have the `_nc_freeall' function. */
+#undef HAVE__NC_FREEALL
+
+/* Define to 1 if you have the `_nc_free_and_exit' function. */
+#undef HAVE__NC_FREE_AND_EXIT
+
+/* Define to 1 if you have the `__argz_count' function. */
+#undef HAVE___ARGZ_COUNT
+
+/* Define to 1 if you have the `__argz_next' function. */
+#undef HAVE___ARGZ_NEXT
+
+/* Define to 1 if you have the `__argz_stringify' function. */
+#undef HAVE___ARGZ_STRINGIFY
+
+/* Define to Lynx homepage URL */
 #undef HOMEPAGE_URL
 
-#undef ALL_CHARSETS		/* AC_ARG_WITH(charsets) */
-#undef ALT_CHAR_SET		/* CF_ALT_CHAR_SET */
-#undef ARCHIVE_ONLY		/* CF_ARG_DISABLE(dired-archive) */
-#undef BROTLI_PATH		/* CF_PATH_PROG(brotli) */
-#undef BZIP2_PATH		/* CF_PATH_PROG(bzip2) */
-#undef CAN_SET_ERRNO		/* CF_SET_ERRNO */
-#undef CHMOD_PATH		/* CF_PATH_PROG(chmod) */
-#undef CJK_EX			/* CF_ARG_DISABLE(cjk) */
-#undef COLOR_CURSES		/* CF_COLOR_CURSES */
-#undef COMPRESS_PATH		/* CF_PATH_PROG(compress) */
-#undef COPY_PATH		/* CF_PATH_PROG(cp) */
-#undef CURS_PERFORMANCE		/* CF_CURS_PERFORMANCE */
-#undef DEBUG			/* configure --enable-debug */
-#undef DECL_ERRNO
-#undef DECL_GETGRGID
-#undef DECL_GETGRNAM
-#undef DECL_SLEEP
-#undef DECL_STRSTR
-#undef DECL_SYS_ERRLIST
-#undef DIRED_SUPPORT		/* AC_ARG_WITH(dired) */
-#undef DISABLE_BIBP		/* CF_ARG_DISABLE(bibp-urls) */
-#undef DISABLE_FINGER		/* CF_ARG_DISABLE(finger) */
-#undef DISABLE_FTP		/* CF_ARG_DISABLE(ftp) */
-#undef DISABLE_GOPHER		/* CF_ARG_DISABLE(gopher) */
-#undef DISABLE_NEWS		/* CF_ARG_DISABLE(news) */
-#undef DISP_PARTIAL		/* CF_ARG_ENABLE(partial) */
-#undef DONT_HAVE_TM_GMTOFF	/* CF_TM_GMTOFF */
-#undef ENABLE_IPV6		/* CF_CHECK_IPV6 */
-#undef ENABLE_NLS		/* defined if NLS is requested */
-#undef ENABLE_OPTS_CHANGE_EXEC	/* CF_ARG_ENABLE(change-exec) */
-#undef EXEC_LINKS		/* CF_ARG_ENABLE(exec-links) */
-#undef EXEC_SCRIPTS		/* CF_ARG_ENABLE(exec-scripts) */
-#undef EXP_CHARTRANS_AUTOSWITCH	/* CF_ARG_ENABLE(font-switch) */
-#undef EXP_CHINESEUTF8_SUPPORT	/* CF_ARG_ENABLE(chinese-utf8) */
-#undef EXP_KEYBOARD_LAYOUT	/* CF_ARG_ENABLE(kbd-layout) */
-#undef EXP_NESTED_TABLES	/* CF_ARG_ENABLE(nested-tables) */
-#undef EXP_WCWIDTH_SUPPORT	/* CF_ARG_ENABLE(wcwidth-support) */
-#undef FANCY_CURSES		/* CF_FANCY_CURSES */
-#undef GCC_NORETURN		/* CF_GCC_ATTRIBUTES */
-#undef GCC_PRINTF		/* CF_GCC_ATTRIBUTES */
-#undef GCC_UNUSED		/* CF_GCC_ATTRIBUTES */
-#undef GETGROUPS_T		/* AC_TYPE_GETGROUPS */
-#undef GZIP_PATH		/* CF_PATH_PROG(gzip) */
-#undef HAVE_ALLOCA		/* AM_GNU_GETTEXT/AC_FUNC_ALLOCA */
-#undef HAVE_ALLOCA_H		/* AM_GNU_GETTEXT/AC_FUNC_ALLOCA */
-#undef HAVE_ARGZ_H		/* AM_GNU_GETTEXT */
-#undef HAVE_ARPA_INET_H
-#undef HAVE_ASSUME_DEFAULT_COLORS /* ncurses extension */
-#undef HAVE_ATOLL
-#undef HAVE_BSD_RANDOM_H	/* CF_SRAND */
-#undef HAVE_BSD_STDLIB_H	/* CF_SRAND */
-#undef HAVE_BSD_TOUCHLINE	/* CF_CURS_TOUCHLINE */
-#undef HAVE_CATGETS		/* defined if you want to use non-GNU catgets */
-#undef HAVE_CBREAK
-#undef HAVE_CTERMID
-#undef HAVE_CURSESX_H
-#undef HAVE_CURSES_EXIT		/* ncurses debugging extension */
-#undef HAVE_CURSES_VERSION	/* CF_FUNC_CURSES_VERSION */
-#undef HAVE_CUSERID
-#undef HAVE_DCGETTEXT		/* AM_GNU_GETTEXT */
-#undef HAVE_DEFINE_KEY
-#undef HAVE_DELSCREEN		/* CF_CURSES_FUNCS  */
-#undef HAVE_DIRENT_H		/* AC_HEADER_DIRENT */
-#undef HAVE_FCNTL_H		/* have <fcntl.h> */
-#undef HAVE_FTIME
-#undef HAVE_GAI_STRERROR	/* CF_CHECK_IPV6 */
-#undef HAVE_GETADDRINFO		/* CF_CHECK_IPV6 */
-#undef HAVE_GETATTRS
-#undef HAVE_GETBEGX
-#undef HAVE_GETBEGY
-#undef HAVE_GETBKGD		/* CF_COLOR_CURSES */
-#undef HAVE_GETCWD
-#undef HAVE_GETGROUPS
-#undef HAVE_GETTEXT		/* defined if you want to use non-GNU gettext */
-#undef HAVE_GETTIMEOFDAY
-#undef HAVE_GETUID
-#undef HAVE_GNUTLS_PROTOCOL_SET_PRIORITY
-#undef HAVE_GNUTLS_RND
-#undef HAVE_H_ERRNO
-#undef HAVE_ICONV		/* AM_ICONV */
-#undef HAVE_INET_ATON		/* CF_INET_ADDR */
-#undef HAVE_INTTYPES_H
-#undef HAVE_JCURSES_H
-#undef HAVE_KEYPAD
-#undef HAVE_LANGINFO_CODESET	/* AM_LANGINFO_CODESET */
-#undef HAVE_LC_MESSAGES		/* locale messages */
-#undef HAVE_LIBDBMALLOC		/* --with-dbmalloc */
-#undef HAVE_LIBDMALLOC		/* --with-dmalloc */
-#undef HAVE_LIBGETTEXT_H	/* defined if you want to use bundled gettext */
-#undef HAVE_LIBINTL_H		/* AM_GNU_GETTEXT, or cleanup from that */
-#undef HAVE_LIBUTF8_H		/* may be needed for libncursesw */
-#undef HAVE_LIMITS_H
-#undef HAVE_LOCALE_H
-#undef HAVE_LONG_LONG		/* CF_TYPE_LONG_LONG */
-#undef HAVE_LSTAT		/* CF_FUNC_LSTAT */
-#undef HAVE_MALLOC_H		/* AM_GNU_GETTEXT */
-#undef HAVE_MBSTATE_T		/* CF_WIDEC_CURSES */
-#undef HAVE_MKDTEMP
-#undef HAVE_MKTEMP
-#undef HAVE_MKTIME		/* AC_REPLACE_FUNCS(mktime) */
-#undef HAVE_MMAP		/* AM_GNU_GETTEXT */
-#undef HAVE_MUNMAP		/* AM_GNU_GETTEXT */
-#undef HAVE_NAPMS
-#undef HAVE_NCURSESW_NCURSES_H	/* defined if we include <ncursesw/ncurses.h> */
-#undef HAVE_NCURSESW_TERM_H	/* have <ncursesw/term.h> */
-#undef HAVE_NCURSES_H		/* defined if we include <ncurses.h> */
-#undef HAVE_NCURSES_NCURSES_H	/* defined if we include <ncurses/ncurses.h> */
-#undef HAVE_NCURSES_TERM_H	/* have <ncurses/term.h> */
-#undef HAVE_NEWPAD
-#undef HAVE_NEWTERM
-#undef HAVE_NL_TYPES_H		/* AM_GNU_GETTEXT */
-#undef HAVE_PNOUTREFRESH
-#undef HAVE_POPEN
-#undef HAVE_PUTENV
-#undef HAVE_READDIR
-#undef HAVE_RESIZETERM
-#undef HAVE_RESOLV_H
-#undef HAVE_SETENV		/* AM_GNU_GETTEXT */
-#undef HAVE_SETLOCALE
-#undef HAVE_SETUID
-#undef HAVE_SIGACTION		/* CF_FUNC_SIGACTION */
-#undef HAVE_SIZECHANGE		/* CF_SIZECHANGE */
-#undef HAVE_SLEEP
-#undef HAVE_STDARG_H		/* CF_VARARGS */
-#undef HAVE_STDLIB_H
-#undef HAVE_STDNORETURN_H	/* CF_C11_NORETURN */
-#undef HAVE_STPCPY		/* AM_GNU_GETTEXT */
-#undef HAVE_STRCASECMP		/* AM_GNU_GETTEXT */
-#undef HAVE_STRCHR		/* AM_GNU_GETTEXT */
-#undef HAVE_STRERROR
-#undef HAVE_STRING_H
-#undef HAVE_STRUCT_DIRENT64	/* CF_LARGEFILE */
-#undef HAVE_SYSLOG_H
-#undef HAVE_SYSV_TOUCHLINE	/* CF_CURS_TOUCHLINE */
-#undef HAVE_SYS_DIR_H		/* AC_HEADER_DIRENT */
-#undef HAVE_SYS_FCNTL_H		/* have <sys/fcntl.h> */
-#undef HAVE_SYS_FILIO_H		/* have <sys/filio.h> */
-#undef HAVE_SYS_IOCTL_H		/* have <sys/ioctl.h> */
-#undef HAVE_SYS_NDIR_H		/* AC_HEADER_DIRENT */
-#undef HAVE_SYS_PARAM_H		/* AM_GNU_GETTEXT */
-#undef HAVE_SYS_TIMEB_H		/* have <sys/timeb.h> */
-#undef HAVE_SYS_TIME_H		/* have <sys/time.h> */
-#undef HAVE_SYS_WAIT_H		/* have <sys/wait.h> */
-#undef HAVE_TERMIOS_H		/* have <termios.h> */
-#undef HAVE_TERMIO_H		/* have <termio.h> */
-#undef HAVE_TERM_H		/* have <term.h> */
-#undef HAVE_TOUCHLINE
-#undef HAVE_TOUCHWIN
-#undef HAVE_TRUNCATE
-#undef HAVE_TTYNAME
-#undef HAVE_TTYTYPE
-#undef HAVE_TYPE_CHTYPE		/* CF_CURSES_CHTYPE */
-#undef HAVE_TYPE_UNIONWAIT	/* CF_UNION_WAIT */
-#undef HAVE_UNISTD_H		/* have <unistd.h> */
-#undef HAVE_UNSETENV
-#undef HAVE_USE_DEFAULT_COLORS	/* ncurses extension */
-#undef HAVE_USE_LEGACY_CODING	/* ncurses extension */
-#undef HAVE_USLEEP
-#undef HAVE_UTMP		/* CF_UTMP */
-#undef HAVE_UTMP_UT_HOST	/* CF_UTMP_UT_HOST */
-#undef HAVE_UTMP_UT_SESSION	/* CF_UTMP_UT_SESSION */
-#undef HAVE_UTMP_UT_XSTATUS	/* CF_UTMP_UT_XSTATUS */
-#undef HAVE_UTMP_UT_XTIME	/* CF_UTMP_UT_XTIME */
-#undef HAVE_VALUES_H		/* AM_GNU_GETTEXT */
-#undef HAVE_VARARGS_H		/* CF_VARARGS */
-#undef HAVE_VASPRINTF		/* CF_FUNC_VASPRINTF */
-#undef HAVE_VFORK_H		/* have <vfork.h> */
-#undef HAVE_WAIS_H
-#undef HAVE_WAITPID
-#undef HAVE_WATTR_GET
-#undef HAVE_WBORDER
-#undef HAVE_WCHAR_H
-#undef HAVE_WCWIDTH		/* AC_REPLACE_FUNCS(wcwidth) */
-#undef HAVE_WINDOWS_H		/* CF_NETLIBS */
-#undef HAVE_WINSOCK2_H		/* CF_NETLIBS */
-#undef HAVE_WINSOCK_H		/* CF_NETLIBS */
-#undef HAVE_WREDRAWLN
-#undef HAVE_WRESIZE
-#undef HAVE_XCURSES		/* CF_PDCURSES_X11 */
-#undef HAVE_ZERROR
-#undef HAVE__NC_FREEALL		/* ncurses debugging extension */
-#undef HAVE__NC_FREE_AND_EXIT	/* ncurses debugging extension */
-#undef HAVE___ARGZ_COUNT	/* AM_GNU_GETTEXT */
-#undef HAVE___ARGZ_NEXT		/* AM_GNU_GETTEXT */
-#undef HAVE___ARGZ_STRINGIFY	/* AM_GNU_GETTEXT */
+/* Define as const if the declaration of iconv() needs const. */
 #undef ICONV_CONST
-#undef IGNORE_CTRL_C		/* FIXME: make tests? */
-#undef INCLUDE_PROTOTYPES	/* CF_SOCKS5 */
-#undef INSTALL_ARGS		/* CF_PATH_PROG(install) */
-#undef INSTALL_PATH		/* CF_PATH_PROG(install) */
-#undef LINUX			/* FIXME: make tests? */
-#undef LOCALE			/* for locale support */
-#undef LONG_LIST		/* CF_ARG_DISABLE(long-list) */
-#undef LYNXCGI_LINKS		/* CF_ARG_ENABLE(cgi-links) */
-#undef LYNX_CFG_FILE		/* $sysconfdir/lynx.cfg */
-#undef LYNX_CFG_PATH		/* $sysconfdir */
-#undef LYNX_LSS_FILE		/* $sysconfdir/lynx.lss */
-#undef LYNX_RAND_MAX		/* CF_SRAND */
-#undef LY_FIND_LEAKS		/* CF_ARG_ENABLE(find-leaks) */
-#undef LY_TRACELINE		/* CF_ARG_ENABLE(vertrace) */
-#undef MIME_LIBDIR		/* CF_WITH_PATH(mime-libdir */
-#undef MKDIR_PATH		/* CF_PATH_PROG(mkdir) */
-#undef MV_PATH			/* CF_PATH_PROG(mv) */
-#undef NCURSES			/* defined for ncurses support */
-#undef NCURSES_BROKEN		/* defined for ncurses color support */
-#undef NEED_PTEM_H		/* CF_SIZECHANGE */
-#undef NEED_REMOVE		/* CF_REMOVE_BROKEN */
-#undef NEED_WCHAR_H		/* CF_WIDEC_CURSES */
-#undef NGROUPS			/* CF_NGROUPS */
-#undef NLS_TEXTDOMAIN		/* NLS_TEXTDOMAIN */
-#undef NO_CHANGE_EXECUTE_PERMS	/* CF_ARG_DISABLE(dired-xpermit) */
-#undef NO_CONFIG_INFO		/* CF_ARG_DISABLE(config-info) */
-#undef NO_EXTENDED_HTMLDTD	/* CF_ARG_DISABLE(extended-dtd) */
-#undef NO_LYNX_TRACE		/* CF_ARG_DISABLE(trace) */
-#undef NO_OPTION_FORMS		/* CF_ARG_DISABLE(forms-options) */
-#undef NO_OPTION_MENU		/* CF_ARG_DISABLE(option-menu) */
-#undef NO_PARENT_DIR_REFERENCE	/* CF_ARG_DISABLE(parent-dir-refs) */
-#undef NSL_FORK			/* CF_ARG_ENABLE(nsl-fork) */
-#undef OK_INSTALL
-#undef OK_OVERRIDE		/* CF_ARG_DISABLE(dired-override) */
-#undef OK_PERMIT		/* CF_ARG_DISABLE(dired-permit) */
-#undef PDC_DLL_BUILD		/* CF_PDCURSES_W32 */
-#undef PDC_WIDE			/* CF_PDCURSES_W32 */
-#undef REAL_UNIX_SYSTEM		/* CF_SLANG_UNIX_DEFS */
-#undef RLOGIN_PATH		/* CF_PATH_PROG(rlogin) */
-#undef RM_PATH			/* CF_PATH_PROG(rm) */
-#undef SETFONT_PATH		/* CF_PATH_PROG(setfont) */
-#undef SIZEOF_INT		/* AC_CHECK_SIZEOF(int) */
-#undef SIZEOF_LONG		/* AC_CHECK_SIZEOF(long) */
-#undef SIZEOF_OFF_T		/* AC_CHECK_SIZEOF(off_t) */
-#undef SIZEOF_SIZE_T		/* AC_CHECK_SIZEOF(size_t) */
-#undef SIZEOF_TIME_T		/* AC_CHECK_SIZEOF(time_t) */
-#undef SLsmg_Color_Type		/* CF_SLANG_UNIX_DEFS */
-#undef SLtt_Char_Type		/* CF_SLANG_UNIX_DEFS */
-#undef SOCKS			/* CF_SOCKS, CF_SOCKS5 */
+
+/* Define to 1 if needed to declare prototypes in socks headers */
+#undef INCLUDE_PROTOTYPES
+
+/* Define to provide args for INSTALL */
+#undef INSTALL_ARGS
+
+/* Define to pathname INSTALL */
+#undef INSTALL_PATH
+
+/* Define to 1 if we have locale support */
+#undef LOCALE
+
+/* Define to 1 if you want long-directory listings */
+#undef LONG_LIST
+
+/* Define to 1 if you want cgi-link support */
+#undef LYNXCGI_LINKS
+
+/* Define to default path for Lynx cfg-file */
+#undef LYNX_CFG_FILE
+
+/* Define to default path for Lynx config-files */
+#undef LYNX_CFG_PATH
+
+/* Define to default path for Lynx lss-file */
+#undef LYNX_LSS_FILE
+
+/* Define to 1 if you want to check memory-leaks */
+#undef LY_FIND_LEAKS
+
+/* Define to __LINE__ if you want verbose trace code */
+#undef LY_TRACELINE
+
+/* Define to default path for MIME library */
+#undef MIME_LIBDIR
+
+/* Define to 1 if filesystem supports mixed-case filenames. */
+#undef MIXEDCASE_FILENAMES
+
+/* Define to provide args for MV */
+#undef MV_ARGS
+
+/* Define to pathname MV */
+#undef MV_PATH
+
+/* Define to 1 if we are using ncurses headers/libraries */
+#undef NCURSES
+
+/* Define to 1 if you have an obsolete version of ncurses */
+#undef NCURSES_BROKEN
+
+/* Define to 1 if we should use remove rather than unlink */
+#undef NEED_REMOVE
+
+/* Define to 1 if we must include wchar.h */
+#undef NEED_WCHAR_H
+
+/* Define to maximum number of groups */
+#undef NGROUPS
+
+/* Define to the nls textdomain value */
+#undef NLS_TEXTDOMAIN
+
+/* Define to 1 if you wish to allow executable-permission commands via DirEd
+   */
+#undef NO_CHANGE_EXECUTE_PERMS
+
+/* Define to 1 if configuration info should be browsable */
+#undef NO_CONFIG_INFO
+
+/* Define to 1 if you want to use extended HTML DTD logic */
+#undef NO_EXTENDED_HTMLDTD
+
+/* Define to 1 if you want to enable lynx trace code */
+#undef NO_LYNX_TRACE
+
+/* Define to 1 if new-style forms-based options screen should be used */
+#undef NO_OPTION_FORMS
+
+/* Define to 1 if old-style options menu should be used */
+#undef NO_OPTION_MENU
+
+/* Define to 1 if parent-directory references are permitted */
+#undef NO_PARENT_DIR_REFERENCE
+
+/* Define to 1 if we want NSL-fork */
+#undef NSL_FORK
+
+/* Define to 1 if you wish to allow "gzip" and "gunzip" commands from DirEd */
+#undef OK_GZIP
+
+/* Define to 1 if DirEd mode should override keys */
+#undef OK_OVERRIDE
+
+/* Define to 1 if you wish to allow permissions commands via DirEd */
+#undef OK_PERMIT
+
+/* Define to 1 if if you wish to allow "tar" commands from DirEd */
+#undef OK_TAR
+
+/* Define to 1 if you wish to allow "uudecode" commands from DirEd */
+#undef OK_UUDECODE
+
+/* Define to 1 if you wish to allow "zip" and "unzip" commands from DirEd */
+#undef OK_ZIP
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if PDCurses has pdcurses_dll_iname */
+#undef PDC_DLL_BUILD
+
+/* Define to 1 if PDCurses has winwstr */
+#undef PDC_WIDE
+
+/* Define to 1 if we must define REAL_UNIX_SYSTEM to compile with s-lang
+   headers */
+#undef REAL_UNIX_SYSTEM
+
+/* Define to provide args for RLOGIN */
+#undef RLOGIN_ARGS
+
+/* Define to pathname RLOGIN */
+#undef RLOGIN_PATH
+
+/* Define to provide args for RM */
+#undef RM_ARGS
+
+/* Define to pathname RM */
+#undef RM_PATH
+
+/* Define to provide args for SETFONT */
+#undef SETFONT_ARGS
+
+/* Define to pathname SETFONT */
+#undef SETFONT_PATH
+
+/* The size of `int', as computed by sizeof. */
+#undef SIZEOF_INT
+
+/* The size of `long', as computed by sizeof. */
+#undef SIZEOF_LONG
+
+/* The size of `off_t', as computed by sizeof. */
+#undef SIZEOF_OFF_T
+
+/* The size of `size_t', as computed by sizeof. */
+#undef SIZEOF_SIZE_T
+
+/* The size of `time_t', as computed by sizeof. */
+#undef SIZEOF_TIME_T
+
+/* Define to int if SLsmg_Color_Type is not declared */
+#undef SLsmg_Color_Type
+
+/* Define to unsigned long if SLtt_Char_Type is not declared */
+#undef SLtt_Char_Type
+
+/* Define to 1 if we are using socks library */
+#undef SOCKS
+
+/* If using the C implementation of alloca, define if you know the
+   direction of stack growth for your system; otherwise it will be
+   automatically deduced at runtime.
+	STACK_DIRECTION > 0 => grows toward higher addresses
+	STACK_DIRECTION < 0 => grows toward lower addresses
+	STACK_DIRECTION = 0 => direction of growth unknown */
+#undef STACK_DIRECTION
+
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
 #undef STDC_HEADERS
-#undef STDC_NORETURN		/* CF_C11_NORETURN */
-#undef SYSTEM_MAIL		/* CF_DEFINE_PROG */
-#undef SYSTEM_MAIL_FLAGS	/* CF_SYSTEM_MAIL_FLAGS */
-#undef SYSTEM_NAME		/* CF_CHECK_CACHE */
-#undef TAR_DOWN_OPTIONS		/* CF_TAR_OPTIONS */
-#undef TAR_FILE_OPTIONS		/* CF_TAR_OPTIONS */
-#undef TAR_PATH			/* CF_PATH_PROG(tar) */
-#undef TAR_PIPE_OPTIONS		/* CF_TAR_OPTIONS */
-#undef TAR_UP_OPTIONS		/* CF_TAR_OPTIONS */
-#undef TELNET_PATH		/* CF_PATH_PROG(telnet) */
-#undef TERMIO_AND_CURSES	/* CF_TERMIO_AND_CURSES workaround */
-#undef TERMIO_AND_TERMIOS	/* CF_TERMIO_AND_TERMIOS workaround */
-#undef TIME_WITH_SYS_TIME	/* AC_HEADER_TIME */
-#undef TN3270_PATH		/* CF_PATH_PROG(tn3270) */
-#undef TOUCH_PATH		/* CF_PATH_PROG(touch) */
-#undef TRACK_INTERNAL_LINKS	/* CF_ARG_DISABLE(internal-links) */
-#undef ULTRIX			/* config.sub */
-#undef UNCOMPRESS_PATH		/* CF_PATH_PROG(gunzip) */
-#undef UNDERLINE_LINKS		/* CF_ARG_ENABLE(underlines) */
+
+/* Define if C11 _Noreturn keyword is supported */
+#undef STDC_NORETURN
+
+/* Define to 1 if you want to log URL requests via syslog */
+#undef SYSLOG_REQUESTED_URLS
+
+/* Define to program from list */
+#undef SYSTEM_MAIL
+
+/* Define to value used for system mail-flags */
+#undef SYSTEM_MAIL_FLAGS
+
+/* Define to the system name. */
+#undef SYSTEM_NAME
+
+/* Define to provide args for TAR */
+#undef TAR_ARGS
+
+/* Define to command for untar'ing files */
+#undef TAR_DOWN_OPTIONS
+
+/* Define to options for tar to work with files */
+#undef TAR_FILE_OPTIONS
+
+/* Define to pathname TAR */
+#undef TAR_PATH
+
+/* Define to options for tar to work with pipes */
+#undef TAR_PIPE_OPTIONS
+
+/* Define to command for tar'ing up files */
+#undef TAR_UP_OPTIONS
+
+/* Define to provide args for TELNET */
+#undef TELNET_ARGS
+
+/* Define to pathname TELNET */
+#undef TELNET_PATH
+
+/* Define to 1 if we can include termio.h with curses.h */
+#undef TERMIO_AND_CURSES
+
+/* Define to 1 if we can include termio.h and termios.h */
+#undef TERMIO_AND_TERMIOS
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. This
+   macro is obsolete. */
+#undef TIME_WITH_SYS_TIME
+
+/* Define to provide args for TN3270 */
+#undef TN3270_ARGS
+
+/* Define to pathname TN3270 */
+#undef TN3270_PATH
+
+/* Define to 1 if you want internal-links feature */
+#undef TRACK_INTERNAL_LINKS
+
+/* Define to TRUE if curses.h does not define */
+#undef TRUE
+
+/* Define to 1 if chtype is a scaler/integer */
+#undef TYPE_CHTYPE_IS_SCALAR
+
+/* Define to provide args for UNCOMPRESS */
+#undef UNCOMPRESS_ARGS
+
+/* Define to pathname UNCOMPRESS */
+#undef UNCOMPRESS_PATH
+
+/* Define to 0 if xxx */
+#undef UNDERLINE_LINKS
+
+/* Define to 1 if using PDCurses on Unix */
 #undef UNIX
-#undef UNZIP_PATH		/* CF_PATH_PROG(unzip) */
-#undef USE_ADDRLIST_PAGE	/* CF_ARG_DISABLE(addrlist-page) */
-#undef USE_ALT_BINDINGS		/* CF_ARG_DISABLE(alt-bindings) */
-#undef USE_ASCII_CTYPES		/* CF_ARG_DISABLE(ascii-ctypes) */
-#undef USE_BROTLI		/* AC_ARG_WITH(brotli) */
-#undef USE_BZLIB		/* AC_ARG_WITH(bzlib) */
-#undef USE_CACHEJAR		/* CF_ARG_DISABLE(session-cache) */
-#undef USE_CHARSET_CHOICE	/* CF_ARG_DISABLE(charset-choice) */
-#undef USE_COLOR_STYLE		/* CF_ARG_DISABLE(color-style) */
-#undef USE_DEFAULT_COLORS	/* CF_ARG_DISABLE(default-colors) */
-#undef USE_EXECVP		/* CF_ARG_DISABLE(full-paths) */
-#undef USE_EXTERNALS		/* CF_ARG_ENABLE(externs) */
-#undef USE_FCNTL		/* CF_FIONBIO */
-#undef USE_FILE_UPLOAD		/* CF_ARG_DISABLE(file-upload) */
-#undef USE_GNUTLS_FUNCS		/* CF_GNUTLS */
-#undef USE_GNUTLS_INCL		/* CF_GNUTLS */
-#undef USE_IDN2			/* CF_ARG_DISABLE(idna) */
-#undef USE_IDNA			/* CF_ARG_DISABLE(idna) */
-#undef USE_JAPANESEUTF8_SUPPORT	/* CF_ARG_DISABLE(japanese-utf8) */
-#undef USE_JUSTIFY_ELTS		/* CF_ARG_DISABLE(justify-elts) */
-#undef USE_LOCALE_CHARSET	/* CF_ARG_DISABLE(locale-charset) */
-#undef USE_OPENSSL_INCL		/* CF_SSL */
-#undef USE_PERSISTENT_COOKIES	/* CF_ARG_DISABLE(persistent-cookies) */
-#undef USE_PRETTYSRC		/* CF_ARG_DISABLE(prettysrc) */
-#undef USE_PROGRESSBAR		/* CF_ARG_DISABLE(progressbar) */
-#undef USE_READPROGRESS		/* CF_ARG_DISABLE(read-eta) */
-#undef USE_SCROLLBAR		/* CF_ARG_DISABLE(scrollbar) */
-#undef USE_SESSIONS		/* CF_ARG_DISABLE(sessions) */
-#undef USE_SLANG		/* AC_ARG_WITH(screen=slang) */
-#undef USE_SOCKS4_PREFIX	/* CF_SOCKS5 */
-#undef USE_SOCKS5		/* CF_SOCKS5 */
-#undef USE_SOURCE_CACHE		/* CF_ARG_DISABLE(source-cache) */
-#undef USE_SSL			/* CF_SSL */
-#undef USE_SYSV_UTMP		/* CF_UTMP */
-#undef USE_X509_SUPPORT		/* CF_GNUTLS, CF_SSL */
-#undef USE_ZLIB			/* AC_ARG_WITH(zlib) */
-#undef UTF8			/* CF_SLANG_CPPFLAGS */
-#undef UTMPX_FOR_UTMP		/* use <utmpx.h> since <utmp.h> not found */
-#undef UUDECODE_PATH		/* CF_PATH_PROG(uudecode) */
-#undef WAITPID_USES_UNION	/* CF_FUNC_WAIT */
-#undef WAIT_USES_UNION		/* CF_FUNC_WAIT */
-#undef WIDEC_CURSES		/* CF_WIDEC_CURSES */
-#undef XCURSES			/* CF_PDCURSES_X11 */
-#undef ZCAT_PATH		/* CF_PATH_PROG(zcat) */
-#undef ZIP_PATH			/* CF_PATH_PROG(zip) */
-#undef _WINDOWS_NSL		/* CF_ARG_ENABLE(nsl-fork) */
-#undef inline			/* AC_C_INLINE */
-#undef intptr_t			/* AC_CHECK_TYPE(intptr_t,...) */
-#undef lynx_rand		/* CF_SRAND */
-#undef lynx_srand		/* CF_SRAND */
-#undef mode_t			/* AC_TYPE_MODE_T */
-#undef off_t			/* AC_TYPE_OFF_T */
-#undef pid_t			/* AC_TYPE_PID_T */
-#undef socklen_t		/* CF_CHECK_TYPE(socklen_t,...) */
-#undef ssize_t			/* CF_CHECK_TYPE(ssize_t,...) */
-#undef uid_t			/* AC_TYPE_UID_T */
-#undef ut_name			/* CF_UTMP */
-#undef ut_xstatus		/* CF_UTMP_UT_XSTATUS */
-#undef ut_xtime			/* CF_UTMP_UT_XTIME */
 
-#ifdef GZIP_PATH
-#undef OK_GZIP			/* CF_ARG_DISABLE(dired-gzip) */
-#endif
+/* Define to provide args for UNZIP */
+#undef UNZIP_ARGS
 
-#ifdef TAR_PATH
-#undef OK_TAR			/* CF_ARG_DISABLE(dired-tar) */
-#endif
+/* Define to pathname UNZIP */
+#undef UNZIP_PATH
 
-#ifdef UUDECODE_PATH
-#undef OK_UUDECODE		/* CF_ARG_DISABLE(dired-uudecode) */
-#endif
+/* Define to 1 if address-list page should be used */
+#undef USE_ADDRLIST_PAGE
 
-#ifdef ZIP_PATH
-#undef OK_ZIP			/* CF_ARG_DISABLE(dired-zip) */
-#endif
+/* Define to 1 if alternative line-edit bindings should be used */
+#undef USE_ALT_BINDINGS
 
-/*
- * U/Win defines vfork() as a macro in vfork.h, which is included from unistd.h.
- */
-#ifndef HAVE_VFORK_H
-#undef vfork			/* AC_FUNC_FORK */
-#endif
+/* Define to 1 if ascii case-conversion should be used */
+#undef USE_ASCII_CTYPES
 
-/* 'const' may be defined externally by the compiler-wrapper, as in 'unproto'
- * or by AC_C_CONST
- */
-#ifndef const
-#undef const
-#endif
+/* Define to 1 if you want to use libbrotli decompression */
+#undef USE_BROTLI
 
-/*
- * The configure script generates LYHelp.h (handcrafted makefiles may not do
- * this, so we set a definition):
- */
-#define HAVE_LYHELP_H 1
+/* Define to 1 if you want to use libbz2 for decompression of some bzip2 files
+   */
+#undef USE_BZLIB
 
-/* FIXME:SVR4_BSDSELECT (done in $host_os case-statement) */
+/* Define to 1 if session-caching code should be used */
+#undef USE_CACHEJAR
 
-/* Some older socks libraries, especially AIX need special definitions */
-#if defined(_AIX) && !defined(USE_SOCKS5)
+/* Define to 1 if charset-selection logic should be used */
+#undef USE_CHARSET_CHOICE
+
+/* Define to 1 if we should enable color-style */
+#undef USE_COLOR_STYLE
+
+/* "Define to 1 if you want to use dbmalloc for testing." */
+#undef USE_DBMALLOC
+
+/* Define to 1 if you want to use default-colors */
+#undef USE_DEFAULT_COLORS
+
+/* "Define to 1 if you want to use dmalloc for testing." */
+#undef USE_DMALLOC
+
+/* Define to 1 if you want full utility pathnames */
+#undef USE_EXECVP
+
+/* Define to 1 if you want to use external commands */
+#undef USE_EXTERNALS
+
+/* Define to 1 if we should use fcntl */
+#undef USE_FCNTL
+
+/* Define to 1 if file-upload logic should be used */
+#undef USE_FILE_UPLOAD
+
+/* Define to 1 if we should use gnutls functions */
+#undef USE_GNUTLS_FUNCS
+
+/* Define to 1 if we should include gnutls headers */
+#undef USE_GNUTLS_INCL
+
+/* Define to 1 if we should use IDN2 library */
+#undef USE_IDN2
+
+/* Define to 1 if we should use IDNA library */
+#undef USE_IDNA
+
+/* Define to 1 if Japanese UTF-8 logic should be used */
+#undef USE_JAPANESEUTF8_SUPPORT
+
+/* Define to 1 if element-justification logic should be used */
+#undef USE_JUSTIFY_ELTS
+
+/* Define to 1 if we can define lastlog pathname */
+#undef USE_LASTLOG
+
+/* Define to 1 if locale-charset selection logic should be used */
+#undef USE_LOCALE_CHARSET
+
+/* Define to 1 if we should use nss compatibility header */
+#undef USE_NSS_COMPAT_INCL
+
+/* Define to 1 if we are using OpenSSL headers */
+#undef USE_OPENSSL_INCL
+
+/* Define to 1 if persistent-cookie logic should be used */
+#undef USE_PERSISTENT_COOKIES
+
+/* Define to 1 if html source should be colorized */
+#undef USE_PRETTYSRC
+
+/* Define to 1 if progress-bar code should be used */
+#undef USE_PROGRESSBAR
+
+/* Define to 1 if read-progress message should show ETA */
+#undef USE_READPROGRESS
+
+/* Define to 1 if configuration supports ACS_xxx definitions */
+#undef USE_SCROLLBAR
+
+/* Define to 1 if sessions code should be used */
+#undef USE_SESSIONS
+
+/* Define to 1 if we should use s-lang library */
+#undef USE_SLANG
+
+/* Define to 1 if socks library uses socks4 prefix */
+#undef USE_SOCKS4_PREFIX
+
+/* Define to 1 if we are using socks5 library */
+#undef USE_SOCKS5
+
+/* Define to 1 if source caching should be used */
+#undef USE_SOURCE_CACHE
+
+/* Define to 1 if we should use SSL */
+#undef USE_SSL
+
+/* Define to 1 if utmp is SYSV flavor */
+#undef USE_SYSV_UTMP
+
+/* Define to 1 if we should include winsock2.h */
+#undef USE_WINSOCK2_H
+
+/* Define to 1 if the SSL library provides X509 support */
+#undef USE_X509_SUPPORT
+
+/* Define to 1 if you want to use zlib for decompression of some gzip files */
+#undef USE_ZLIB
+
+/* Define to 1 if we must define UTF-8 for s-lang headers */
+#undef UTF8
+
+/* Define if we have utmpx interface */
+#undef UTMPX_FOR_UTMP
+
+/* Define to provide args for UUDECODE */
+#undef UUDECODE_ARGS
+
+/* Define to pathname UUDECODE */
+#undef UUDECODE_PATH
+
+/* Define to 1 if waitpid() uses a union parameter */
+#undef WAITPID_USES_UNION
+
+/* Define to 1 if wait() uses a union parameter */
+#undef WAIT_USES_UNION
+
+/* Define to 1 if curses supports wide characters */
+#undef WIDEC_CURSES
+
+/* Define to 1 if using PDCurses on Unix */
+#undef XCURSES
+
+/* Define to 1 if the X Window System is missing or not being used. */
+#undef X_DISPLAY_MISSING
+
+/* Define to provide args for ZCAT */
+#undef ZCAT_ARGS
+
+/* Define to pathname ZCAT */
+#undef ZCAT_PATH
+
+/* Define to provide args for ZIP */
+#undef ZIP_ARGS
+
+/* Define to pathname ZIP */
+#undef ZIP_PATH
+
+/* Number of bits in a file offset, on hosts where this is settable. */
+#undef _FILE_OFFSET_BITS
+
+/* Define to 1 to make fseeko visible on some hosts (e.g. glibc 2.2). */
+#undef _LARGEFILE_SOURCE
+
+/* Define for large files, on AIX-style hosts. */
+#undef _LARGE_FILES
+
+/* Define to 1 if we must define _POSIX_SOURCE */
+#undef _POSIX_SOURCE
+
+/* Define to 1 if we want NSL-fork with Windows */
+#undef _WINDOWS_NSL
+
+/* Define to override function name if using socks library */
 #undef accept
+
+/* Define to override function name if using socks library */
 #undef bind
+
+/* Define to override function name if using socks library */
 #undef connect
+
+/* Define to override function name if using socks library */
 #undef getpeername
+
+/* Define to override function name if using socks library */
 #undef getsockname
+
+/* Define to `int' if <sys/types.h> doesn't define. */
+#undef gid_t
+
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#undef inline
+#endif
+
+/* Define to `long' if <sys/types.h> does not define. */
+#undef intptr_t
+
+/* Define to override function name if using socks library */
 #undef listen
+
+/* Define to the name for the rand function */
+#undef lynx_rand
+
+/* Define to the name for the srand function */
+#undef lynx_srand
+
+/* Define to `int' if <sys/types.h> does not define. */
+#undef mode_t
+
+/* Define to `long int' if <sys/types.h> does not define. */
+#undef off_t
+
+/* Define as a signed integer type capable of holding a process identifier. */
+#undef pid_t
+
+/* Define to override function name if using socks library */
 #undef recvfrom
+
+/* Define to override function name if using socks library */
 #undef select
-#endif
 
-#ifdef HAVE_SYSLOG_H
-#undef SYSLOG_REQUESTED_URLS	/* CF_ARG_ENABLE(syslog) */
-#endif
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#undef size_t
 
-#ifndef HAVE_LSTAT
-#define lstat stat
-#endif
+/* Define to int if socklen_t is not declared */
+#undef socklen_t
 
-#ifdef DECL_GETGRGID
-extern struct group * getgrgid ();
-#endif
+/* Define to int if ssize_t is not declared */
+#undef ssize_t
 
-#ifdef DECL_GETGRNAM
-extern struct group * getgrnam ();
-#endif
+/* Define to `int' if <sys/types.h> doesn't define. */
+#undef uid_t
 
-#ifdef DECL_STRSTR
-extern char * strstr ();
-#endif
+/* Define to rename UTMP/UTMPX struct ut_name member */
+#undef ut_name
 
-#endif /* LYNX_CFG_H */
+/* Define if needed to rename member ut_xstatus of UTMP/UTMPX */
+#undef ut_xstatus
+
+/* Define if needed to alternate name for utmpx.ut_xtime member */
+#undef ut_xtime
+
+/* Define as `fork' if `vfork' does not work. */
+#undef vfork

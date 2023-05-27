@@ -16,6 +16,7 @@
 #include <LYexit.h>
 #include <LYLeaks.h>
 
+
 #ifdef DJGPP
 extern void sig_handler_watt(int);
 #endif /* DJGPP */
@@ -23,6 +24,8 @@ extern void sig_handler_watt(int);
 #ifdef VMS
 BOOLEAN HadVMSInterrupt = FALSE;
 #endif /* VMS */
+
+#include <js/js.h>
 
 /*
  * Interrupt handler.  Stop curses and exit gracefully.
@@ -147,6 +150,8 @@ void cleanup_files(void)
 
 void cleanup(void)
 {
+    js_destroy();
+
     /*
      * Ignore signals from terminal.
      */

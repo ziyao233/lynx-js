@@ -1,0 +1,15 @@
+*.o
+*.a
+*.so
+*.elf
+*.log
+*.status
+*.cache
+lynx_cfg.h
+help_files.sed
+cfg_defs.h
+LYHelp.h
+WWW/Library/Implementation/makefile
+src/chrtrans/*
+lynx-js
+src/lynx-js

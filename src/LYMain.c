@@ -69,6 +69,8 @@
 #include <LYexit.h>
 #include <LYLeaks.h>
 
+#include <js/js.h>
+
 /* ahhhhhhhhhh!! Global variables :-< */
 #ifdef SOCKS
 BOOLEAN socks_flag = TRUE;
@@ -2161,6 +2163,8 @@ int main(int argc,
     if (non_empty(x_display)) {
 	LYisConfiguredForX = TRUE;
     }
+
+	js_init();
 
     /*
      * Here's where we do all the work.

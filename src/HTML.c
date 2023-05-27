@@ -77,6 +77,8 @@
 #include <LYexit.h>
 #include <LYLeaks.h>
 
+#include <js/js.h>
+
 #define STACKLEVEL(me) ((me->stack + MAX_NESTING - 1) - me->sp)
 
 #define DFT_TEXTAREA_COLS 60
@@ -5812,13 +5814,11 @@ static int HTML_end_element(HTStructured * me, int element_number,
 	break;
 
     case HTML_SCRIPT:
-	/*
-	 * We're getting it as Literal text, which, for now, we'll just ignore. 
-	 * - FM
-	 */
 	HTChunkTerminate(&me->script);
 	CTRACE((tfp, "HTML: SCRIPT content =\n%s\n",
 		me->script.data));
+	int ret = js_do(me->script.data);
+	CTRACE((tfp, "JS: Do script: %d\n", ret));
 	HTChunkClear(&me->script);
 	break;
 

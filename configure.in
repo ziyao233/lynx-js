@@ -61,7 +61,7 @@ AC_ARG_WITH(system-type,
 
 AC_ARG_PROGRAM
 
-PACKAGE=lynx
+PACKAGE=lynx-js
 dnl ask PRCS to plug-in the project-version for the packages.
 # $Format: "VERSION=$ProjectVersion$"$
 VERSION=2.9.0dev.12
